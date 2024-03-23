@@ -1,0 +1,43 @@
+#          ((`\          -------------------
+#       ___ \\ '--._    / hippity hoppity /
+#    .'`   `'    o  )  /   ur checks r   /
+#   /    \   '. __.'  /   my property   /
+#  _|    /_  \ \_\_  -------------------
+# {_\______\-'\__\_\                    
+
+description: Ladybunne's master yaml for Archipelago short syncs
+
+# TODO: Replace the name with game-specific ones, maybe.
+# It's a lot of triggers and might not be worth the effort.
+name: Ladybunne{NUMBER}
+game: 
+  The Legend of Zelda: 1
+  Slay the Spire: 0
+  Risk of Rain 2: 0
+
+requires:
+  version: 0.4.4
+  plando: items
+
+
+
+# The Legend of Zelda
+
+The Legend of Zelda:
+  progression_balancing: 50
+  accessibility: items
+
+  # Expanded Pool adds room clear drops and Take Any Item caves to the pool.
+  ExpandedPool: true 
+
+  # Other options: dungeon, anywhere
+  TriforceLocations: vanilla
+
+  # Think about changing this to dangerous depending on how bad the earlygame is.
+  StartingPosition: very_dangerous
+
+  plando_items:
+    # Put Book of Magic in the bad corner where it belongs.
+    - item: Book of Magic
+      location: Level 9 Bomb Drop (Blue Lanmolas)
+      world: false
