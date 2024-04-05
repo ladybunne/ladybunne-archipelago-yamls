@@ -1,0 +1,78 @@
+description: Ladybunne's Z1 plando key concept thing
+
+name: Ladybunne{NUMBER}
+game: The Legend of Zelda
+
+requires:
+  version: 0.4.5
+  plando: items
+
+
+The Legend of Zelda:
+  progression_balancing: 50
+  accessibility: items
+
+  # Link starts with a few items in this one! Kind of like a "I'm ready to go kill
+  # Gannon, but I lost my keys!" sorta deal.
+  start_inventory:
+    White Sword: 1
+    Silver Arrow: 1
+
+  non_local_items:
+    - Small Key
+
+  # Expanded Pool adds room clear drops and Take Any Item caves to the pool.
+  ExpandedPool: true 
+
+  # Other options: dungeon, anywhere
+  TriforceLocations: vanilla
+
+  # TODO Think about changing this to dangerous depending on how bad the earlygame is.
+  StartingPosition: very_dangerous
+
+  plando_items:
+    # The ultimate goal - Link's lost keyring!
+    - item: Magical Key
+      location: Magical Sword Grave
+      from_pool: true
+      world: false
+    
+    # This is the cool bit - you need many hearts to get the Magical Key.
+    # They're all plandoed in "hard" spots!
+    - item: Heart Container
+      locations:
+        - Level 1 Item (Bow)
+        - Ocean Heart Container
+
+    # Blank shops' items, if possible, to stop keys being purchasable.
+    - item: Bomb
+      locations:
+        - Arrow Shop Item Middle
+        - Blue Ring Shop Item Middle
+        - Candle Shop Item Middle
+        - Shield Shop Item Middle
+      from_pool: true
+      world: false
+    
+    - item: Water of Life (Red)
+      locations:
+        - Arrow Shop Item Right
+        - Blue Ring Shop Item Right
+        - Candle Shop Item Right
+        - Shield Shop Item Right
+      from_pool: true
+      world: false
+    
+    - item: Fairy
+      locations:
+        - Arrow Shop Item Left
+        - Blue Ring Shop Item Left
+        - Candle Shop Item Left
+        - Shield Shop Item Left
+      from_pool: true
+      world: false
+
+    
+  # Design notes:
+  # - Use Letter to have some cool items, but can't put a heart there because it 
+  #   would be infinitely purchaseable.

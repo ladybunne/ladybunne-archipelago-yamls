@@ -118,3 +118,9 @@ Terraria:
     # When you die, everyone dies. Of course the reverse is true too.
     false: 50
     true: 0
+
+  plando_items:
+    - item: Post-Plantera
+      location: Wall of Flesh
+      from_pool: true
+      world: false

@@ -5,20 +5,19 @@
 #  _|    /_  \ \_\_  -------------------
 # {_\______\-'\__\_\                    
 
-description: Ladybunne's master yaml for Archipelago short syncs
+description: Ladybunne's main weighted yaml for Archipelago short syncs
 
-# TODO: Replace the name with game-specific ones, maybe.
-# It's a lot of triggers and might not be worth the effort.
 name: Ladybunne{NUMBER}
 game: 
-  The Legend of Zelda: 0
-  Slay the Spire: 0
-  Risk of Rain 2: 0
-  Sonic Adventure 2 Battle: 0
-  Kingdom Hearts 2: 1
+  # The Legend of Zelda: 1
+  # Slay the Spire: 1
+  # Risk of Rain 2: 2
+  Kingdom Hearts 2: 2
+  # A Link to the Past: 1
+  # Sonic Adventure 2 Battle: 1
 
 requires:
-  version: 0.4.4
+  version: 0.4.5
   plando: items
 
 
@@ -28,6 +27,10 @@ requires:
 The Legend of Zelda:
   progression_balancing: 50
   accessibility: items
+
+  # Trying this out.
+  local_items:
+    - Stepladder
 
   # Expanded Pool adds room clear drops and Take Any Item caves to the pool.
   ExpandedPool: true 
@@ -90,9 +93,9 @@ Slay the Spire:
   accessibility: items
 
   character:
-    the_ironclad: 10
-    the_silent: 10
-    the_defect: 10
+    the_ironclad: 1
+    the_silent: 2
+    the_defect: 1
     the_watcher: 0
     spire_take_the_wheel: 0
   
@@ -131,9 +134,17 @@ Risk of Rain 2:
       "ItemPickup96", "ItemPickup97", "ItemPickup98", "ItemPickup99", "ItemPickup100",
     ]
 
-  start_location_hints:
+  non_local_items:
+    # - Uncommon Item
+    - Legendary Item
+    - Boss Item
+    # - Money
+    # - 1000 Exp
+
   # Start with these locations and their item prefilled into the !hint command
-    []
+  start_hints:
+    - Legendary Item
+    - Boss Item
 
   dlc_sotv: true
 
@@ -168,20 +179,20 @@ Risk of Rain 2:
   item_pool_presets: false
 
   # Items.
-  common_item: 0
-  uncommon_item: 0
-  legendary_item: 0
-  boss_item: 0
+  common_item: 40
+  uncommon_item: 20
+  legendary_item: 5
+  boss_item: 5
 
   # Scrap.
-  white_scrap: 0
-  green_scrap: 0
+  white_scrap: 15
+  green_scrap: 5
   red_scrap: 0
   yellow_scrap: 0
 
   # Consumables.
-  money: 0
-  experience: 0
+  money: 5
+  experience: 5
 
   # Don't want random equipment from other players.
   equipment: 0
@@ -209,6 +220,30 @@ Risk of Rain 2:
 Kingdom Hearts 2:
   progression_balancing: 50
   accessibility: items
+
+  exclude_locations:
+    - (CoR) Depths AP Boost
+    - (CoR) Depths Power Crystal
+    - (CoR) Depths Frost Crystal
+    - (CoR) Depths Manifest Illusion
+    - (CoR) Depths AP Boost 2
+    - (CoR) Mineshaft Lower Level Depths of Remembrance Map
+    - (CoR) Mineshaft Lower Level AP Boost
+    - (CoR) Depths Upper Level Remembrance Gem
+    - (CoR) Mining Area Serenity Gem
+    - (CoR) Mining Area AP Boost
+    - (CoR) Mining Area Serenity Crystal
+    - (CoR) Mining Area Manifest Illusion
+    - (CoR) Mining Area Serenity Gem 2
+    - (CoR) Mining Area Dark Remembrance Map
+    - (CoR) Mineshaft Mid Level Power Boost
+    - (CoR) Engine Chamber Serenity Crystal
+    - (CoR) Engine Chamber Remembrance Crystal
+    - (CoR) Engine Chamber AP Boost
+    - (CoR) Engine Chamber Manifest Illusion
+    - (CoR) Mineshaft Upper Level Magic Boost
+    - (CoR) Mineshaft Upper Level AP Boost
+    - Transport to Remembrance
 
   start_inventory:
     Scan: 1
@@ -250,14 +285,9 @@ Kingdom Hearts 2:
     hitlist: 0
     hitlist_and_lucky_emblem: 0
 
-  FinalXemnas:
-    # Kill Final Xemnas to Beat the Game.
-    # 
-    # This is in addition to your Goal.
-    # 
-    # I.E. get three proofs+kill final Xemnas
-    false: 50
-    true: 0
+  # I am bad and apparently can't do this.
+  # But I will try anyway.
+  FinalXemnas: true
 
   # Range: 1 to 60
   LuckyEmblemsRequired: 25
@@ -331,10 +361,9 @@ Kingdom Hearts 2:
     false: 0
     true: 50
 
-  FillerItemsLocal:
-    # Make all dynamic filler classified items local. Recommended when playing with games with fewer locations than kh2
-    false: 0
-    true: 50
+  # Make all dynamic filler classified items local. Recommended when playing with games
+  # with fewer locations than kh2
+  FillerItemsLocal: true
 
   Visitlocking:
     # Determines the level of visit locking
@@ -361,25 +390,15 @@ Kingdom Hearts 2:
     false: 50
     true: 0
 
-  AtlanticaToggle:
-    # Atlantica Toggle
-    false: 50
-    true: 0
+  # Is Atlantica on?
+  AtlanticaToggle: false
 
-  CorSkipToggle:
-    # Toggle for Cor skip.
-    # 
-    # Tools depend on which difficulty was chosen on Fight Difficulty.
-    # 
-    # Toggle does not negate fight logic but is an alternative.
-    # 
-    # Final Chest is also can be put into logic with this skip.
-    false: 0
-    true: 50
+  # Note: this doesn't ACTUALLY skip CoR. Still need to `exclude_locations` this one.
+  CorSkipToggle: true
 
   CustomItemPoolQuantity:
     # Add more of an item into the itempool. Note: You cannot take out items from the pool.
-    Aerial Dodge: 4
+    Aerial Dodge: 1
     Battlefields of War: 2
     Beast's Claw: 2
     Blizzard Element: 3
@@ -417,3 +436,99 @@ Kingdom Hearts 2:
     Valor Form: 1
     Way to the Dawn: 2
     Wisdom Form: 1
+
+
+
+# A Link to the Past
+# These settings are currently broken on 0.4.5.
+# TODO Update to 0.4.5
+
+A Link to the Past:
+  progression_balancing: 50
+  accessibility: items
+
+  crystals_needed_for_gt: 3
+
+  crystals_needed_for_ganon: 3
+  
+  # Formerly goal, which required GT. GT sucks though.
+  open_pyramid: open
+
+  # Start with these items and don't place them in the world.
+  # The game decides what the replacement items will be.
+  start_inventory_from_pool:
+    - Pegasus Boots
+
+  bigkey_shuffle: original_dungeon
+
+  smallkey_shuffle: original_dungeon
+
+  key_drop_shuffle: false
+
+  compass_shuffle: start_with
+
+  map_shuffle: start_with
+
+  progressive: on
+
+  swordless: false
+
+  retro_bow: false
+
+  retro_caves: false
+
+  hints: on
+
+  scams: off
+
+  restrict_dungeon_item_on_boss: true
+
+  boss_shuffle: none
+
+  pot_shuffle: false
+
+  enemy_shuffle: false
+
+  killable_thieves: false
+
+  bush_shuffle: false
+
+  shop_item_slots: 1
+
+  shop_price_modifier: 100
+
+  tile_shuffle: false
+
+  ow_palettes: default
+
+  uw_palettes: default
+
+  hud_palettes: default
+
+  sword_palettes: default
+
+  shield_palettes: default
+
+  heartbeep: normal
+
+  heartcolor: red
+
+  quickswap: true
+
+  menuspeed: normal
+
+  music: true
+
+  reduceflashing: true
+
+  triforcehud: normal
+
+  glitch_boots: true
+
+  beemizer_total_chance: 0
+
+  beemizer_trap_chance: 0
+
+  death_link: false
+
+  allow_collect: false

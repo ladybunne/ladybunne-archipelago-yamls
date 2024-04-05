@@ -1,0 +1,186 @@
+name: KH-Comp
+game: Kingdom Hearts 2
+
+Kingdom Hearts 2:
+  progression_balancing: 50
+  accessibility: items
+
+  exclude_locations:
+    - (CoR) Depths AP Boost
+    - (CoR) Depths Power Crystal
+    - (CoR) Depths Frost Crystal
+    - (CoR) Depths Manifest Illusion
+    - (CoR) Depths AP Boost 2
+    - (CoR) Mineshaft Lower Level Depths of Remembrance Map
+    - (CoR) Mineshaft Lower Level AP Boost
+    - (CoR) Depths Upper Level Remembrance Gem
+    - (CoR) Mining Area Serenity Gem
+    - (CoR) Mining Area AP Boost
+    - (CoR) Mining Area Serenity Crystal
+    - (CoR) Mining Area Manifest Illusion
+    - (CoR) Mining Area Serenity Gem 2
+    - (CoR) Mining Area Dark Remembrance Map
+    - (CoR) Mineshaft Mid Level Power Boost
+    - (CoR) Engine Chamber Serenity Crystal
+    - (CoR) Engine Chamber Remembrance Crystal
+    - (CoR) Engine Chamber AP Boost
+    - (CoR) Engine Chamber Manifest Illusion
+    - (CoR) Mineshaft Upper Level Magic Boost
+    - (CoR) Mineshaft Upper Level AP Boost
+    - Transport to Remembrance
+
+  start_inventory:
+    Scan: 1
+    Aerial Recovery: 1
+    Guard: 1
+
+  # Options: 1, 50, 99, 50_sanity, 99_sanity
+  # sanity is "all levels are checks", non is "only 23 levels are checks"
+  LevelDepth: level_1
+
+  Sora_Level_EXP: 6
+
+  Valor_Form_EXP: 8
+  Wisdom_Form_EXP: 3
+  Limit_Form_EXP: 3
+  Master_Form_EXP: 3
+  Final_Form_EXP: 3
+
+  Summon_EXP: 5
+
+  # Ranges from 0 to 4
+  Schmovement: level_1
+  RandomGrowth: 0
+
+  AntiForm: false
+
+  Promise_Charm: true
+
+  Goal:
+    # Win Condition
+    # Three Proofs: Find the 3 Proofs to unlock the final door.
+    # 
+    # Lucky Emblem Hunt: Find required amount of Lucky Emblems.
+    # 
+    # Hitlist (Bounty Hunt): Find required amount of Bounties.
+    # 
+    # Lucky Emblem and Hitlist: Find the required amount of Lucky Emblems and Bounties.
+    three_proofs: 50
+    lucky_emblem_hunt: 0
+    hitlist: 0
+    hitlist_and_lucky_emblem: 0
+
+  # I am bad and apparently can't do this.
+  # But I will try anyway.
+  FinalXemnas: true
+
+  Keyblade_Minimum: 3
+  Keyblade_Maximum: 10
+
+  # Start with Weapon Slots' Hinted
+  WeaponSlotStartHint: false
+
+  FightLogic:
+    # The level of logic to use when determining what fights in each KH2 world are beatable.
+    # 
+    # Easy: For Players not very comfortable doing things without a lot of tools.
+    # 
+    # Normal: For Players somewhat comfortable doing fights with some of the tools.
+    # 
+    # Hard: For Players comfortable doing fights with almost no tools.
+    easy: 50
+    normal: 0
+    hard: 0
+
+  FinalFormLogic:
+    # Determines forcing final form logic
+    # 
+    # No Light and Darkness: Light and Darkness is not in logic.
+    # Light And Darkness: Final Forcing with light and darkness is in logic.
+    # Just a Form: All that requires final forcing is another form.
+    no_light_and_darkness: 0
+    light_and_darkness: 50
+    just_a_form: 0
+
+  AutoFormLogic: false
+
+  DonaldGoofyStatsanity:
+    # Toggles if on Donald and Goofy's Get Bonus locations can be any item
+    false: 0
+    true: 50
+
+  # Make all dynamic filler classified items local. Recommended when playing with games
+  # with fewer locations than kh2
+  FillerItemsLocal: true
+
+  Visitlocking:
+    # Determines the level of visit locking
+    # 
+    # No Visit Locking: Start with all 25 visit locking items.
+    # 
+
+    # Second Visit Locking: Start with 13 visit locking items for every first visit.
+    # 
+
+    # First and Second Visit Locking: One item for First Visit Two For Second Visit
+    no_visit_locking: 0
+    second_visit_locking: 0
+    first_and_second_visit_locking: 50
+
+  RandomVisitLockingItem: 3
+
+  SuperBosses: false
+
+  Cups: no_cups
+
+  SummonLevelLocationToggle:
+    # Toggle Summon levels to have locations.
+    false: 50
+    true: 0
+
+  # Is Atlantica on?
+  AtlanticaToggle: false
+
+  # Note: this doesn't ACTUALLY skip CoR. Still need to `exclude_locations` this one.
+  CorSkipToggle: true
+
+  CustomItemPoolQuantity:
+    # Add more of an item into the itempool. Note: You cannot take out items from the pool.
+    Aerial Dodge: 1
+    Battlefields of War: 2
+    Beast's Claw: 2
+    Blizzard Element: 3
+    Bone Fist: 2
+    Chicken Little: 1
+    Cure Element: 3
+    Disney Castle Key: 2
+    Dodge Roll: 4
+    Final Form: 1
+    Fire Element: 3
+    Genie: 1
+    Glide: 4
+    High Jump: 4
+    Ice Cream: 3
+    Identity Disk: 2
+    Limit Form: 1
+    Magnet Element: 3
+    Master Form: 1
+    Membership Card: 2
+    Namine Sketches: 1
+    Peter Pan: 1
+    Promise Charm: 1
+    Proof of Connection: 1
+    Proof of Nonexistence: 1
+    Proof of Peace: 1
+    Proud Fang: 2
+    Quick Run: 4
+    Reflect Element: 3
+    Scimitar: 2
+    Skill and Crossbones: 2
+    Stitch: 1
+    Sword of the Ancestor: 2
+    Thunder Element: 3
+    Torn Page: 5
+    Valor Form: 1
+    Way to the Dawn: 2
+    Wisdom Form: 1
