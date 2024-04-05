@@ -7,6 +7,16 @@ requires:
   version: 0.4.5
   plando: items
 
+# So! The broad idea with this is that it's a semi-plando run where the structure of the
+# game is quite different, due to manual placement of keys.
+#
+# The game is intended to not be beatable without the Magical Key. I'm going to do plando
+# shenanigans to ensure that there are not enough keys to reach Gannon without it, and
+# from there, I can do some cool stuff with it being a sort of "Lucky Emblem hunt," a la
+# KH2, where you need to get enough heart containers to get the Magical Key, which lets you
+# beat the game.
+#
+# Some stuff will still be random (items like Bow, Recorder, Stepladder, Food and such).
 
 The Legend of Zelda:
   progression_balancing: 50
@@ -18,7 +28,7 @@ The Legend of Zelda:
     White Sword: 1
     Silver Arrow: 1
 
-  non_local_items:
+  local_items:
     - Small Key
 
   # Expanded Pool adds room clear drops and Take Any Item caves to the pool.
@@ -27,24 +37,63 @@ The Legend of Zelda:
   # Other options: dungeon, anywhere
   TriforceLocations: vanilla
 
-  # TODO Think about changing this to dangerous depending on how bad the earlygame is.
-  StartingPosition: very_dangerous
+  # Since we start with a sword, we're safe!
+  StartingPosition: safe
 
   plando_items:
     # The ultimate goal - Link's lost keyring!
+    # Alternate: put Magical Key and two keys in Potion Shop, and put Letter here.
     - item: Magical Key
       location: Magical Sword Grave
       from_pool: true
       world: false
     
-    # This is the cool bit - you need many hearts to get the Magical Key.
+    # This is the cool bit - you need at least 9 Heart Containers to get the Magical Key.
     # They're all plandoed in "hard" spots!
-    - item: Heart Container
+    # Total: 13
+    - items:
+        Heart Container: 13
       locations:
         - Level 1 Item (Bow)
+        - Level 5 Item (Recorder)
+        - Level 6 Item (Magical Rod)
+        - Level 8 Item (Magical Key)
+        - Level 9 Rupee Drop (Wizzrobes Central)
         - Ocean Heart Container
+      from_pool: true
+      world: false
+
+    # Otherwise, here are all the normal keys.
+    # Total: 45
+    - items:
+        Small Key: 45
+      locations:
+        - Level 1 Item (Bow)
+        - Level 4 Compass
+        - Level 5 Map
+        - Level 7 Bomb Drop (Moldorms North)
+        - Level 9 Bomb Drop (Blue Lanmolas)
+        - Level 9 Bomb Drop (Like Likes and Zols Corridor)
+        - Level 9 Bomb Drop (Patra Northeast)
+        - Level 9 Bomb Drop (Vires)
+        - Level 9 Compass
+        - Level 9 Item (Red Ring)
+        - Level 9 Item (Silver Arrow)
+        - Level 9 Key Drop (Patra Southwest)
+        - Level 9 Key Drop (Wizzrobes East Island)
+        - Level 9 Key Drop (Wizzrobes and Bubbles East)
+        - Level 9 Map
+        - Level 9 Rupee Drop (Gels East)
+        - Level 9 Rupee Drop (Keese Southwest)
+        - Level 9 Rupee Drop (Red Lanmolas)
+        - Level 9 Rupee Drop (Wizzrobes North Island)
+        - Level 9 Rupee Drop (Wizzrobes West Island)
+        - Starting Sword Cave
+      from_pool: true
+      world: false
 
     # Blank shops' items, if possible, to stop keys being purchasable.
+    # Update: this needs apworld changes to work.
     - item: Bomb
       locations:
         - Arrow Shop Item Middle
@@ -60,7 +109,7 @@ The Legend of Zelda:
         - Blue Ring Shop Item Right
         - Candle Shop Item Right
         - Shield Shop Item Right
-      from_pool: true
+      from_pool: false
       world: false
     
     - item: Fairy
@@ -76,3 +125,18 @@ The Legend of Zelda:
   # Design notes:
   # - Use Letter to have some cool items, but can't put a heart there because it 
   #   would be infinitely purchaseable.
+  # - Maybe make Letter be the bomb shop? That's a fun thought.
+
+  # KEYS TO FULL CLEAR EACH DUNGEON
+  # 
+  # L1: 3 (1 to finish, 2 for Bow)
+  # L2: 0
+  # L3: 2 (0 to finish, 1 for Raft, 1 for Keese North)
+  # L4: 3 (1 to finish, 1 for Compass, 1 for Stepladder)
+  # L5: 4 (2 to finish, 1 for Recorder, 1 for Map)
+  # L6: 2 (2 to finish)
+  # L7: 3 (2 to finish, 1 for Moldorms North)
+  # L8: 2 (1 to finish, 1 for Compass)
+  # L9: 
+  # 
+  # Total: 
