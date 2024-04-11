@@ -9,9 +9,9 @@ description: Ladybunne's main weighted yaml for Archipelago short syncs
 
 name: Ladybunne{NUMBER}
 game: 
-  # The Legend of Zelda: 1
+  The Legend of Zelda: 2
   # Slay the Spire: 1
-  # Risk of Rain 2: 2
+  Risk of Rain 2: 1
   Kingdom Hearts 2: 2
   # A Link to the Past: 1
   # Sonic Adventure 2 Battle: 1
@@ -135,11 +135,11 @@ Risk of Rain 2:
     ]
 
   non_local_items:
-    # - Uncommon Item
+    - Uncommon Item
     - Legendary Item
     - Boss Item
-    # - Money
-    # - 1000 Exp
+    - Money
+    - 1000 Exp
 
   # Start with these locations and their item prefilled into the !hint command
   start_hints:
@@ -222,27 +222,6 @@ Kingdom Hearts 2:
   accessibility: items
 
   exclude_locations:
-    - (CoR) Depths AP Boost
-    - (CoR) Depths Power Crystal
-    - (CoR) Depths Frost Crystal
-    - (CoR) Depths Manifest Illusion
-    - (CoR) Depths AP Boost 2
-    - (CoR) Mineshaft Lower Level Depths of Remembrance Map
-    - (CoR) Mineshaft Lower Level AP Boost
-    - (CoR) Depths Upper Level Remembrance Gem
-    - (CoR) Mining Area Serenity Gem
-    - (CoR) Mining Area AP Boost
-    - (CoR) Mining Area Serenity Crystal
-    - (CoR) Mining Area Manifest Illusion
-    - (CoR) Mining Area Serenity Gem 2
-    - (CoR) Mining Area Dark Remembrance Map
-    - (CoR) Mineshaft Mid Level Power Boost
-    - (CoR) Engine Chamber Serenity Crystal
-    - (CoR) Engine Chamber Remembrance Crystal
-    - (CoR) Engine Chamber AP Boost
-    - (CoR) Engine Chamber Manifest Illusion
-    - (CoR) Mineshaft Upper Level Magic Boost
-    - (CoR) Mineshaft Upper Level AP Boost
     - Transport to Remembrance
 
   start_inventory:
@@ -251,7 +230,7 @@ Kingdom Hearts 2:
 
   # Options: 1, 50, 99, 50_sanity, 99_sanity
   # sanity is "all levels are checks", non is "only 23 levels are checks"
-  LevelDepth: level_50_sanity
+  LevelDepth: level_1
 
   Sora_Level_EXP: 6
 
@@ -280,8 +259,8 @@ Kingdom Hearts 2:
     # Hitlist (Bounty Hunt): Find required amount of Bounties.
     # 
     # Lucky Emblem and Hitlist: Find the required amount of Lucky Emblems and Bounties.
-    three_proofs: 0
-    lucky_emblem_hunt: 50
+    three_proofs: 50
+    lucky_emblem_hunt: 0
     hitlist: 0
     hitlist_and_lucky_emblem: 0
 
@@ -292,37 +271,6 @@ Kingdom Hearts 2:
   # Range: 1 to 60
   LuckyEmblemsRequired: 25
   LuckyEmblemsAmount: 60
-
-  BountyAmount:
-    # Number of Bounties that are in the pool.
-    # 
-    # If Goal is not Hitlist or Lucky Emblem and Hitlist this does nothing.
-    #
-    # You can define additional values between the minimum and maximum values.
-    # Minimum value is 1
-    # Maximum value is 26
-    10: 50
-    random: 0
-    random-low: 0
-    random-high: 0
-
-  BountyRequired:
-    # Number of Bounties to collect to Win/Unlock Final Xemnas Door.
-    # 
-    # If Goal is not Hitlist or Lucky Emblem and Hitlist this does nothing.
-    #
-    # You can define additional values between the minimum and maximum values.
-    # Minimum value is 1
-    # Maximum value is 26
-    7: 50
-    random: 0
-    random-low: 0
-    random-high: 0
-
-  BountyStartingHintToggle:
-    # Start with Bounties Hinted
-    false: 50
-    true: 0
 
   Keyblade_Minimum: 3
   Keyblade_Maximum: 10
@@ -369,11 +317,9 @@ Kingdom Hearts 2:
     # Determines the level of visit locking
     # 
     # No Visit Locking: Start with all 25 visit locking items.
-    # 
-
+    #
     # Second Visit Locking: Start with 13 visit locking items for every first visit.
-    # 
-
+    #
     # First and Second Visit Locking: One item for First Visit Two For Second Visit
     no_visit_locking: 0
     second_visit_locking: 0
@@ -382,7 +328,6 @@ Kingdom Hearts 2:
   RandomVisitLockingItem: 3
 
   SuperBosses: false
-
   Cups: no_cups
 
   SummonLevelLocationToggle:
