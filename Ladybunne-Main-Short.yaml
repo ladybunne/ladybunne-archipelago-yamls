@@ -9,9 +9,9 @@ description: Ladybunne's main weighted yaml for Archipelago short syncs
 
 name: Ladybunne{NUMBER}
 game: 
-  The Legend of Zelda: 2
+  # The Legend of Zelda: 2
   # Slay the Spire: 1
-  Risk of Rain 2: 1
+  # Risk of Rain 2: 1
   Kingdom Hearts 2: 2
   # A Link to the Past: 1
   # Sonic Adventure 2 Battle: 1
@@ -227,6 +227,7 @@ Kingdom Hearts 2:
   start_inventory:
     Scan: 1
     Aerial Recovery: 1
+    Draw: 1
 
   # Options: 1, 50, 99, 50_sanity, 99_sanity
   # sanity is "all levels are checks", non is "only 23 levels are checks"
@@ -240,7 +241,7 @@ Kingdom Hearts 2:
   Master_Form_EXP: 3
   Final_Form_EXP: 3
 
-  Summon_EXP: 5
+  Summon_EXP: 10
 
   # Ranges from 0 to 4
   Schmovement: level_1
@@ -259,38 +260,26 @@ Kingdom Hearts 2:
     # Hitlist (Bounty Hunt): Find required amount of Bounties.
     # 
     # Lucky Emblem and Hitlist: Find the required amount of Lucky Emblems and Bounties.
-    three_proofs: 50
-    lucky_emblem_hunt: 0
+    three_proofs: 1
+    lucky_emblem_hunt: 1
     hitlist: 0
     hitlist_and_lucky_emblem: 0
 
-  # I am bad and apparently can't do this.
-  # But I will try anyway.
+  # Nowadays, we are gaming.
   FinalXemnas: true
 
   # Range: 1 to 60
   LuckyEmblemsRequired: 25
-  LuckyEmblemsAmount: 60
+  LuckyEmblemsAmount: 40
 
   Keyblade_Minimum: 3
   Keyblade_Maximum: 10
 
-  WeaponSlotStartHint:
-    # Start with Weapon Slots' Hinted
-    false: 50
-    true: 0
+  # Start with Weapon Slots' Hinted
+  WeaponSlotStartHint: false
 
-  FightLogic:
-    # The level of logic to use when determining what fights in each KH2 world are beatable.
-    # 
-    # Easy: For Players not very comfortable doing things without a lot of tools.
-    # 
-    # Normal: For Players somewhat comfortable doing fights with some of the tools.
-    # 
-    # Hard: For Players comfortable doing fights with almost no tools.
-    easy: 50
-    normal: 0
-    hard: 0
+  # Options: easy, normal, hard
+  FightLogic: normal
 
   FinalFormLogic:
     # Determines forcing final form logic
@@ -304,10 +293,8 @@ Kingdom Hearts 2:
 
   AutoFormLogic: false
 
-  DonaldGoofyStatsanity:
-    # Toggles if on Donald and Goofy's Get Bonus locations can be any item
-    false: 0
-    true: 50
+  # Toggles if on Donald and Goofy's Get Bonus locations can be any item
+  DonaldGoofyStatsanity: true
 
   # Make all dynamic filler classified items local. Recommended when playing with games
   # with fewer locations than kh2
@@ -330,10 +317,8 @@ Kingdom Hearts 2:
   SuperBosses: false
   Cups: no_cups
 
-  SummonLevelLocationToggle:
-    # Toggle Summon levels to have locations.
-    false: 50
-    true: 0
+  # Toggle Summon levels to have locations.
+  SummonLevelLocationToggle: true
 
   # Is Atlantica on?
   AtlanticaToggle: false
