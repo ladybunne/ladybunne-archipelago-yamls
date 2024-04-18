@@ -1,0 +1,19 @@
+meta_description: Ladybunne's meta yaml for The Rabbit Games (LFG Short)
+
+Hollow Knight:
+  RandomizeGeoRocks: false
+  AddUnshuffledLocations: false
+
+Kirby's Dream Land 3:
+  starsanity: false
+
+Ocarina of Time:
+  shuffle_freestanding_items: false
+
+Pokemon Emerald:
+  dexsanity: false
+  trainersanity: false
+
+Super Mario World:
+  blocksanity: false
+
