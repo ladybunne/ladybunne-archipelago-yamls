@@ -13,9 +13,8 @@ game:
   # Slay the Spire: 1
   # Risk of Rain 2: 1
   # Kingdom Hearts 2: 2
-  # A Link to the Past: 1
-  # Sonic Adventure 2 Battle: 1
-  Hollow Knight: 1
+  A Link to the Past: 1
+  # Hollow Knight: 1
 
 requires:
   version: 0.4.5
@@ -646,26 +645,18 @@ Hollow Knight:
   progression_balancing: 20
   accessibility: items
 
-  RandomizeDreamers:
-    # Allow for Dreamers to be randomized into the item pool and opens their locations for randomization.
-    false: 0
-    true: 50
+  # Allow for Dreamers to be randomized into the item pool and opens their locations for randomization.
+  RandomizeDreamers: true
 
-  RandomizeSkills:
-    # Allow for Skills, such as Mantis Claw or Shade Soul, to be randomized into the item pool. Also opens their locations
-    # for receiving randomized items.
-    false: 0
-    true: 50
+  # Allow for Skills, such as Mantis Claw or Shade Soul, to be randomized into the item pool. Also opens their locations
+  # for receiving randomized items.
+  RandomizeSkills: true
 
-  RandomizeFocus:
-    # Removes the ability to focus and randomizes it into the item pool.
-    false: 50
-    true: 0
+  # Removes the ability to focus and randomizes it into the item pool.
+  RandomizeFocus: false
 
-  RandomizeSwim:
-    # Removes the ability to swim in water and randomizes it into the item pool.
-    false: 50
-    true: 0
+  # Removes the ability to swim in water and randomizes it into the item pool.
+  RandomizeSwim: false
 
   RandomizeCharms:
     # Allow for Charms to be randomized into the item pool and open their locations for randomization. Includes Charms

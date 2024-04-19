@@ -1,0 +1,119 @@
+# Ladybunne's big async yaml submission
+# For AP version 0.4.5
+# Date: 2024-09-19
+# 
+# Note: only settings that deviate from the defaults are listed.
+#       Hope this helps! Thanks again, organisers!
+
+
+# The Legend of Zelda
+name: Ladybunne-TLoZ{NUMBER}
+game: The Legend of Zelda
+
+The Legend of Zelda:
+  StartingPosition: very_dangerous
+
+
+---
+
+# Kingdom Hearts 2
+name: Ladybunne-KH2{NUMBER}
+game: Kingdom Hearts 2
+
+Kingdom Hearts 2:
+
+  # --- Goal stuff ---
+
+  LuckyEmblemsRequired: 50
+  LuckyEmblemsAmount: 60
+
+  Promise_Charm: true
+
+
+  # --- RPG stuff ---
+
+  start_inventory:
+    Scan: 1
+    Aerial Recovery: 1
+
+  Valor_Form_EXP: 8
+
+  Summon_EXP: 10
+
+  Keyblade_Maximum: 10
+
+
+  # --- Checks stuff ---
+
+  RandomVisitLockingItem: random-range-1-4
+  LevelDepth: level_99_sanity
+
+  SuperBosses: false
+
+  SummonLevelLocationToggle: true
+
+
+---
+
+# A Link to the Past
+name: Ladybunne-ALttP{NUMBER}
+game: A Link to the Past
+
+A Link to the Past:
+
+  # --- Item stuff ---
+ 
+  start_inventory_from_pool:
+    Pegasus Boots: 1
+
+
+  # --- Checks stuff ---
+ 
+  shuffle_capacity_upgrades: on
+  
+  shop_item_slots: 30
+  randomize_shop_inventories: randomize_each
+  randomize_shop_prices: true
+  randomize_cost_types: true
+  include_witch_hut: true
+
+  scams: all
+  
+  misery_mire_medallion: ether
+  turtle_rock_medallion: quake
+
+
+  # --- Quality of life stuff ---
+ 
+  map_shuffle: start_with
+  compass_shuffle: start_with
+
+  dungeon_counters: on
+
+  killable_thieves: true
+
+
+---
+
+# Hollow Knight
+name: Ladybunne-HK{NUMBER}
+game: Hollow Knight
+
+Hollow Knight:
+  
+  # --- Goal stuff ---
+  
+  Goal: radiance
+
+
+  # --- RPG stuff ---
+
+  RandomCharmCosts: shuffle
+
+
+  # --- Check stuff ---
+  
+  RandomizeGrubs: true
+  RandomizeBossGeo: true
+  RandomizeRelics: true
+  WhitePalace: include
