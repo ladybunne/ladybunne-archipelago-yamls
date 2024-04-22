@@ -12,12 +12,12 @@ game:
   # The Legend of Zelda: 2
   # Slay the Spire: 1
   # Risk of Rain 2: 1
-  # Kingdom Hearts 2: 2
-  A Link to the Past: 1
-  # Hollow Knight: 1
+  Kingdom Hearts 2: 7
+  # A Link to the Past: 1
+  # Hollow Knight: 2
 
 requires:
-  version: 0.4.5
+  version: 0.4.6
   plando: items
 
 
@@ -25,28 +25,23 @@ requires:
 # The Legend of Zelda
 
 The Legend of Zelda:
-  progression_balancing: 50
-  accessibility: items
 
   # Trying this out.
   local_items:
     - Stepladder
 
-  # Expanded Pool adds room clear drops and Take Any Item caves to the pool.
-  ExpandedPool: true 
-
-  # Other options: dungeon, anywhere
-  TriforceLocations: vanilla
-
-  # TODO Think about changing this to dangerous depending on how bad the earlygame is.
+  # Danger is fun!
   StartingPosition: very_dangerous
 
   plando_items:
-    # Put Book of Magic in the bad corner where it belongs.
+    # Put Book of Magic and the boomerangs in the bad corner where it belongs.
     # Ideally I force it to something like L9 Wizzrobes East Island, which you would
     # normally never visit... but because a random 50% of L9 is junked by the
     # generator, I need to provide a list of at least 50% + 1 checks.
-    - item: Book of Magic
+    - items:
+        - Book of Magic
+        - Boomerang
+        - Magical Boomerang
       locations:
         - Level 9 Item (Silver Arrow)
         - Level 9 Item (Red Ring)
@@ -65,32 +60,12 @@ The Legend of Zelda:
         - Level 9 Rupee Drop (Gels East)
       from_pool: true
       world: false
-  
-  # TODO Think about which items benefit from being forced to be local.
-  # Seeds suck a bit if you're BKed forever, but some of the fun of the multiworld
-  # is the randomness. Gotta find a balance.
-  #
-  # Notable items that benefit from being local (unblocking BKs):
-  # Recorder, Stepladder
-  #
-  # Maybe:
-  # Blue Ring, Bow, a fire source
-  #
-  # Probably not needed:
-  # Silver Arrow, Food
-
-  # TODO Think about junking certain items that are not useful.
-  #
-  # Examples:
-  # Boomerang, Magical Boomerang
 
 
 
 # Slay the Spire
 
 Slay the Spire:
-  progression_balancing: 50
-  accessibility: items
 
   start_hints:
     - Boss Relic
@@ -111,7 +86,6 @@ Slay the Spire:
     the_silent: 2
     the_defect: 1
     the_watcher: 0
-    spire_take_the_wheel: 0
   
   # low% + high ascension = bad times, so we do Ascension 0.
   ascension: 0
@@ -119,16 +93,11 @@ Slay the Spire:
   # Same deal.
   final_act: false
 
-  # No Downfall yet.
-  downfall: false
-
 
 
 # Risk of Rain 2
 
 Risk of Rain 2:
-  progression_balancing: 50
-  accessibility: items
 
   # Force these locations to be junk. The main reason to do this is twofold: 
   # - It lets RoR2 hoover up bad items for other players.
@@ -232,20 +201,33 @@ Risk of Rain 2:
 # Kingdom Hearts 2
 
 Kingdom Hearts 2:
-  progression_balancing: 50
-  accessibility: items
 
+  # Emblems is a bit harder, but I still like proofs.
+  Goal:
+    three_proofs: 1
+    lucky_emblem_hunt: 2
+
+  # Nowadays, we are gaming.
+  FinalXemnas: true
+
+  # Range: 1 to 60
+  LuckyEmblemsRequired: 35
+  LuckyEmblemsAmount: 50
+
+  Promise_Charm: true
+  
   exclude_locations:
     - Transport to Remembrance
+
+  RandomVisitLockingItem: random-range-1-4
+
+  # Checks on levels kinda suck, tbh.
+  LevelDepth: level_1
 
   start_inventory:
     Scan: 1
     Aerial Recovery: 1
     Draw: 1
-
-  # Options: 1, 50, 99, 50_sanity, 99_sanity
-  # sanity is "all levels are checks", non is "only 23 levels are checks"
-  LevelDepth: level_1
 
   Sora_Level_EXP: 6
 
@@ -257,385 +239,46 @@ Kingdom Hearts 2:
 
   Summon_EXP: 10
 
-  # Ranges from 0 to 4
   Schmovement: level_1
-  RandomGrowth: 0
-
-  AntiForm: false
-
-  Promise_Charm: true
-
-  Goal:
-    # Win Condition
-    # Three Proofs: Find the 3 Proofs to unlock the final door.
-    # 
-    # Lucky Emblem Hunt: Find required amount of Lucky Emblems.
-    # 
-    # Hitlist (Bounty Hunt): Find required amount of Bounties.
-    # 
-    # Lucky Emblem and Hitlist: Find the required amount of Lucky Emblems and Bounties.
-    three_proofs: 1
-    lucky_emblem_hunt: 1
-    hitlist: 0
-    hitlist_and_lucky_emblem: 0
-
-  # Nowadays, we are gaming.
-  FinalXemnas: true
-
-  # Range: 1 to 60
-  LuckyEmblemsRequired: 25
-  LuckyEmblemsAmount: 40
-  # LuckyEmblemsRequired: 40
-  # LuckyEmblemsAmount: 50
 
   Keyblade_Minimum: 3
   Keyblade_Maximum: 10
 
-  # Start with Weapon Slots' Hinted
-  WeaponSlotStartHint: false
-
   # Options: easy, normal, hard
   FightLogic: normal
-
-  FinalFormLogic:
-    # Determines forcing final form logic
-    # 
-    # No Light and Darkness: Light and Darkness is not in logic.
-    # Light And Darkness: Final Forcing with light and darkness is in logic.
-    # Just a Form: All that requires final forcing is another form.
-    no_light_and_darkness: 0
-    light_and_darkness: 50
-    just_a_form: 0
-
-  AutoFormLogic: false
-
-  # Toggles if on Donald and Goofy's Get Bonus locations can be any item
-  DonaldGoofyStatsanity: true
-
-  # Make all dynamic filler classified items local. Recommended when playing with games
-  # with fewer locations than kh2
-  FillerItemsLocal: true
-
-  Visitlocking:
-    # Determines the level of visit locking
-    # 
-    # No Visit Locking: Start with all 25 visit locking items.
-    #
-    # Second Visit Locking: Start with 13 visit locking items for every first visit.
-    #
-    # First and Second Visit Locking: One item for First Visit Two For Second Visit
-    no_visit_locking: 0
-    second_visit_locking: 0
-    first_and_second_visit_locking: 50
-
-  RandomVisitLockingItem: random-range-1-4
-
-  SuperBosses: false
-  Cups: no_cups
 
   # Toggle Summon levels to have locations.
   SummonLevelLocationToggle: true
 
-  # Is Atlantica on?
-  AtlanticaToggle: false
-
-  # Note: this doesn't ACTUALLY skip CoR. Still need to `exclude_locations` this one.
   CorSkipToggle: true
-
-  CustomItemPoolQuantity:
-    # Add more of an item into the itempool. Note: You cannot take out items from the pool.
-    Aerial Dodge: 1
-    Battlefields of War: 2
-    Beast's Claw: 2
-    Blizzard Element: 3
-    Bone Fist: 2
-    Chicken Little: 1
-    Cure Element: 3
-    Disney Castle Key: 2
-    Dodge Roll: 4
-    Final Form: 1
-    Fire Element: 3
-    Genie: 1
-    Glide: 4
-    High Jump: 4
-    Ice Cream: 3
-    Identity Disk: 2
-    Limit Form: 1
-    Magnet Element: 3
-    Master Form: 1
-    Membership Card: 2
-    Namine Sketches: 1
-    Peter Pan: 1
-    Promise Charm: 1
-    Proof of Connection: 1
-    Proof of Nonexistence: 1
-    Proof of Peace: 1
-    Proud Fang: 2
-    Quick Run: 4
-    Reflect Element: 3
-    Scimitar: 2
-    Skill and Crossbones: 2
-    Stitch: 1
-    Sword of the Ancestor: 2
-    Thunder Element: 3
-    Torn Page: 5
-    Valor Form: 1
-    Way to the Dawn: 2
-    Wisdom Form: 1
+  SuperBosses: false
 
 
 
 # A Link to the Past
 
 A Link to the Past:
-  progression_balancing: 50
-  accessibility: items
+
+  # Normal stuff.
+  goal: ganon
+  mode: open
+
+  # GT sucks.
+  open_pyramid: open
+
+  crystals_needed_for_gt: 4
+  crystals_needed_for_ganon: 4
 
   start_inventory_from_pool:
     Pegasus Boots: 1
 
-  goal: ganon
-
-  mode: open
-
-  glitches_required: no_glitches
-
-  dark_room_logic: lamp
-
-  open_pyramid: open
-
-  crystals_needed_for_gt: 3
-  crystals_needed_for_ganon: 3
-
-  entrance_shuffle: vanilla
-
-  big_key_shuffle: original_dungeon
-  small_key_shuffle: original_dungeon
-
-  key_drop_shuffle: false
-
+  shuffle_capacity_upgrades: on
+  
   map_shuffle: start_with
   compass_shuffle: start_with
 
-  item_pool: normal
-  item_functionality: normal
-
-  progressive: on
-
-  swordless: false
-
-  dungeon_counters: on
-
-  retro_bow: false
-  retro_caves: false
-
-  hints: on
-
   scams: all
-
-  boss_shuffle: none
-
-  pot_shuffle: false
-  enemy_shuffle: false
-
   killable_thieves: true
-
-  bush_shuffle: false
-
-  shop_item_slots: 0
-
-  randomize_shop_inventories: default
-  shuffle_shop_inventories: false
-
-  include_witch_hut: false
-
-  randomize_shop_prices: false
-
-  # Prices of the items in shop inventories may cost hearts, arrow, or bombs instead of rupees
-  # What the fuck?
-  randomize_cost_types: false
-
-  shop_price_modifier: 100
-
-  shuffle_capacity_upgrades: on
-
-  bombless_start: false
-
-  shuffle_prizes: general
-
-  tile_shuffle: false
-
-  misery_mire_medallion: ether
-
-  turtle_rock_medallion: quake
-
-  glitch_boots: true
-
-  beemizer_total_chance: 10
-
-  timer:
-    # None: No timer will be displayed. OHKO: Timer always at zero. Permanent OHKO.
-    # Timed: Starts with clock at zero. Green clocks subtract 4 minutes (total 20). Blue clocks subtract 2 minutes (total 10). Red clocks add two minutes (total 10). Winner is the player with the lowest time at the end.
-    # Timed OHKO: Starts the clock at ten minutes. Green clocks add five minutes (total 25). As long as the clock as at zero, Link will die in one hit.
-    # Timed Countdown: Starts the clock with forty minutes. Same clocks as timed mode, but if the clock hits zero you lose. You can still keep playing, though.
-    # Display: Displays a timer, but otherwise does not affect gameplay or the item pool.
-    none: 50
-    timed: 0
-    timed_ohko: 0
-    ohko: 0
-    timed_countdown: 0
-    display: 0
-
-  countdown_start_time:
-    # For Timed OHKO and Timed Countdown timer modes, the amount of time in minutes to start with.
-    #
-    # You can define additional values between the minimum and maximum values.
-    # Minimum value is 0
-    # Maximum value is 480
-    10: 50
-    random: 0
-    random-low: 0
-    random-high: 0
-
-  red_clock_time:
-    # For all timer modes, the amount of time in minutes to gain or lose when picking up a red clock.
-    #
-    # You can define additional values between the minimum and maximum values.
-    # Minimum value is -60
-    # Maximum value is 60
-    -2: 50
-    random: 0
-    random-low: 0
-    random-high: 0
-
-  blue_clock_time:
-    # For all timer modes, the amount of time in minutes to gain or lose when picking up a blue clock.
-    #
-    # You can define additional values between the minimum and maximum values.
-    # Minimum value is -60
-    # Maximum value is 60
-    2: 50
-    random: 0
-    random-low: 0
-    random-high: 0
-
-  green_clock_time:
-    # For all timer modes, the amount of time in minutes to gain or lose when picking up a green clock.
-    #
-    # You can define additional values between the minimum and maximum values.
-    # Minimum value is -60
-    # Maximum value is 60
-    4: 50
-    random: 0
-    random-low: 0
-    random-high: 0
-
-  death_link: false
-
-  allow_collect: false
-
-  ow_palettes:
-    # The type of palette shuffle to use for the overworld
-    default: 50
-    good: 0
-    blackout: 0
-    puke: 0
-    classic: 0
-    grayscale: 0
-    negative: 0
-    dizzy: 0
-    sick: 0
-
-  uw_palettes:
-    # The type of palette shuffle to use for the underworld (caves, dungeons, etc.)
-    default: 50
-    good: 0
-    blackout: 0
-    puke: 0
-    classic: 0
-    grayscale: 0
-    negative: 0
-    dizzy: 0
-    sick: 0
-
-  hud_palettes:
-    # The type of palette shuffle to use for the HUD
-    default: 50
-    good: 0
-    blackout: 0
-    puke: 0
-    classic: 0
-    grayscale: 0
-    negative: 0
-    dizzy: 0
-    sick: 0
-
-  sword_palettes:
-    # The type of palette shuffle to use for the sword
-    default: 50
-    good: 0
-    blackout: 0
-    puke: 0
-    classic: 0
-    grayscale: 0
-    negative: 0
-    dizzy: 0
-    sick: 0
-
-  shield_palettes:
-    # The type of palette shuffle to use for the shield
-    default: 50
-    good: 0
-    blackout: 0
-    puke: 0
-    classic: 0
-    grayscale: 0
-    negative: 0
-    dizzy: 0
-    sick: 0
-
-  heartbeep:
-    # How quickly the heart beep sound effect will play
-    normal: 50
-    double: 0
-    half: 0
-    quarter: 0
-    off: 0
-
-  heartcolor:
-    # The color of hearts in the HUD
-    red: 50
-    blue: 0
-    green: 0
-    yellow: 0
-
-  quickswap: true
-
-  menuspeed:
-    # How quickly the menu appears/disappears
-    normal: 50
-    instant: 0
-    double: 0
-    triple: 0
-    quadruple: 0
-    half: 0
-
-  music:
-    # Whether background music will play in game
-    false: 0
-    true: 50
-
-  reduceflashing:
-    # Reduces flashing for certain scenes such as the Misery Mire and Ganon's Tower opening cutscenes
-    false: 0
-    true: 50
-
-  triforcehud:
-    # When and how the triforce hunt HUD should display
-    normal: 50
-    hide_goal: 0
-    hide_required: 0
-    hide_both: 0
 
 
 
