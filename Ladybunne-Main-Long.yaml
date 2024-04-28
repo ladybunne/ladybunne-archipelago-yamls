@@ -1,0 +1,39 @@
+#          ((`\          -------------------
+#       ___ \\ '--._    / hippity hoppity /
+#    .'`   `'    o  )  /   ur checks r   /
+#   /    \   '. __.'  /   my property   /
+#  _|    /_  \ \_\_  -------------------
+# {_\______\-'\__\_\    (LONG EDITION)   
+
+description: Ladybunne's main weighted yaml for Archipelago long syncs
+
+name: Ladybunne{NUMBER}
+game: 
+  Terraria: 1
+
+requires:
+  version: 0.4.6
+  plando: items
+
+
+
+# Terraria
+
+Terraria:
+  # Apparently my settings are all default, so this will do as a placeholder.
+  goal: mechanical_bosses
+
+  plando_items: 
+    - item: Hardmode
+      location: The Big Red Button
+      from_pool: true
+      world: Ladybunne-HM
+      force: true
+
+---
+
+name: Ladybunne-HM
+game: Clique
+
+Clique:
+  hard_mode: 'true'

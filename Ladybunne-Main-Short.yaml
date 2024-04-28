@@ -9,12 +9,12 @@ description: Ladybunne's main weighted yaml for Archipelago short syncs
 
 name: Ladybunne{NUMBER}
 game: 
-  # The Legend of Zelda: 2
+  # The Legend of Zelda: 1
   # Slay the Spire: 1
   # Risk of Rain 2: 1
-  # Kingdom Hearts 2: 1
-  A Link to the Past: 3
-  Hollow Knight: 1
+  Kingdom Hearts 2: 1
+  # A Link to the Past: 1
+  # Hollow Knight: 1
 
 requires:
   version: 0.4.6
@@ -205,7 +205,7 @@ Kingdom Hearts 2:
   # Emblems is a bit harder, but I still like proofs.
   Goal:
     three_proofs: 1
-    lucky_emblem_hunt: 2
+    # lucky_emblem_hunt: 2
 
   # Nowadays, we are gaming.
   FinalXemnas: true
@@ -250,7 +250,7 @@ Kingdom Hearts 2:
   # Toggle Summon levels to have locations.
   SummonLevelLocationToggle: true
 
-  CorSkipToggle: true
+  CorSkipToggle: false
   SuperBosses: false
 
 
@@ -266,11 +266,15 @@ A Link to the Past:
   # GT sucks.
   open_pyramid: open
 
-  crystals_needed_for_gt: 4
-  crystals_needed_for_ganon: 4
+  # I want this to be on 5, but 4 is a bit more chill.
+  crystals_needed_for_gt: 5
+  crystals_needed_for_ganon: 5
 
-  start_inventory_from_pool:
-    Pegasus Boots: 1
+  # I am ENLIGHTENED.
+  glitches_required: overworld_glitches
+
+  # start_inventory_from_pool:
+  #   Pegasus Boots: 1
 
   shuffle_capacity_upgrades: on
   
