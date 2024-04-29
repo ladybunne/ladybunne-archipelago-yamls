@@ -204,8 +204,8 @@ Kingdom Hearts 2:
 
   # Emblems is a bit harder, but I still like proofs.
   Goal:
-    three_proofs: 1
-    # lucky_emblem_hunt: 2
+    # three_proofs: 1
+    lucky_emblem_hunt: 2
 
   # Nowadays, we are gaming.
   FinalXemnas: true
@@ -219,7 +219,7 @@ Kingdom Hearts 2:
   exclude_locations:
     - Transport to Remembrance
 
-  RandomVisitLockingItem: random-range-1-4
+  RandomVisitLockingItem: random-range-2-4
 
   # Checks on levels kinda suck, tbh.
   LevelDepth: level_1
