@@ -1,4 +1,11 @@
-description: THE BURDEN OF PROOF
+# Overview:
+# A 1v1 same-server competitive yaml for Kingdom Hearts 2.
+# Themed around "the burden of proof" - the first person to receive all their
+# proofs and goal is the loser.
+# 
+# Hints should be somewhere between 5-10%, release should be disabled.
+
+description: BURDEN OF PROOF
 
 name: Proofbearer{number}
 game: Kingdom Hearts 2
@@ -18,32 +25,41 @@ Kingdom Hearts 2:
   Goal: three_proofs
   FinalXemnas: false
 
-  non_local_items: 
+  non_local_items:
     - Proof
-  
-  # Double all proofs, so it's a little less linear.
-  CustomItemPoolQuantity:
-    Proof of Connection: 2
-    Proof of Nonexistence: 2
-    Proof of Peace: 2
+
+  # Progression balancing needs to be lower, I think.
+  progression_balancing: 20
+
+  # Prehint one proof as a target for people to work towards.
+  start_hints:
+    - Proof of Nonexistence
 
   plando_items:
-    # Plando an extra one of your proofs onto your opponent's Final Level 6.
+    # Have an alternate path to victory in form levelling.
     - items:
         Proof of Connection: 1
-        Proof of Nonexistence: 1
-        Proof of Peace: 1
+        Drive Recovery: 4
       locations:
-        - Final level 6
+        - Valor level 7
+        - Wisdom level 7
+        - Master level 7
+        - Limit level 7
+        - Final level 7
       from_pool: false
       world: true
 
-  # Make your world unlocks local...
+  # Make the following local...
+  # - Worlds, to ensure item links work.
+  # - Drive forms, to enable the alternate wincon in Final levelling.
+  # - Growth abilities, to ensure you're not boosting your opponent too much.
   local_items:
     - Visit Lock
     - Torn Page
+    - Drive Form
+    - Growth
 
-  # ...then link all world unlocks, so that it's interactive.
+  # Link all world unlocks, so that it's interactive.
   # These need to be separate item links to ensure there's duplicate copies of each,
   # and that there's a full set in each world.
   item_links: 
