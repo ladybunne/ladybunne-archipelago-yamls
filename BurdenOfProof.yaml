@@ -27,9 +27,6 @@ Kingdom Hearts 2:
     Proof of Nonexistence: 2
     Proof of Peace: 2
 
-  start_hints:
-    Proof of Connection: 1
-
   plando_items:
     # Plando an extra one of your proofs onto your opponent's Final Level 6.
     - items:
