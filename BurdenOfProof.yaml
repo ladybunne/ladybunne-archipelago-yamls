@@ -1,0 +1,141 @@
+description: THE BURDEN OF PROOF
+
+name: Proofbearer{number}
+game: Kingdom Hearts 2
+
+requires:
+  version: 0.4.6
+
+
+
+# Kingdom Hearts 2
+
+Kingdom Hearts 2:
+
+  # -- Burden of Proof stuff --
+
+  Goal: three_proofs
+  FinalXemnas: false
+
+  # Double all world unlocks and all proofs.
+  CustomItemPoolQuantity:
+    Battlefields of War: 4
+    Beast's Claw: 4
+    Bone Fist: 4
+    Disney Castle Key: 4
+    Ice Cream: 6
+    Identity Disk: 4
+    Membership Card: 4
+    Namine Sketches: 2
+    Proud Fang: 4
+    Scimitar: 4
+    Skill and Crossbones: 4
+    Sword of the Ancestor: 4
+    Torn Page: 10
+    Way to the Dawn: 4
+
+    Proof of Connection: 2
+    Proof of Nonexistence: 2
+    Proof of Peace: 2
+
+  non_local_items: 
+    # The burden of proof is on your opponent! First to goal loses!
+    Proof of Connection: 2
+    Proof of Nonexistence: 2
+    Proof of Peace: 2
+
+    # Plando a carbon copy of all your world unlocks into the other person's world.
+    Battlefields of War: 2
+    Beast's Claw: 2
+    Bone Fist: 2
+    Disney Castle Key: 2
+    Ice Cream: 3
+    Identity Disk: 2
+    Membership Card: 2
+    Namine Sketches: 1
+    Proud Fang: 2
+    Scimitar: 2
+    Skill and Crossbones: 2
+    Sword of the Ancestor: 2
+    Torn Page: 5
+    Way to the Dawn: 2
+
+  # Make sure your world _also_ has a full set of them.
+  local_items:
+    Battlefields of War: 2
+    Beast's Claw: 2
+    Bone Fist: 2
+    Disney Castle Key: 2
+    Ice Cream: 3
+    Identity Disk: 2
+    Membership Card: 2
+    Namine Sketches: 1
+    Proud Fang: 2
+    Scimitar: 2
+    Skill and Crossbones: 2
+    Sword of the Ancestor: 2
+    Torn Page: 5
+    Way to the Dawn: 2
+
+  # Link all world unlocks, so that it's interactive.
+  item_links: 
+    - name: Weight of the Worlds
+      item_pool:
+        - Visit Lock
+        - Torn Page
+      replacement_item: Lucky Emblem
+
+  plando_items:
+    # Plando an extra one of your proofs onto your opponent's Final Level 6.
+    - items:
+        Proof of Connection: 1
+        Proof of Nonexistence: 1
+        Proof of Peace: 1
+      locations:
+        - Final level 6
+      from_pool: false
+      world: true
+
+  # -- Check / logic stuff --
+
+  FightLogic: normal
+
+  exclude_locations:
+    - Transport to Remembrance
+
+  # Checks on levels kinda suck, tbh.
+  LevelDepth: level_1
+
+  # Toggle Summon levels to have locations.
+  SummonLevelLocationToggle: true
+
+  CorSkipToggle: false
+  SuperBosses: false
+  
+  # -- RPG stuff --
+
+  start_inventory:
+    Scan: 1
+    Aerial Recovery: 1
+    Draw: 1
+    Guard: 1
+
+  Sora_Level_EXP: 6
+
+  Valor_Form_EXP: 8
+  Wisdom_Form_EXP: 3
+  Limit_Form_EXP: 3
+  Master_Form_EXP: 3
+  Final_Form_EXP: 3
+
+  Summon_EXP: 10
+
+  Schmovement: level_1
+
+  Keyblade_Minimum: 3
+  Keyblade_Maximum: 10
+
+# Improvements to make from our test:
+# - Both worlds need to have local copies of all world unlocks.
+# - Probably have duplicates of each proof.
+# - Plando one proof to Final Level 7.

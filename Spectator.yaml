@@ -1,0 +1,6 @@
+name: Spectator
+game: Archipelago
+
+Archipelago:
+  # We need an option, so...
+  progression_balancing: 0

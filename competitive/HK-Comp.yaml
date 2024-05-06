@@ -4,13 +4,15 @@ name: HK-Comp{NUMBER}
 Hollow Knight:
 
   # normal rando stuff
-  progression_balancing: 0
+  progression_balancing: 10 # dont worry its hollow knight
+  Goal: radiance
   RandomizeGeoChests: 'true'
   RandomizeRancidEggs: 'true'
   RandomizeRelics: 'true'
   RandomizeBossEssence: 'true'
   RandomizeGrubs: 'true'
   RandomizeMaps: 'true'
+  RandomizeLifebloodCocoons: 'false'
   RandomizeBossGeo: 'true'
   RandomizeElevatorPass: 'true'
   RandomCharmCosts: random-range-80-120

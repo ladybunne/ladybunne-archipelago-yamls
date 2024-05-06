@@ -9,7 +9,8 @@ description: Ladybunne's main weighted yaml for Archipelago long syncs
 
 name: Ladybunne{NUMBER}
 game: 
-  Terraria: 1
+  Terraria: 5
+  A Link to the Past: 1
 
 requires:
   version: 0.4.6
@@ -19,20 +20,53 @@ requires:
 
 # Terraria
 
+# This is now short-compatible, apparently.
+# Consider upping to Moon Lord.
 Terraria:
   # Apparently my settings are all default, so this will do as a placeholder.
-  goal: mechanical_bosses
+  goal: moon_lord
+
+  exclude_locations:
+    ["Heliophobia"]
 
   plando_items: 
     - item: Hardmode
       location: The Big Red Button
       from_pool: true
-      world: Ladybunne-HM
+      world: Ladybuttonne
       force: true
+
+
+
+# A Link to the Past
+
+A Link to the Past:
+
+  # Normal stuff.
+  goal: ganon
+  mode: open
+
+  # GT sucks.
+  open_pyramid: open
+
+  # I want this to be on 5, but 4 is a bit more chill.
+  crystals_needed_for_gt: 7
+  crystals_needed_for_ganon: 7
+
+  # I am ENLIGHTENED.
+  glitches_required: overworld_glitches
+
+  shuffle_capacity_upgrades: on
+  
+  map_shuffle: start_with
+  compass_shuffle: start_with
+
+  scams: all
+  killable_thieves: true
 
 ---
 
-name: Ladybunne-HM
+name: Ladybuttonne{NUMBER}
 game: Clique
 
 Clique:
