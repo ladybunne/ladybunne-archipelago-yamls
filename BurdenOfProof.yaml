@@ -14,76 +14,21 @@ Kingdom Hearts 2:
 
   # -- Burden of Proof stuff --
 
+  # The burden of proof is on your opponent! First to goal loses!
   Goal: three_proofs
   FinalXemnas: false
 
-  # Double all world unlocks and all proofs.
-  CustomItemPoolQuantity:
-    Battlefields of War: 4
-    Beast's Claw: 4
-    Bone Fist: 4
-    Disney Castle Key: 4
-    Ice Cream: 6
-    Identity Disk: 4
-    Membership Card: 4
-    Namine Sketches: 2
-    Proud Fang: 4
-    Scimitar: 4
-    Skill and Crossbones: 4
-    Sword of the Ancestor: 4
-    Torn Page: 10
-    Way to the Dawn: 4
-
-    Proof of Connection: 2
-    Proof of Nonexistence: 2
-    Proof of Peace: 2
-
   non_local_items: 
-    # The burden of proof is on your opponent! First to goal loses!
+    - Proof
+  
+  # Double all proofs, so it's a little less linear.
+  CustomItemPoolQuantity:
     Proof of Connection: 2
     Proof of Nonexistence: 2
     Proof of Peace: 2
 
-    # Plando a carbon copy of all your world unlocks into the other person's world.
-    Battlefields of War: 2
-    Beast's Claw: 2
-    Bone Fist: 2
-    Disney Castle Key: 2
-    Ice Cream: 3
-    Identity Disk: 2
-    Membership Card: 2
-    Namine Sketches: 1
-    Proud Fang: 2
-    Scimitar: 2
-    Skill and Crossbones: 2
-    Sword of the Ancestor: 2
-    Torn Page: 5
-    Way to the Dawn: 2
-
-  # Make sure your world _also_ has a full set of them.
-  local_items:
-    Battlefields of War: 2
-    Beast's Claw: 2
-    Bone Fist: 2
-    Disney Castle Key: 2
-    Ice Cream: 3
-    Identity Disk: 2
-    Membership Card: 2
-    Namine Sketches: 1
-    Proud Fang: 2
-    Scimitar: 2
-    Skill and Crossbones: 2
-    Sword of the Ancestor: 2
-    Torn Page: 5
-    Way to the Dawn: 2
-
-  # Link all world unlocks, so that it's interactive.
-  item_links: 
-    - name: Weight of the Worlds
-      item_pool:
-        - Visit Lock
-        - Torn Page
-      replacement_item: Lucky Emblem
+  start_hints:
+    Proof of Connection: 1
 
   plando_items:
     # Plando an extra one of your proofs onto your opponent's Final Level 6.
@@ -95,6 +40,100 @@ Kingdom Hearts 2:
         - Final level 6
       from_pool: false
       world: true
+
+  # Make your world unlocks local...
+  local_items:
+    - Visit Lock
+    - Torn Page
+
+  # ...then link all world unlocks, so that it's interactive.
+  # These need to be separate item links to ensure there's duplicate copies of each,
+  # and that there's a full set in each world.
+  item_links: 
+    - name: Burden of Heroism
+      item_pool:
+        - Battlefields of War
+      replacement_item: Battlefields of War
+      link_replacement: true
+    
+    - name: Burden of Arrogance
+      item_pool:
+        - Beast's Claw
+      replacement_item: Beast's Claw
+      link_replacement: true
+    
+    - name: Burden of Creation
+      item_pool:
+        - Bone Fist
+      replacement_item: Bone Fist
+      link_replacement: true
+    
+    - name: Burden of History
+      item_pool:
+        - Disney Castle Key
+      replacement_item: Disney Castle Key
+      link_replacement: true
+    
+    - name: Burden of Friendship
+      item_pool:
+        - Ice Cream
+      replacement_item: Ice Cream
+      link_replacement: true
+    
+    - name: Burden of Authority
+      item_pool:
+        - Identity Disk
+      replacement_item: Identity Disk
+      link_replacement: true
+    
+    - name: Burden of Restoration
+      item_pool:
+        - Membership Card
+      replacement_item: Membership Card
+      link_replacement: true
+    
+    - name: Burden of Memory
+      item_pool:
+        - Namine Sketches
+      replacement_item: Namine Sketches
+      link_replacement: true
+    
+    - name: Burden of Succession
+      item_pool:
+        - Proud Fang
+      replacement_item: Proud Fang
+      link_replacement: true
+    
+    - name: Burden of Tyranny
+      item_pool:
+        - Scimitar
+      replacement_item: Scimitar
+      link_replacement: true
+    
+    - name: Burden of Avarice
+      item_pool:
+        - Skill and Crossbones
+      replacement_item: Skill and Crossbones
+      link_replacement: true
+    
+    - name: Burden of Duty
+      item_pool:
+        - Sword of the Ancestor
+      replacement_item: Sword of the Ancestor
+      link_replacement: true
+    
+    - name: Burden of Honey
+      item_pool:
+        - Torn Page
+      replacement_item: Torn Page
+      link_replacement: true
+    
+    - name: Burden of Loyalty
+      item_pool:
+        - Way to the Dawn
+      replacement_item: Way to the Dawn
+      link_replacement: true
+
 
   # -- Check / logic stuff --
 
@@ -111,7 +150,8 @@ Kingdom Hearts 2:
 
   CorSkipToggle: false
   SuperBosses: false
-  
+
+
   # -- RPG stuff --
 
   start_inventory:
@@ -134,8 +174,3 @@ Kingdom Hearts 2:
 
   Keyblade_Minimum: 3
   Keyblade_Maximum: 10
-
-# Improvements to make from our test:
-# - Both worlds need to have local copies of all world unlocks.
-# - Probably have duplicates of each proof.
-# - Plando one proof to Final Level 7.
