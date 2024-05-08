@@ -73,6 +73,11 @@ Slay the Spire:
     - Boss Relic
 
   # Trying this out. Should be fun.
+  # Prio locations are normally a bit of a red flag, but given
+  # how few checks Spire has, if you *don't* prio your locations
+  # it ends up being very uninteractive.
+  #
+  # I'll be keeping an eye on this (when I play it, lol).
   priority_locations: 
     [
       "Boss Relic 1", "Boss Relic 2",
@@ -234,10 +239,6 @@ Kingdom Hearts 2:
   Sora_Level_EXP: 6
 
   Valor_Form_EXP: 8
-  Wisdom_Form_EXP: 3
-  Limit_Form_EXP: 3
-  Master_Form_EXP: 3
-  Final_Form_EXP: 3
 
   Summon_EXP: 10
 
@@ -305,169 +306,17 @@ Hollow Knight:
   # Randomize boss Geo drops into the item pool and open those locations for randomization.
   RandomizeBossGeo: true
 
-  RandomCharmCosts:
-    # Total Notch Cost of all Charms together. Vanilla sums to 90.
-    # This value is distributed among all charms in a random fashion.
-    # Special Cases:
-    # Set to -1 or vanilla for vanilla costs.
-    # Set to -2 or shuffle to shuffle around the vanilla costs to different charms.
-    #
-    # You can define additional values between the minimum and maximum values.
-    # Minimum value is 0
-    # Maximum value is 240
-    random: 0
-    random-low: 0
-    random-high: 0
-    vanilla: 50 # equivalent to -1
-    shuffle: 0 # equivalent to -2
+  # For spice, change this to 'shuffle' sometime.
+  RandomCharmCosts: vanilla
 
 
 
 # Super Mario 64
 
 Super Mario 64:
-  area_rando:
-    # Randomize Entrances
-    off: 50
-    courses_only: 0
-    courses_and_secrets_separate: 0
-    courses_and_secrets: 0
 
-  buddy_checks:
-    # Bob-omb Buddies are checks, Cannon Unlocks are items
-    false: 50
-    true: 0
-
-  exclamation_boxes:
-    # Include 1Up Exclamation Boxes during randomization.
-    # Adds 29 locations to the pool.
-    off: 50
-    1ups_only: 0
-
-  progressive_keys:
-    # Keys will first grant you access to the Basement, then to the Second Floor
-    false: 0
-    true: 50
-
-  # Disable to Ignore 100 Coin Stars. You can still collect them, but they don't do anything.
-  # Removes 15 locations from the pool.
+  # No thanks.
   enable_coin_stars: false
-
-  enable_move_rando:
-    # Mario is unable to perform some actions until a corresponding item is picked up.
-    # This option is incompatible with builds using a 'nomoverando' branch.
-    # Specific actions to randomize can be specified in the YAML.
-    false: 50
-    true: 0
-
-  move_rando_actions:
-    # Which actions to randomize when Move Randomizer is enabled
-    ['Triple Jump', 'Long Jump', 'Backflip', 'Side Flip', 'Wall Kick', 'Dive', 'Ground Pound', 'Kick', 'Climb', 'Ledge Grab']
-
-  strict_cap_requirements:
-    # If disabled, Stars that expect special caps may have to be acquired without the caps
-    false: 0
-    true: 50
-
-  strict_cannon_requirements:
-    # If disabled, Stars that expect cannons may have to be acquired without them.
-    # Has no effect if Buddy Checks and Move Randomizer are disabled
-    false: 0
-    true: 50
-
-  strict_move_requirements:
-    # If disabled, Stars that expect certain moves may have to be acquired without them. Only makes a difference
-    # if Move Randomization is enabled
-    false: 0
-    true: 50
-
-  amount_of_stars:
-    # How many stars exist.
-    # If there aren't enough locations to hold the given total, the total will be reduced.
-    #
-    # You can define additional values between the minimum and maximum values.
-    # Minimum value is 35
-    # Maximum value is 120
-    120: 50
-    random: 0
-    random-low: 0
-    random-high: 0
-
-  first_bowser_star_door_cost:
-    # What percent of the total stars are required at the Star Door to Bowser in the Dark World
-    #
-    # You can define additional values between the minimum and maximum values.
-    # Minimum value is 0
-    # Maximum value is 40
-    7: 50
-    random: 0
-    random-low: 0
-    random-high: 0
-
-  basement_star_door_cost:
-    # What percent of the total stars are required at the Star Door in the Basement
-    #
-    # You can define additional values between the minimum and maximum values.
-    # Minimum value is 0
-    # Maximum value is 50
-    25: 50
-    random: 0
-    random-low: 0
-    random-high: 0
-
-  second_floor_star_door_cost:
-    # What percent of the total stars are required to access the third floor
-    #
-    # You can define additional values between the minimum and maximum values.
-    # Minimum value is 0
-    # Maximum value is 70
-    42: 50
-    random: 0
-    random-low: 0
-    random-high: 0
-
-  mips1_cost:
-    # What percent of the total stars are required to spawn MIPS the first time
-    #
-    # You can define additional values between the minimum and maximum values.
-    # Minimum value is 0
-    # Maximum value is 35
-    12: 50
-    random: 0
-    random-low: 0
-    random-high: 0
-
-  mips2_cost:
-    # What percent of the total stars are required to spawn MIPS the second time.
-    #
-    # You can define additional values between the minimum and maximum values.
-    # Minimum value is 0
-    # Maximum value is 70
-    42: 50
-    random: 0
-    random-low: 0
-    random-high: 0
-
-  stars_to_finish:
-    # What percent of the total stars are required at the infinite stairs
-    #
-    # You can define additional values between the minimum and maximum values.
-    # Minimum value is 0
-    # Maximum value is 90
-    58: 50
-    random: 0
-    random-low: 0
-    random-high: 0
-
-  death_link:
-    # When you die, everyone dies. Of course the reverse is true too.
-    false: 50
-    true: 0
-
-  completion_type:
-    # Set goal for game completion
-    last_bowser_stage: 50
-    all_bowser_stages: 0
 
 
 
