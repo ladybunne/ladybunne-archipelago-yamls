@@ -1,6 +1,6 @@
 # Ladybunne's big async yaml submission
 # For AP version 0.4.5
-# Date: 2024-09-19
+# Date: 2024-04-19
 # 
 # Note: only settings that deviate from the defaults are listed.
 #       Hope this helps! Thanks again, organisers!
@@ -78,9 +78,6 @@ A Link to the Past:
   include_witch_hut: true
 
   scams: all
-  
-  misery_mire_medallion: ether
-  turtle_rock_medallion: quake
 
 
   # --- Quality of life stuff ---

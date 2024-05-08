@@ -10,7 +10,7 @@ description: Ladybunne's main weighted yaml for Archipelago long syncs
 name: Ladybunne{NUMBER}
 game: 
   Terraria: 5
-  A Link to the Past: 1
+  # A Link to the Past: 1
 
 requires:
   version: 0.4.6
@@ -25,9 +25,6 @@ requires:
 Terraria:
   # Apparently my settings are all default, so this will do as a placeholder.
   goal: moon_lord
-
-  exclude_locations:
-    ["Heliophobia"]
 
   plando_items: 
     - item: Hardmode

@@ -9,14 +9,14 @@ description: Ladybunne's main weighted yaml for Archipelago short syncs
 
 name: Ladybunne{NUMBER}
 game: 
-  # The Legend of Zelda: 1
+  The Legend of Zelda: 1
   # Slay the Spire: 1
   # Risk of Rain 2: 1
   # Kingdom Hearts 2: 10
   # A Link to the Past: 10
   # Hollow Knight: 5
   # Super Mario 64: 1
-  Terraria: 10
+  # Terraria: 5
 
 requires:
   version: 0.4.6
@@ -36,7 +36,7 @@ The Legend of Zelda:
   StartingPosition: very_dangerous
 
   plando_items:
-    # Put Book of Magic and the boomerangs in the bad corner where it belongs.
+    # Put Book of Magic and the boomerangs in the bad corner where they belong.
     # Ideally I force it to something like L9 Wizzrobes East Island, which you would
     # normally never visit... but because a random 50% of L9 is junked by the
     # generator, I need to provide a list of at least 50% + 1 checks.
@@ -477,9 +477,6 @@ Terraria:
   # Apparently my settings are all default, so this will do as a placeholder.
   goal: mechanical_bosses
 
-  exclude_locations:
-    ["Heliophobia"]
-
   plando_items: 
     - item: Hardmode
       location: The Big Red Button
@@ -487,10 +484,10 @@ Terraria:
       world: Ladybuttonne
       force: true
 
----
+# ---
 
-name: Ladybuttonne{NUMBER}
-game: Clique
+# name: Ladybuttonne{NUMBER}
+# game: Clique
 
-Clique:
-  hard_mode: 'true'
+# Clique:
+#   hard_mode: 'true'

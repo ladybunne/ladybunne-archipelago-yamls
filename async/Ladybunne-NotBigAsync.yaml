@@ -1,0 +1,103 @@
+# Another Ladybunne async yaml
+# For AP version 0.4.6
+# Date: 2024-05-07
+# 
+# Note: only settings that deviate from the defaults are listed.
+#       Hope this helps!
+
+
+# The Legend of Zelda
+name: Ladybunne-TLoZ{NUMBER}
+game: The Legend of Zelda
+
+The Legend of Zelda:
+  StartingPosition: very_dangerous
+
+
+---
+
+# Kingdom Hearts 2
+name: Ladybunne-KH2{NUMBER}
+game: Kingdom Hearts 2
+
+Kingdom Hearts 2:
+
+  # --- Goal stuff ---
+
+  LuckyEmblemsRequired: 50
+  LuckyEmblemsAmount: 60
+
+  Promise_Charm: true
+
+
+  # --- RPG stuff ---
+
+  start_inventory:
+    Scan: 1
+    Aerial Recovery: 1
+
+  Valor_Form_EXP: 8
+
+  Summon_EXP: 10
+
+  Keyblade_Maximum: 10
+
+
+  # --- Checks stuff ---
+
+  RandomVisitLockingItem: random-range-1-4
+  LevelDepth: level_99_sanity
+
+  SuperBosses: false
+
+  SummonLevelLocationToggle: true
+
+
+---
+
+# A Link to the Past
+name: Ladybunne-ALttP{NUMBER}
+game: A Link to the Past
+
+A Link to the Past:
+
+  open_pyramid: open
+
+  crystals_needed_for_gt: 7
+  crystals_needed_for_ganon: 7
+
+  glitches_required: overworld_glitches
+
+  shuffle_capacity_upgrades: on
+  
+  map_shuffle: start_with
+  compass_shuffle: start_with
+
+  scams: all
+  killable_thieves: true
+
+
+---
+
+# Terraria
+name: Ladybunne-Terra{NUMBER}
+game: Terraria
+
+Terraria:
+  goal: zenith
+
+  plando_items: 
+    - item: Hardmode
+      location: The Big Red Button
+      from_pool: true
+      world: Ladybuttonne
+      force: true
+
+
+---
+
+name: Ladybuttonne{NUMBER}
+game: Clique
+
+Clique:
+  hard_mode: 'true'
