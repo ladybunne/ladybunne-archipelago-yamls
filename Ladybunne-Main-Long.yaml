@@ -23,8 +23,7 @@ requires:
 # This is now short-compatible, apparently.
 # Consider upping to Moon Lord.
 Terraria:
-  # Apparently my settings are all default, so this will do as a placeholder.
-  goal: moon_lord
+  goal: zenith
 
   plando_items: 
     - item: Hardmode

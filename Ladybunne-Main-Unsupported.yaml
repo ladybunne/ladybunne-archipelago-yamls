@@ -1,0 +1,19 @@
+#          ((`\          -------------------
+#       ___ \\ '--._    / hippity hoppity /
+#    .'`   `'    o  )  /   ur checks r   /
+#   /    \   '. __.'  /   my property   /
+#  _|    /_  \ \_\_  -------------------
+# {_\______\-'\__\_\    (UNSUPPORTED)   
+
+description: Ladybunne's main weighted yaml for Archipelago unsupported syncs
+
+name: Ladybunne{NUMBER}
+game: 
+  An Untitled Story: 1
+
+requires:
+  version: 0.4.6
+  plando: items
+
+An Untitled Story:
+  is_cool: true

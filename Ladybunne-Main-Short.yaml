@@ -9,10 +9,10 @@ description: Ladybunne's main weighted yaml for Archipelago short syncs
 
 name: Ladybunne{NUMBER}
 game: 
-  The Legend of Zelda: 1
+  # The Legend of Zelda: 1
   # Slay the Spire: 1
   # Risk of Rain 2: 1
-  # Kingdom Hearts 2: 10
+  Kingdom Hearts 2: 10
   # A Link to the Past: 10
   # Hollow Knight: 5
   # Super Mario 64: 1
@@ -212,7 +212,7 @@ Kingdom Hearts 2:
   # Emblems is a bit harder, but I still like proofs.
   Goal:
     three_proofs: 1
-    lucky_emblem_hunt: 2
+    # lucky_emblem_hunt: 2
 
   # Nowadays, we are gaming.
   FinalXemnas: true
@@ -323,8 +323,7 @@ Super Mario 64:
 # Terraria
 
 Terraria:
-  # Apparently my settings are all default, so this will do as a placeholder.
-  goal: mechanical_bosses
+  goal: moon_lord
 
   plando_items: 
     - item: Hardmode
@@ -333,10 +332,10 @@ Terraria:
       world: Ladybuttonne
       force: true
 
-# ---
+---
 
-# name: Ladybuttonne{NUMBER}
-# game: Clique
+name: Ladybuttonne{NUMBER}
+game: Clique
 
-# Clique:
-#   hard_mode: 'true'
+Clique:
+  hard_mode: 'true'
