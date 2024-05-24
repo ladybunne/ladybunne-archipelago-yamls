@@ -9,7 +9,7 @@ description: Ladybunne's main weighted yaml for Archipelago long syncs
 
 name: Ladybunne{NUMBER}
 game: 
-  Terraria: 5
+  Terraria: 1
   # A Link to the Past: 1
 
 requires:
@@ -24,6 +24,8 @@ requires:
 # Consider upping to Moon Lord.
 Terraria:
   goal: zenith
+
+  excluded_locations: ["Don't Dread on Me", "Rainbows and Unicorns"]
 
   plando_items: 
     - item: Hardmode
@@ -45,7 +47,7 @@ A Link to the Past:
   # GT sucks.
   open_pyramid: open
 
-  # I want this to be on 5, but 4 is a bit more chill.
+  # 7 for longs.
   crystals_needed_for_gt: 7
   crystals_needed_for_ganon: 7
 

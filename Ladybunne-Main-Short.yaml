@@ -212,7 +212,7 @@ Kingdom Hearts 2:
   # Emblems is a bit harder, but I still like proofs.
   Goal:
     three_proofs: 1
-    # lucky_emblem_hunt: 2
+    lucky_emblem_hunt: 1
 
   # Nowadays, we are gaming.
   FinalXemnas: true
@@ -244,8 +244,8 @@ Kingdom Hearts 2:
 
   Schmovement: level_1
 
-  Keyblade_Minimum: 3
-  Keyblade_Maximum: 10
+  Keyblade_Minimum: 0
+  Keyblade_Maximum: 0
 
   # Options: easy, normal, hard
   FightLogic: normal
@@ -332,10 +332,10 @@ Terraria:
       world: Ladybuttonne
       force: true
 
----
+# ---
 
-name: Ladybuttonne{NUMBER}
-game: Clique
+# name: Ladybuttonne{NUMBER}
+# game: Clique
 
-Clique:
-  hard_mode: 'true'
+# Clique:
+#   hard_mode: 'true'

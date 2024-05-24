@@ -1,7 +1,7 @@
 # Big thanks to the broader Archipelago community for helping me assemble this!
 #
 # In no particular order:
-# marsipan., Elsavira, MeridianBC, kiebs, Skiller50, Tnk, Phone, Bron_Blackhorn, Eeveon, SilentBrow, SunriseShortcake
+# marsipan., Elsavira, MeridianBC, kiebs, Skiller50, Tnk, Phone, Bron_Blackhorn, Eeveon, SilentBrow, SunriseShortcake, Kinrah, Trixie
 
 meta_description: Ladybunne's meta yaml for The Rabbit Games 100 (Down the Rabbit Hole)
 
@@ -42,7 +42,71 @@ Clique:
 
 Dark Souls III:
   # Dark Souls players, please lend me your knowledge. 🙏
-  priority_locations: []
+  priority_locations: 
+    [
+      "CC: Black Blade",
+      "CC: Carthus Bloodring",
+      "CC: Carthus Milkring",
+      "CC: Carthus Pyromancy Tome",
+      "CC: Grave Warden Pyromancy Tome",
+      "CC: Grave Warden's Ashes",
+      "CC: Old Sage's Blindfold",
+      "CC: Soul of a Demon",
+      "CC: Soul of High Lord Wolnir",
+      "CC: Witch's Ring",
+      "ID: Bellowing Dragoncrest Ring",
+      "ID: Covetous Gold Serpent Ring",
+      "ID: Dark Clutch Ring",
+      "ID: Dragon Torso Stone",
+      "ID: Dusk Crown Ring",
+      "ID: Great Magic Shield",
+      "ID: Jailbreaker's Key",
+      "ID: Jailer's Key Ring",
+      "ID: Karla's Ashes",
+      "ID: Karla's Coat",
+      "ID: Karla's Gloves",
+      "ID: Karla's Pointed Hat",
+      "ID: Karla's Trousers",
+      "ID: Lightning Blade",
+      "ID: Old Cell Key",
+      "ID: Old Sorcerer Boots",
+      "ID: Old Sorcerer Coat",
+      "ID: Old Sorcerer Gauntlets",
+      "ID: Old Sorcerer Hat",
+      "ID: Pickaxe",
+      "ID: Prisoner Chief's Ashes",
+      "ID: Profaned Coal",
+      "ID: Profaned Flame",
+      "ID: Xanthous Ashes",
+      "PC: Cinders of a Lord - Yhorm the Giant",
+      "PC: Court Sorcerer Gloves",
+      "PC: Court Sorcerer Hood",
+      "PC: Court Sorcerer Robe",
+      "PC: Court Sorcerer Trousers",
+      "PC: Court Sorcerer's Staff",
+      "PC: Cursebite Ring",
+      "PC: Eleonora",
+      "PC: Greatshield of Glory",
+      "PC: Logan's Scroll",
+      "PC: Soul of Yhorm the Giant",
+      "PC: Storm Ruler",
+      "PC: Wrath of the Gods",
+      "SL: Black Iron Greatshield",
+      "SL: Black Knight Sword",
+      "SL: Dragonrider Bow",
+      "SL: Fume Ultra Greatsword",
+      "SL: Izalith Pyromancy Tome",
+      "SL: Izalith Staff",
+      "SL: Knight Slayer's Ring",
+      "SL: Lightning Stake",
+      "SL: Quelana Pyromancy Tome",
+      "SL: Sacred Flame",
+      "SL: Shield of Want",
+      "SL: Soul of the Old Demon King",
+      "SL: Speckled Stoneplate Ring",
+      "SL: Toxic Mist",
+      "SL: White Hair Talisman",
+    ]
 
 DLCQuest:
   priority_locations: ["Hole in the Wall Sheep", "West Cave Sheep"]
@@ -1261,41 +1325,9 @@ Starcraft 2:
 Stardew Valley:
   priority_locations:
     [
-      "The Mines Floor 10 Treasure",
-      "The Mines Floor 100 Treasure",
-      "The Mines Floor 110 Treasure",
-      "The Mines Floor 120 Treasure",
-      "The Mines Floor 20 Treasure",
-      "The Mines Floor 40 Treasure",
-      "The Mines Floor 50 Treasure",
-      "The Mines Floor 60 Treasure",
-      "The Mines Floor 70 Treasure",
-      "The Mines Floor 80 Treasure",
-      "The Mines Floor 90 Treasure",
-      "Floor 10 Elevator",
-      "Floor 100 Elevator",
-      "Floor 105 Elevator",
-      "Floor 110 Elevator",
-      "Floor 115 Elevator",
-      "Floor 120 Elevator",
-      "Floor 15 Elevator",
-      "Floor 20 Elevator",
-      "Floor 25 Elevator",
-      "Floor 30 Elevator",
-      "Floor 35 Elevator",
-      "Floor 40 Elevator",
-      "Floor 45 Elevator",
-      "Floor 5 Elevator",
-      "Floor 50 Elevator",
-      "Floor 55 Elevator",
-      "Floor 60 Elevator",
-      "Floor 65 Elevator",
-      "Floor 70 Elevator",
-      "Floor 75 Elevator",
-      "Floor 80 Elevator",
-      "Floor 85 Elevator",
-      "Floor 90 Elevator",
-      "Floor 95 Elevator",
+      "The Mines Entrance Cutscene",
+      "The Mines Treasure",
+      "Elevator",
     ]
 
 Subnautica:
@@ -1503,12 +1535,13 @@ Timespinner:
 TUNIC:
   priority_locations:
     [
+      "Beneath the Fortress - Back Room Chest",
+      "Beneath the Fortress - Bridge",
+      "Beneath the Fortress - Cell Chest 1",
+      "Beneath the Fortress - Cell Chest 2",
+      "Beneath the Fortress - Obscured Behind Waterfall",
       "Caustic Light Cave - Holy Cross Chest",
       "Cube Cave - Holy Cross Chest",
-      "Maze Cave - Maze Room Chest",
-      "Maze Cave - Maze Room Holy Cross",
-      "Patrol Cave - Holy Cross Chest",
-      "Patrol Cave - Normal Chest",
       "Frog's Domain - Above Vault",
       "Frog's Domain - Escape Chest",
       "Frog's Domain - Grapple Above Hot Tub",
@@ -1522,6 +1555,10 @@ TUNIC:
       "Frog's Domain - Slorm Room",
       "Hourglass Cave - Holy Cross Chest",
       "Hourglass Cave - Hourglass Chest",
+      "Maze Cave - Maze Room Chest",
+      "Maze Cave - Maze Room Holy Cross",
+      "Patrol Cave - Holy Cross Chest",
+      "Patrol Cave - Normal Chest",
       "Secret Gathering Place - 10 Fairy Reward",
       "Secret Gathering Place - 20 Fairy Reward",
       "Secret Gathering Place - Holy Cross Chest",
@@ -1546,16 +1583,8 @@ Wargroove:
 The Witness:
   priority_locations:
     [
-      "Caves Doors",
-      "Caves Elevator Controls (Panel)",
-      "Caves Entry (Door)",
-      "Caves Entry (Panel)",
-      "Caves Mountain Shortcut (Door)",
-      "Caves Panels",
-      "Caves Pillar Door",
-      "Caves Shortcuts",
-      "Caves Swamp Shortcut (Door)",
-      "Mountain & Caves Control Panels",
+      "Caves",
+      "Tunnels",
     ]
 
 Yoshi's Island:

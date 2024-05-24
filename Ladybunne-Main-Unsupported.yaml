@@ -17,3 +17,31 @@ requires:
 
 An Untitled Story:
   is_cool: true
+
+  local_items: [
+    # "Jump Upgrade",
+    # "Double Jump Upgrade",
+    "Red Energy",
+    "Smash",
+    "Progressive Fire Shot",
+    "Ice Shot",
+    # "Progressive Ceiling Stick",
+  ]
+
+  plando_items:
+    # Anti-BK shenanigans.
+    - items:
+        Jump Upgrade: 1
+        Double Jump Upgrade: 1
+      locations:
+        - Nightwalk_jump_1
+      from_pool: true
+      world: false
+    
+    - items:
+        Jump Upgrade: 1
+        Double Jump Upgrade: 1
+      locations:
+        - Grotto_djump
+      from_pool: true
+      world: false
