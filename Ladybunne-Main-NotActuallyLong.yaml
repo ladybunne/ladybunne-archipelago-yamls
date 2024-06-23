@@ -3,9 +3,9 @@
 #    .'`   `'    o  )  /   ur checks r   /
 #   /    \   '. __.'  /   my property   /
 #  _|    /_  \ \_\_  -------------------
-# {_\______\-'\__\_\    (LONG EDITION)   
+# {_\______\-'\__\_\  (not LONG EDITION) 
 
-description: Ladybunne's main weighted yaml for Archipelago long syncs
+description: Ladybunne's main weighted yaml for Archipelago long syncs (but not actually)
 
 name: Ladybunne{NUMBER}
 game: 
@@ -25,11 +25,23 @@ requires:
 Terraria:
   goal: zenith
 
-  exclude_locations: 
-    [
-      "Don't Dread on Me", "Rainbows and Unicorns",
-      "Old One's Army Tier 2", "Old One's Army Tier 3", "Real Estate Agent",
-    ]
+  exclude_locations:
+    - Don't Dread on Me
+    - Rainbows and Unicorns
+    - Big Booty
+    - Dead Men Tell No Tales
+    - There are Some Who Call Him...
+    - Archaeologist
+    - Deceiver of Fools
+    - Slayer of Worlds
+    - You and What Army?
+    - Real Estate Agent
+    - Old One's Army Tier 3
+    - Old One's Army Tier 2
+    - Old One's Army Tier 1
+    - Heliophobia
+    - Hey! Listen!
+    - Sick Throw
 
   plando_items: 
     - item: Hardmode

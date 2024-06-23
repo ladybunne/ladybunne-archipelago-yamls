@@ -1,0 +1,108 @@
+#   ___  __ _  __ _ 
+#  / _ \/ _` |/ _` |      An Untitled Story
+# |  __/ (_| | (_| |    Beginner-friendly yaml
+#  \___|\__, |\__, |
+#        __/ | __/ |        By Ladybunne! 
+#       |___/ |___/ 
+
+# Here's a beginner friendly An Untitled Story yaml, to get you started with
+# playing it in Archipelago games!
+description: A beginner-friendly An Untitled Story yaml, by Ladybunne
+
+name: BeginnerEgg{NUMBER}
+game: 
+  An Untitled Story: 1
+
+requires:
+  version: 0.4.6
+  plando: items
+
+An Untitled Story:
+  # First, are you cool for playing An Untitled Story?
+  is_cool: true
+  # Heck yeah you are!
+
+  # Second, we'll local some items to help balance out the seed.
+  local_items: [
+    # Red Energy and Smash are both pretty big roadblocks. If we make them local,
+    # it'll make it more likely that we can make meaningful progress without having
+    # to wait too much.
+    "Red Energy",
+    "Smash",
+
+    # Here are some others you could turn on if you wanted to try something different.
+    # Each will have varying consequences on how it skews the placement of items
+    # in your seed though. If you're feeling spicy, give them a try!
+    # "Jump Upgrade",
+    # "Double Jump Upgrade",
+    # "Duck",
+    # "Hatch",
+    # "Yellow Energy",
+    # "Progressive Fire Shot",
+    # "Ice Shot",
+    # "Progressive Ceiling Stick",
+  ]
+
+  # Third, we'll exclude some locations that are pretty hard.
+  exclude_locations: [
+    # RainbowDive top score is hard even if you know what you're doing. A tip for high
+    # scores: you can collect stars for 10 points, or shoot them with fire for 15.
+    # Good luck!
+    "Rainbowdive_first_prize",
+    
+    # Flower checks are both hard to turn in, and hard to meaningfully chase.
+    # 5 and 10 are fine, 15 and 20 are quite a lot worse.
+    "15_flowers", "20_flowers",
+
+    # Upper NightWalk in general is very punishing, so we'll exclude the hitless one
+    # for that too.
+    "Deeptower_top_entrance",
+
+    # CloudRun has a very difficult boss that is somewhat unreasonable for new players
+    # to do.
+    "Cloudrun_boss_11", "Cloudrun_boss", "Cloudrun_far_right",
+
+    # StrangeCastle hitless is a bit fiddly.
+    "Strangecastle_heart_door",
+
+    # IceCastle is both late and very rough, so we'll exclude it entirely.
+    "Icecastle_boss", "Icecastle_boss_15", "Icecastle_bottom_underhang",
+    "Icecastle_entrance", "Icecastle_entrance_flower", "Icecastle_entrance_heart_door",
+    "Icecastle_high_mid_heartdoor", "Icecastle_left_outside",
+    "Icecastle_low_mid_heartdoor", "Icecastle_low_mid_secret",
+    "Icecastle_top_left_heart_door", "Icecastle_top_right",
+
+    # There are some checks in SkyLands that require beating IceCastle, so they
+    # can go too.
+    "Skylands_balloon_chain", "Skylands_duck", "Skylands_heart_gate",
+    "Skylands_underhang",
+  ]
+
+  # Last, we'll use the power of ✨ plando ✨ in order to smooth some things out!
+  plando_items:
+    # We can randomly put some jumps in early areas, to mitigate early BKs.
+    - items:
+        Jump Upgrade: 1
+        Double Jump Upgrade: 1
+      locations:
+        - Nightwalk_jump_1
+      from_pool: true
+      world: false
+    
+    - items:
+        Jump Upgrade: 1
+        Double Jump Upgrade: 1
+      locations:
+        - Grotto_djump
+      from_pool: true
+      world: false
+    
+    # We can also plando some Toughness Upgrades early, which will help make
+    # a lot of the game more manageable.
+    - items:
+        Toughness Upgrade: 2
+      locations:
+        - Nightwalk_shrine_heart
+        - Grotto_boss_1
+
+  # And that should be it! 

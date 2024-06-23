@@ -19,17 +19,36 @@ An Untitled Story:
   is_cool: true
 
   local_items: [
-    # "Jump Upgrade",
-    # "Double Jump Upgrade",
+    # Good singular items that help balance progression between local and non-local.
     "Red Energy",
     "Smash",
-    "Progressive Fire Shot",
-    "Ice Shot",
+
+    # Ice Shot skews things towards certain areas, which is boring. Let's make it
+    # more random!
+    # "Ice Shot",
+
+    # Hatch can straight up be skipped, which is awesome, so I want to see non-local
+    # hatch seeds more often.
+    # "Hatch",
+
+    # These ones are multiples, so forcing them local can end up dragging you to 
+    # the Curtain and beyond. We don't like that.
+
+    # "Jump Upgrade",
+    # "Double Jump Upgrade",
+    # "Progressive Fire Shot",
     # "Progressive Ceiling Stick",
   ]
 
+  # RainbowDive max prize is very hard, and too many flowers is unreasonable.
+  exclude_locations: ["Rainbowdive_first_prize", "15_flowers", "20_flowers"]
+
+  # MountSide rules, so we should make its last check priority.
+  # Also left ceiling memes.
+  priority_locations: ["Mountside_right_heart_door", "Deepdive_left_ceiling"]
+
+  # Plando some jump height upgrades early on to prevent early BKs.
   plando_items:
-    # Anti-BK shenanigans.
     - items:
         Jump Upgrade: 1
         Double Jump Upgrade: 1
