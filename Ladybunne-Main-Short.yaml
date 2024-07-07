@@ -12,14 +12,15 @@ game:
   # The Legend of Zelda: 1
   # Slay the Spire: 1
   # Risk of Rain 2: 1
-  Kingdom Hearts 2: 10
+  # Kingdom Hearts 2: 10
   # A Link to the Past: 10
   # Hollow Knight: 5
   # Super Mario 64: 1
   # Terraria: 5
+  Timespinner: 1
 
 requires:
-  version: 0.4.6
+  version: 0.5.0
   plando: items
 
 
@@ -283,7 +284,6 @@ A Link to the Past:
   compass_shuffle: start_with
 
   scams: all
-  killable_thieves: true
 
 
 
@@ -338,6 +338,20 @@ Terraria:
       from_pool: true
       world: Ladybuttonne
       force: true
+
+
+
+# Timespinner
+
+Timespinner:
+  DownloadableItems: true
+  StartWithJewelryBox: true
+  QuickSeed: true
+  LoreChecks: true
+  DamageRando: off
+  UnchainedKeys: true
+  TrapChance: 0
+  SpecificKeycards: false
 
 ---
 

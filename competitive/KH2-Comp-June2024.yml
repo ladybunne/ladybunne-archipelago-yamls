@@ -1,0 +1,47 @@
+name: KH2-Comp{NUMBER}
+game: Kingdom Hearts 2
+
+Kingdom Hearts 2:
+
+  Goal: three_proofs
+  FinalXemnas: true
+
+  Promise_Charm: false
+  
+  RandomVisitLockingItem: random-range-2-4
+
+  # Checks on levels kinda suck, tbh.
+  LevelDepth: level_1
+
+  start_inventory:
+    Scan: 1
+    Aerial Recovery: 1
+    Draw: 1
+    Guard: 1
+    Olympus Stone: 1
+    Unknown Disk: 1
+
+  Sora_Level_EXP: 6
+
+  Valor_Form_EXP: 10
+  Wisdom_Form_EXP: 3
+  Limit_Form_EXP: 3
+  Master_Form_EXP: 3
+  Final_Form_EXP: 3
+
+  Summon_EXP: 10
+
+  Schmovement: level_1
+  RandomGrowth: 3
+
+  Keyblade_Minimum: 0
+  Keyblade_Maximum: 0
+
+  # Options: easy, normal, hard
+  FightLogic: hard
+
+  # Toggle Summon levels to have locations.
+  SummonLevelLocationToggle: true
+
+  CorSkipToggle: true
+  SuperBosses: false

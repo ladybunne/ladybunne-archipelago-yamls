@@ -32,7 +32,7 @@ description: Ladybunne's Sonic Adventure 2 Battle Template
 
 game: Sonic Adventure 2 Battle
 requires:
-  version: 0.4.4 # Version of Archipelago required for this yaml to work as expected.
+  version: 0.5.0 # Version of Archipelago required for this yaml to work as expected.
 
 Sonic Adventure 2 Battle:
   progression_balancing:

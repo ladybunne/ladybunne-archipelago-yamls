@@ -13,7 +13,7 @@ game:
   # A Link to the Past: 1
 
 requires:
-  version: 0.4.6
+  version: 0.5.0
   plando: items
 
 

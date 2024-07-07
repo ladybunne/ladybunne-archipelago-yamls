@@ -14,7 +14,7 @@ game:
   An Untitled Story: 1
 
 requires:
-  version: 0.4.6
+  version: 0.5.0
   plando: items
 
 An Untitled Story:
@@ -102,7 +102,7 @@ An Untitled Story:
     - items:
         Toughness Upgrade: 2
       locations:
-        - Nightwalk_shrine_heart
-        - Grotto_boss_1
+        - Deeptower_boss_2
+        - Deeptower_cannon_boss
 
   # And that should be it! 

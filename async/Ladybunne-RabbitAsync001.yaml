@@ -1,0 +1,68 @@
+#          ((`\          -------------------
+#       ___ \\ '--._    / hippity hoppity /
+#    .'`   `'    o  )  /   ur async is   /
+#   /    \   '. __.'  /   my property   /
+#  _|    /_  \ \_\_  -------------------
+# {_\______\-'\__\_\                    
+
+# Ladybunne's yaml submission for The Rabbit Async: Episode 1
+# For AP version 0.5.0
+# Date: 2024-07-06
+#
+# Reminder: Settings that are not present default to whatever templates specify.
+#           Check the templates for more detail.
+
+name: Ladybunne-Old{NUMBER}
+game: The Legend of Zelda
+
+The Legend of Zelda:
+  StartingPosition: very_dangerous
+
+---
+
+name: Ladybunne-New{NUMBER}
+game: Yu-Gi-Oh! 2006
+
+Yu-Gi-Oh! 2006:
+  add_empty_banlist: true
+
+---
+
+name: Ladybunne-Blue{NUMBER}
+game: Kingdom Hearts 2
+
+Kingdom Hearts 2:
+  Goal: hitlist_and_lucky_emblem
+  FinalXemnas: true
+
+  LuckyEmblemsRequired: 50
+  LuckyEmblemsAmount: 60
+
+  BountyRequired: 26
+  BountyAmount: 26
+
+  FightLogic: hard
+
+  LevelDepth: level_99_sanity
+  SummonLevelLocationToggle: true
+  SuperBosses: true
+
+  FillerItemsLocal: false
+
+  start_inventory:
+    Scan: 1
+    Aerial Recovery: 1
+    Draw: 1
+
+  Valor_Form_EXP: 8
+  Summon_EXP: 10
+
+  Schmovement: level_0
+
+  FinalFormLogic: just_a_form
+  AutoFormLogic: true
+
+  Keyblade_Minimum: 0
+  Keyblade_Maximum: 0
+
+  CorSkipToggle: true

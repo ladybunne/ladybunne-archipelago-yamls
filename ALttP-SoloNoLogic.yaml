@@ -1,0 +1,34 @@
+name: Ladybunne{NUMBER}
+game: A Link to the Past
+
+requires:
+  version: 0.5.0
+  plando: items
+
+
+# A Link to the Past
+
+A Link to the Past:
+
+  goal: bosses
+  mode: open
+
+  # GT sucks.
+  open_pyramid: goal
+
+  # I want this to be on 5, but 4 is a bit more chill.
+  crystals_needed_for_gt: 7
+  crystals_needed_for_ganon: 7
+
+  glitches_required: no_logic
+  key_drop_shuffle: false
+  small_key_shuffle: any_world
+  big_key_shuffle: any_world
+
+  shuffle_capacity_upgrades: on
+
+  map_shuffle: start_with
+  compass_shuffle: start_with
+
+  shop_price_modifier: 30
+  scams: all

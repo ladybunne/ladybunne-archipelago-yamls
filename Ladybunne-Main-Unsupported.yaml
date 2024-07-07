@@ -9,11 +9,16 @@ description: Ladybunne's main weighted yaml for Archipelago unsupported syncs
 
 name: Ladybunne{NUMBER}
 game: 
-  An Untitled Story: 1
+  # An Untitled Story: 1
+  Metroid Zero Mission: 1
 
 requires:
-  version: 0.4.6
+  version: 0.5.0
   plando: items
+
+
+
+# An Untitled Story
 
 An Untitled Story:
   is_cool: true
@@ -64,3 +69,21 @@ An Untitled Story:
         - Grotto_djump
       from_pool: true
       world: false
+
+
+
+# Metroid: Zero Mission
+
+Metroid Zero Mission:
+  start_inventory_from_pool:
+    Bomb: 1
+
+  chozodia_access: closed
+  skip_chozodia_stealth: true
+  unknown_items_always_usable: true
+  layout_patches: true
+  morph_ball: early
+  ibj_in_logic: true
+  heatruns_lavadives: false
+  walljumps_in_logic: true
+  display_nonlocal_items: none

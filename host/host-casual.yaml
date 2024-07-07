@@ -78,6 +78,11 @@ generator:
   # List of options that can be plando'd. Can be combined, for example "bosses, items"
   # Available options: bosses, items, texts, connections
   plando_options: "items, bosses, texts, connections"
+  # What to do if the current item placements appear unsolvable.
+  # raise -> Raise an exception and abort.
+  # swap -> Attempt to fix it by swapping prior placements around. (Default)
+  # start_inventory -> Move remaining items to start_inventory, generate additional filler items to fill locations.
+  panic_method: "swap"
   glitch_triforce_room: 0
 sni_options:
   # Set this to your SNI folder location if you want the MultiClient to attempt an auto start, does nothing if not found
@@ -88,7 +93,7 @@ sni_options:
   snes_rom_start: true
 bizhawkclient_options:
   # The location of the EmuHawk you want to auto launch patched ROMs with
-  emuhawk_path: "None"
+  emuhawk_path: "C:/Users/Ladybunne/Games/BizHawk/EmuHawk.exe"
   # Set this to true to autostart a patched ROM in BizHawk with the connector script,
   # to false to never open the patched rom automatically,
   # or to a path to an external program to open the ROM file with that instead.
@@ -110,9 +115,13 @@ adventure_options:
   rom_args: " "
   # Set this to true to display item received messages in EmuHawk
   display_msgs: true
+cave_story_settings:
+  game_exe: "Doukutsu.exe"
 cv64_options:
   # File name of the CV64 US 1.0 rom
   rom_file: "Castlevania (USA).z64"
+cvcotm_options:
+  rom_file: "Castlevania - Circle of the Moon (USA).gba"
 dkc3_options:
   # File name of the DKC3 US rom
   rom_file: "Donkey Kong Country 3 - Dixie Kong's Double Trouble! (USA) (En,Fr).sfc"
@@ -127,6 +136,12 @@ factorio_options:
   bridge_chat_out: true
 ffr_options:
   display_msgs: true
+ffta_options:
+  rom_file: "Final Fantasy Tactics Advance (USA).gba"
+hades_options:
+  styx_scribe_path: "C:/Program Files/Steam/steamapps/common/Hades/StyxScribe.py"
+jakanddaxter_options:
+  root_directory: "D:/Files/Repositories/ArchipelaGOAL/out/build/Release/bin"
 kdl3_options:
   # File name of the KDL3 JP or EN rom
   rom_file: "Kirby's Dream Land 3.sfc"
@@ -150,17 +165,37 @@ lufia2ac_options:
   rom_file: "Lufia II - Rise of the Sinistrals (USA).sfc"
 messenger_settings:
   game_path: "TheMessenger.exe"
+metroidprime_options:
+  rom_file: "Metroid_Prime.iso"
+  rom_start: false
 minecraft_options:
   forge_directory: "Minecraft Forge server"
   max_heap_size: "2G"
   # release channel, currently "release", or "beta"
   # any games played on the "beta" channel have a high likelihood of no longer working on the "release" channel.
   release_channel: "release"
+mlss_options:
+  # File name of the MLSS US rom
+  rom_file: "Mario & Luigi - Superstar Saga (U).gba"
+  rom_start: true
 mm2_options:
+  # File name of the MM2 EN rom
   rom_file: "Mega Man 2 (USA).nes"
+mm3_options:
+  rom_file: "Mega Man 3 (USA).nes"
 mmbn3_options:
   # File name of the MMBN3 Blue US rom
   rom_file: "Mega Man Battle Network 3 - Blue Version (USA).gba"
+  rom_start: true
+mmx3_options:
+  # File name of the Mega Man X3 US ROM
+  rom_file: "Mega Man X3 (USA).sfc"
+mzm_options:
+  # File name of the Metroid: Zero Mission ROM.
+  rom_file: "Metroid - Zero Mission (USA).gba"
+  # Set this to false to never autostart a rom (such as after patching),
+  # Set it to true to have the operating system default program open the rom
+  # Alternatively, set it to a path to a program to open the .gba file with
   rom_start: true
 oot_options:
   # File name of the OoT v1.0 ROM
@@ -172,6 +207,9 @@ oot_options:
 paper_mario_settings:
   rom_file: "Paper Mario (USA).z64"
   rom_start: true
+pokemon_crystal_settings:
+  rom_file: "Pokemon - Crystal Version (UE) (V1.0) [C][!].gbc"
+  rom_start: true
 pokemon_emerald_settings:
   # File name of your English Pokemon Emerald ROM
   rom_file: "Pokemon - Emerald Version (USA, Europe).gba"
@@ -179,6 +217,8 @@ pokemon_rb_options:
   # File names of the Pokemon Red and Blue roms
   red_rom_file: "Pokemon Red (UE) [S][!].gb"
   blue_rom_file: "Pokemon Blue (UE) [S][!].gb"
+rabi_ribi_options:
+  game_installation_path: "C:/Program Files (x86)/Steam/steamapps/common/Rabi-Ribi"
 sm_options:
   # File name of the v1.0 J rom
   rom_file: "Super Metroid (JU).sfc"
@@ -198,19 +238,26 @@ tloz_options:
   # Alternatively, a path to a program to open the .nes file with
   rom_start: true
   # Display message inside of Bizhawk
-  display_msgs: true
+  display_msgs: false
 universal_tracker:
   player_files_path: null
-  include_region_name: false
+  include_region_name: true
   include_location_name: true
-  hide_excluded_locations: false
+  hide_excluded_locations: true
 wargroove_options:
   # Locate the Wargroove root directory on your system.
   # This is used by the Wargroove client, so it knows where to send communication files to
   root_directory: "C:/Program Files (x86)/Steam/steamapps/common/Wargroove"
+wl4_options:
+  # File name of the Wario Land 4 ROM
+  rom_file: "Wario Land 4.gba"
+  rom_start: true
 yoshisisland_options:
   # File name of the Yoshi's Island 1.0 US rom
   rom_file: "Super Mario World 2 - Yoshi's Island (U).sfc"
+yugioh06_settings:
+  # File name of your Yu-Gi-Oh 2006 ROM
+  rom_file: "YuGiOh06.gba"
 zillion_options:
   # File name of the Zillion US rom
   rom_file: "Zillion (UE) [!].sms"

@@ -2,7 +2,7 @@ name: RB-Comp{NUMBER}
 description: Default Pokemon Red and Blue Template
 game: Pokemon Red and Blue
 requires:
-  version: 0.4.5
+  version: 0.5.0
 
 Pokemon Red and Blue:
   game_version:
