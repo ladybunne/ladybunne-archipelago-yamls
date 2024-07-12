@@ -1,0 +1,5 @@
+meta_description: Ladybunne's meta yaml for The Rabbit Async
+
+null:
+  # Disable progression balancing.
+  progression_balancing: disabled

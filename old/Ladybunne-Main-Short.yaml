@@ -18,6 +18,7 @@ game:
   # Super Mario 64: 1
   # Terraria: 5
   Timespinner: 1
+  # Bomb Rush Cyberfunk: 1
 
 requires:
   version: 0.5.0
@@ -344,14 +345,211 @@ Terraria:
 # Timespinner
 
 Timespinner:
-  DownloadableItems: true
-  StartWithJewelryBox: true
-  QuickSeed: true
-  LoreChecks: true
-  DamageRando: off
+  # Goal and "shape of seed" stuff
+  EnterSandman: false
+  DadPercent: false
   UnchainedKeys: true
-  TrapChance: 0
   SpecificKeycards: false
+  Inverted: false
+
+  # Extra checks
+  DownloadableItems: true
+  LoreChecks: true
+  Cantoran: true
+  GyreArchives: false
+  LootPool: vanilla
+  
+  # Starting gear
+  StartWithJewelryBox: true
+  QuickSeed: true 
+  ShowBestiary: true
+
+  # Shops
+  ShopFill: randomized
+  ShopWarpShards: true
+
+  # Misc
+  DamageRando: balanced
+  TrapChance: 0
+
+
+
+# Bomb Rush Cyberfunk
+
+Bomb Rush Cyberfunk:
+  logic: glitchless
+  total_rep: 2000
+
+  skip_intro: true
+  skip_dreams: true
+  skip_statue_hands: true
+  
+  starting_movestyle: skateboard
+  
+  limited_graffiti: false
+  small_graffiti_uses: combined
+  
+  skip_polo_photos: false
+  dont_save_photos: false
+
+  exclude_locations: [
+    # These are time-consuming checks.
+    # "Hideout: Solace joins the crew",
+    # "Hideout: Vinyl joins the crew",
+    "Versum Hill: Frank joins the crew",
+    "Versum Hill: Rave joins the crew",
+    "Versum Hill: Rietveld joins the crew",
+    "Millennium Square: DJ Cyber joins the crew",
+    "Brink Terminal: Eclipse joins the crew",
+    "Brink Terminal: Mesh joins the crew",
+    "Millennium Mall: DOT.EXE joins the crew",
+    "Millennium Mall: Shine joins the crew",
+    "Pyramid Island: Devil Theory joins the crew",
+    "Pyramid Island: Rise joins the crew",
+    "Mataan: Coil joins the crew",
+    "Mataan: Flesh Prince joins the crew",
+    "Mataan: Futurism joins the crew",
+
+    # Mataan is just way too late in a seed for it to be viable for thoroughness.
+    "Mataan: Across bull horns graffiti",
+    "Mataan: Crane CD",
+    "Mataan: Deep city Robo Post CD",
+    "Mataan: Deep city center island outfit",
+    "Mataan: Deep city side wires outfit",
+    "Mataan: Deep city vent jump BMX",
+    "Mataan: Elephant tower glass outfit",
+    "Mataan: Half pipe CD",
+    "Mataan: Helipad outfit",
+    "Mataan: Race challenge reward",
+    "Mataan: Red light rail graffiti",
+    "Mataan: Red light side alley outfit",
+    "Mataan: Score challenge reward",
+    "Mataan: Secret ledge BMX",
+    "Mataan: Shopping Polo",
+    "Mataan: Small rooftop graffiti",
+    "Mataan: Statue hand outfit",
+    "Mataan: Trash CD",
+    "Mataan: Trash Polo",
+    "Mataan: Trash graffiti",
+    "Mataan: Vending machine CD",
+
+    # More than 200 graffiti checks is similarly too many checks. I'll adjust this over time.
+    # "Tagged 205 Graffiti Spots", "Tagged 210 Graffiti Spots", "Tagged 215 Graffiti Spots", "Tagged 220 Graffiti Spots",
+    # "Tagged 225 Graffiti Spots",
+    # "Tagged 230 Graffiti Spots", "Tagged 235 Graffiti Spots", "Tagged 240 Graffiti Spots",
+    # "Tagged 245 Graffiti Spots", "Tagged 250 Graffiti Spots", "Tagged 255 Graffiti Spots", "Tagged 260 Graffiti Spots",
+    # "Tagged 265 Graffiti Spots", "Tagged 270 Graffiti Spots", "Tagged 275 Graffiti Spots", "Tagged 280 Graffiti Spots",
+    # "Tagged 285 Graffiti Spots", "Tagged 290 Graffiti Spots", "Tagged 295 Graffiti Spots", "Tagged 300 Graffiti Spots",
+    # "Tagged 305 Graffiti Spots", "Tagged 310 Graffiti Spots", "Tagged 315 Graffiti Spots", "Tagged 320 Graffiti Spots",
+    # "Tagged 325 Graffiti Spots", "Tagged 330 Graffiti Spots", "Tagged 335 Graffiti Spots", "Tagged 340 Graffiti Spots",
+    # "Tagged 345 Graffiti Spots", "Tagged 350 Graffiti Spots", "Tagged 355 Graffiti Spots", "Tagged 360 Graffiti Spots",
+    # "Tagged 365 Graffiti Spots", "Tagged 370 Graffiti Spots", "Tagged 375 Graffiti Spots", "Tagged 380 Graffiti Spots",
+    # "Tagged 385 Graffiti Spots", "Tagged 389 Graffiti Spots",
+  ]
+
+  # Plando graffiti onto the later graffiti checks, effectively making them worthless, and taking more of my graffiti
+  # out of the pool.
+
+  plando_items:
+  - items:
+      # - "Graffiti (L - Boom)"
+      # - "Graffiti (L - Campaign Trail)"
+      # - "Graffiti (L - FREAKS)"
+      # - "Graffiti (L - Fang It Up!)"
+      # - "Graffiti (L - Graffo Le Fou)"
+      - "Graffiti (L - INFINITY)"
+      - "Graffiti (L - Jd Vila Formosa)"
+      - "Graffiti (L - Lauder)"
+      - "Graffiti (L - Messenger Mural)"
+      - "Graffiti (L - Moai Marathon)"
+      - "Graffiti (L - NOISY NINJA)"
+      - "Graffiti (L - RECORD.HEAD)"
+      - "Graffiti (L - SpawningSeason)"
+      - "Graffiti (L - Tius)"
+      - "Graffiti (L - VoodooBoy)"
+      - "Graffiti (L - WHOLE SIXER)"
+      # - "Graffiti (L - buttercup)"
+      - "Graffiti (L - skate or di3)"
+      - "Graffiti (L - wild rush)"
+      # - "Graffiti (M - 0m33)"
+      # - "Graffiti (M - B-boy Love)"
+      # - "Graffiti (M - BLOCKY)"
+      # - "Graffiti (M - BOMB BEATS)"
+      # - "Graffiti (M - Devil 68)"
+      # - "Graffiti (M - OVERWHELMME)"
+      - "Graffiti (M - Pora)"
+      - "Graffiti (M - QUICK BING)"
+      - "Graffiti (M - SHOGUN)"
+      - "Graffiti (M - SPRAYTANICPANIC!)"
+      - "Graffiti (M - Stacked Symbols)"
+      - "Graffiti (M - Street classic)"
+      - "Graffiti (M - Teddy 4)"
+      - "Graffiti (M - TeleBinge)"
+      - "Graffiti (M - Thick Candy)"
+      - "Graffiti (M - Vom'B)"
+      - "Graffiti (M - Zona Leste)"
+      - "Graffiti (M - colorBOMB)"
+      - "Graffiti (M - pico pow)"
+      # - "Graffiti (XL - BiGSHiNYBoMB)"
+      # - "Graffiti (XL - Bomb Burner)"
+      # - "Graffiti (XL - Bomb Croc)"
+      # - "Graffiti (XL - Bombing by FireMan)"
+      # - "Graffiti (XL - Deep Dive)"
+      # - "Graffiti (XL - FATE)"
+      - "Graffiti (XL - Gamex UPA ABL)"
+      - "Graffiti (XL - Gold Rush)"
+      - "Graffiti (XL - MOTORCYCLE GANG)"
+      - "Graffiti (XL - MegaHood)"
+      - "Graffiti (XL - Pirate's Life 4 Me)"
+      - "Graffiti (XL - Raver Funk)"
+      - "Graffiti (XL - SECOND SIGHT)"
+      - "Graffiti (XL - VIBRATIONS)"
+      - "Graffiti (XL - WILD STRUXXA)"
+      - "Graffiti (XL - Web Spitter)"
+      - "Graffiti (XL - end 2 end)"
+      - "Graffiti (XL - headphones on Helmet on)"
+    locations:
+      - "Tagged 205 Graffiti Spots"
+      - "Tagged 210 Graffiti Spots"
+      - "Tagged 215 Graffiti Spots"
+      - "Tagged 220 Graffiti Spots"
+      - "Tagged 225 Graffiti Spots"
+      - "Tagged 230 Graffiti Spots"
+      - "Tagged 235 Graffiti Spots"
+      - "Tagged 240 Graffiti Spots"
+      - "Tagged 245 Graffiti Spots"
+      - "Tagged 250 Graffiti Spots"
+      - "Tagged 255 Graffiti Spots"
+      - "Tagged 260 Graffiti Spots"
+      - "Tagged 265 Graffiti Spots"
+      - "Tagged 270 Graffiti Spots"
+      - "Tagged 275 Graffiti Spots"
+      - "Tagged 280 Graffiti Spots"
+      - "Tagged 285 Graffiti Spots"
+      - "Tagged 290 Graffiti Spots"
+      - "Tagged 295 Graffiti Spots"
+      - "Tagged 300 Graffiti Spots"
+      - "Tagged 305 Graffiti Spots"
+      - "Tagged 310 Graffiti Spots"
+      - "Tagged 315 Graffiti Spots"
+      - "Tagged 320 Graffiti Spots"
+      - "Tagged 325 Graffiti Spots"
+      - "Tagged 330 Graffiti Spots"
+      - "Tagged 335 Graffiti Spots"
+      - "Tagged 340 Graffiti Spots"
+      - "Tagged 345 Graffiti Spots"
+      - "Tagged 350 Graffiti Spots"
+      - "Tagged 355 Graffiti Spots"
+      - "Tagged 360 Graffiti Spots"
+      - "Tagged 365 Graffiti Spots"
+      - "Tagged 370 Graffiti Spots"
+      - "Tagged 375 Graffiti Spots"
+      - "Tagged 380 Graffiti Spots"
+      - "Tagged 385 Graffiti Spots"
+      - "Tagged 389 Graffiti Spots"
+
+    from_pool: true
+    world: false
 
 ---
 

@@ -9,8 +9,8 @@ description: Ladybunne's main weighted yaml for Archipelago unsupported syncs
 
 name: Ladybunne{NUMBER}
 game: 
-  # An Untitled Story: 1
-  Metroid Zero Mission: 1
+  An Untitled Story: 1
+  # Metroid Zero Mission: 1
 
 requires:
   version: 0.5.0
@@ -84,6 +84,6 @@ Metroid Zero Mission:
   layout_patches: true
   morph_ball: early
   ibj_in_logic: true
-  heatruns_lavadives: false
+  heatruns_lavadives: true
   walljumps_in_logic: true
   display_nonlocal_items: none
