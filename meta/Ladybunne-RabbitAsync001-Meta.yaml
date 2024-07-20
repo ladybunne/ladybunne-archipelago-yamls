@@ -1,0 +1,546 @@
+meta_description: Ladybunne's meta yaml for The Rabbit Async
+
+null:
+  # Disable progression balancing.
+  progression_balancing: disabled
+
+# Game-specific overrides for these apparently-not-global options.
+
+Adventure:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Aquaria:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Blasphemous:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Bomb Rush Cyberfunk:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Bumper Stickers:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Castlevania 64:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Celeste 64:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+ChecksFinder:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Clique:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Dark Souls III:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+DLCQuest:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Donkey Kong Country 3:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+DOOM 1993:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+DOOM II:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Factorio:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+  # No, Factorio. Bad.
+  tech_tree_information: none
+
+Final Fantasy:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Final Fantasy Mystic Quest:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+A Hat in Time:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Heretic:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Hollow Knight:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Hylics 2:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Kingdom Hearts 2:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Kirby's Dream Land 3:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Landstalker - The Treasures of King Nole:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+The Legend of Zelda:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Lingo:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+A Link to the Past:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Links Awakening DX:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Lufia II Ancient Cave:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Mario & Luigi Superstar Saga:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+MegaMan Battle Network 3:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Meritous:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+The Messenger:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Minecraft:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Muse Dash:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Noita:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Ocarina of Time:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Overcooked! 2:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Pokemon Emerald:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Pokemon Red and Blue:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Raft:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Risk of Rain 2:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Rogue Legacy:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Secret of Evermore:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Shivers:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+A Short Hike:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Slay the Spire:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+SMZ3:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Sonic Adventure 2 Battle:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Starcraft 2:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Stardew Valley:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Subnautica:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Super Mario 64:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Super Mario World:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Super Metroid:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Terraria:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Timespinner:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+TUNIC:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Undertale:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+VVVVVV:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Wargroove:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+The Witness:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Yoshi's Island:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Yu-Gi-Oh! 2006:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Zillion:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Zork Grand Inquisitor:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+# Unsupported games
+
+# Unsupported:
+#   start_hints: []
+#   start_location_hints: []
+#   priority_locations: []
+#   item_links: []
+
+Battle for Bikini Bottom:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Cave Story:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Celeste:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Civilization VI:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Castlevania - Circle of the Moon:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Jak and Daxter The Precursor Legacy:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+The Legend of Zelda - Oracle of Seasons:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Lethal Company:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Hatsune Miku Project Diva Mega Mix+:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Mega Man 2:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Mega Man 3:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Mega Man X:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Metroid Zero Mission:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Old School Runescape:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Outer Wilds:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Paper Mario:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Pseudoregalia:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Psychonauts:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Super Junkoid:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Super Mario Land 2:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+The Wind Waker:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []
+
+Yacht Dice:
+  start_hints: []
+  start_location_hints: []
+  priority_locations: []
+  item_links: []

@@ -15,6 +15,10 @@ Pokemon Emerald:
   dexsanity: false
   trainersanity: false
 
+Risk of Rain 2:
+  start_inventory: ["Hidden Realm: Bazaar Between Time"]
+  chests_per_stage: 6
+  shrines_per_stage: 2
+
 Super Mario World:
   blocksanity: false
-

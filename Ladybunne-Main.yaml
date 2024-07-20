@@ -11,12 +11,12 @@ name: Ladybunne{NUMBER}
 game: 
   # Short games
 
-  # A Link to the Past: 1
-  # Bomb Rush Cyberfunk: 1
-  # Hollow Knight: 1
-  # Kingdom Hearts 2: 1
   # The Legend of Zelda: 1
-  Timespinner: 1
+  # Kingdom Hearts 2: 1
+  # A Link to the Past: 1
+  # Hollow Knight: 1
+  # Timespinner: 1
+  Bomb Rush Cyberfunk: 1
   
   # Long games
 
@@ -71,6 +71,13 @@ The Legend of Zelda:
         - Level 9 Rupee Drop (Gels East)
       from_pool: true
       world: false
+    
+    # Also a cool thing that I'm considering trying out.
+    - item: Clock
+      location: The Big Red Button
+      from_pool: true
+      world: Ladybuttonne
+      force: true
 
 
 # Kingdom Hearts 2
@@ -173,23 +180,31 @@ Timespinner:
   # Mental note to change this to tournament settings, maybe.
 
   # Goal and "shape of seed" stuff
-  EnterSandman: false
+  EnterSandman: true
   DadPercent: false
   UnchainedKeys: true
-  SpecificKeycards: false
-  Inverted: false
+  SpecificKeycards: true
+  EyeSpy: true
+  Inverted: true
+  PresentAccessWithWheelAndSpindle: true
+  RisingTides: true
 
   # Extra checks
   DownloadableItems: true
   LoreChecks: true
   Cantoran: true
-  GyreArchives: false
-  LootPool: vanilla
+  GyreArchives: true
+  LootPool: randomized
   
-  # Starting gear
+  # Combat
   StartWithJewelryBox: true
   QuickSeed: true 
-  ShowBestiary: true
+  LevelCap: 99
+  HpCap: 999
+  ExtraEarringsXP: 14
+  BossRando: scaled
+  EnemyRando: off
+  ShowBestiary: false
 
   # Shops
   ShopFill: randomized
@@ -197,7 +212,7 @@ Timespinner:
 
   # Misc
   DamageRando: balanced
-  TrapChance: 0
+  TrapChance: 10
 
 
 # Bomb Rush Cyberfunk
@@ -258,51 +273,20 @@ Bomb Rush Cyberfunk:
     "Mataan: Trash Polo",
     "Mataan: Trash graffiti",
     "Mataan: Vending machine CD",
-
-    # More than 200 graffiti checks is similarly too many checks. I'll adjust this over time.
-    # "Tagged 205 Graffiti Spots", "Tagged 210 Graffiti Spots", "Tagged 215 Graffiti Spots", "Tagged 220 Graffiti Spots",
-    # "Tagged 225 Graffiti Spots",
-    # "Tagged 230 Graffiti Spots", "Tagged 235 Graffiti Spots", "Tagged 240 Graffiti Spots",
-    # "Tagged 245 Graffiti Spots", "Tagged 250 Graffiti Spots", "Tagged 255 Graffiti Spots", "Tagged 260 Graffiti Spots",
-    # "Tagged 265 Graffiti Spots", "Tagged 270 Graffiti Spots", "Tagged 275 Graffiti Spots", "Tagged 280 Graffiti Spots",
-    # "Tagged 285 Graffiti Spots", "Tagged 290 Graffiti Spots", "Tagged 295 Graffiti Spots", "Tagged 300 Graffiti Spots",
-    # "Tagged 305 Graffiti Spots", "Tagged 310 Graffiti Spots", "Tagged 315 Graffiti Spots", "Tagged 320 Graffiti Spots",
-    # "Tagged 325 Graffiti Spots", "Tagged 330 Graffiti Spots", "Tagged 335 Graffiti Spots", "Tagged 340 Graffiti Spots",
-    # "Tagged 345 Graffiti Spots", "Tagged 350 Graffiti Spots", "Tagged 355 Graffiti Spots", "Tagged 360 Graffiti Spots",
-    # "Tagged 365 Graffiti Spots", "Tagged 370 Graffiti Spots", "Tagged 375 Graffiti Spots", "Tagged 380 Graffiti Spots",
-    # "Tagged 385 Graffiti Spots", "Tagged 389 Graffiti Spots",
   ]
 
   # Plando graffiti onto the later graffiti checks, effectively making them worthless, and taking more of my graffiti
   # out of the pool.
 
   plando_items:
-  - items:
-      # - "Graffiti (L - Boom)"
-      # - "Graffiti (L - Campaign Trail)"
-      # - "Graffiti (L - FREAKS)"
-      # - "Graffiti (L - Fang It Up!)"
-      # - "Graffiti (L - Graffo Le Fou)"
-      - "Graffiti (L - INFINITY)"
-      - "Graffiti (L - Jd Vila Formosa)"
-      - "Graffiti (L - Lauder)"
-      - "Graffiti (L - Messenger Mural)"
-      - "Graffiti (L - Moai Marathon)"
-      - "Graffiti (L - NOISY NINJA)"
-      - "Graffiti (L - RECORD.HEAD)"
-      - "Graffiti (L - SpawningSeason)"
-      - "Graffiti (L - Tius)"
-      - "Graffiti (L - VoodooBoy)"
-      - "Graffiti (L - WHOLE SIXER)"
-      # - "Graffiti (L - buttercup)"
-      - "Graffiti (L - skate or di3)"
-      - "Graffiti (L - wild rush)"
-      # - "Graffiti (M - 0m33)"
-      # - "Graffiti (M - B-boy Love)"
-      # - "Graffiti (M - BLOCKY)"
-      # - "Graffiti (M - BOMB BEATS)"
-      # - "Graffiti (M - Devil 68)"
-      # - "Graffiti (M - OVERWHELMME)"
+    # M graffiti
+    - items:
+      - "Graffiti (M - 0m33)"
+      - "Graffiti (M - B-boy Love)"
+      - "Graffiti (M - BLOCKY)"
+      - "Graffiti (M - BOMB BEATS)"
+      - "Graffiti (M - Devil 68)"
+      - "Graffiti (M - OVERWHELMME)"
       - "Graffiti (M - Pora)"
       - "Graffiti (M - QUICK BING)"
       - "Graffiti (M - SHOGUN)"
@@ -316,12 +300,71 @@ Bomb Rush Cyberfunk:
       - "Graffiti (M - Zona Leste)"
       - "Graffiti (M - colorBOMB)"
       - "Graffiti (M - pico pow)"
-      # - "Graffiti (XL - BiGSHiNYBoMB)"
-      # - "Graffiti (XL - Bomb Burner)"
-      # - "Graffiti (XL - Bomb Croc)"
-      # - "Graffiti (XL - Bombing by FireMan)"
-      # - "Graffiti (XL - Deep Dive)"
-      # - "Graffiti (XL - FATE)"
+      locations:
+        - "Tagged 205 Graffiti Spots"
+        - "Tagged 220 Graffiti Spots"
+        - "Tagged 235 Graffiti Spots"
+        - "Tagged 250 Graffiti Spots"
+        - "Tagged 265 Graffiti Spots"
+        - "Tagged 280 Graffiti Spots"
+        - "Tagged 295 Graffiti Spots"
+        - "Tagged 310 Graffiti Spots"
+        - "Tagged 325 Graffiti Spots"
+        - "Tagged 340 Graffiti Spots"
+        - "Tagged 355 Graffiti Spots"
+        - "Tagged 370 Graffiti Spots"
+        - "Tagged 385 Graffiti Spots"
+
+      from_pool: true
+      world: false
+
+    # L graffiti
+    - items:
+      - "Graffiti (L - Boom)"
+      - "Graffiti (L - Campaign Trail)"
+      - "Graffiti (L - FREAKS)"
+      - "Graffiti (L - Fang It Up!)"
+      - "Graffiti (L - Graffo Le Fou)"
+      - "Graffiti (L - INFINITY)"
+      - "Graffiti (L - Jd Vila Formosa)"
+      - "Graffiti (L - Lauder)"
+      - "Graffiti (L - Messenger Mural)"
+      - "Graffiti (L - Moai Marathon)"
+      - "Graffiti (L - NOISY NINJA)"
+      - "Graffiti (L - RECORD.HEAD)"
+      - "Graffiti (L - SpawningSeason)"
+      - "Graffiti (L - Tius)"
+      - "Graffiti (L - VoodooBoy)"
+      - "Graffiti (L - WHOLE SIXER)"
+      - "Graffiti (L - buttercup)"
+      - "Graffiti (L - skate or di3)"
+      - "Graffiti (L - wild rush)"
+      locations:
+        - "Tagged 210 Graffiti Spots"
+        - "Tagged 225 Graffiti Spots"
+        - "Tagged 240 Graffiti Spots"
+        - "Tagged 255 Graffiti Spots"
+        - "Tagged 270 Graffiti Spots"
+        - "Tagged 285 Graffiti Spots"
+        - "Tagged 300 Graffiti Spots"
+        - "Tagged 315 Graffiti Spots"
+        - "Tagged 330 Graffiti Spots"
+        - "Tagged 345 Graffiti Spots"
+        - "Tagged 360 Graffiti Spots"
+        - "Tagged 375 Graffiti Spots"
+        - "Tagged 389 Graffiti Spots"
+
+      from_pool: true
+      world: false
+
+    # XL graffiti
+    - items:
+      - "Graffiti (XL - BiGSHiNYBoMB)"
+      - "Graffiti (XL - Bomb Burner)"
+      - "Graffiti (XL - Bomb Croc)"
+      - "Graffiti (XL - Bombing by FireMan)"
+      - "Graffiti (XL - Deep Dive)"
+      - "Graffiti (XL - FATE)"
       - "Graffiti (XL - Gamex UPA ABL)"
       - "Graffiti (XL - Gold Rush)"
       - "Graffiti (XL - MOTORCYCLE GANG)"
@@ -334,59 +377,34 @@ Bomb Rush Cyberfunk:
       - "Graffiti (XL - Web Spitter)"
       - "Graffiti (XL - end 2 end)"
       - "Graffiti (XL - headphones on Helmet on)"
-    locations:
-      - "Tagged 205 Graffiti Spots"
-      - "Tagged 210 Graffiti Spots"
-      - "Tagged 215 Graffiti Spots"
-      - "Tagged 220 Graffiti Spots"
-      - "Tagged 225 Graffiti Spots"
-      - "Tagged 230 Graffiti Spots"
-      - "Tagged 235 Graffiti Spots"
-      - "Tagged 240 Graffiti Spots"
-      - "Tagged 245 Graffiti Spots"
-      - "Tagged 250 Graffiti Spots"
-      - "Tagged 255 Graffiti Spots"
-      - "Tagged 260 Graffiti Spots"
-      - "Tagged 265 Graffiti Spots"
-      - "Tagged 270 Graffiti Spots"
-      - "Tagged 275 Graffiti Spots"
-      - "Tagged 280 Graffiti Spots"
-      - "Tagged 285 Graffiti Spots"
-      - "Tagged 290 Graffiti Spots"
-      - "Tagged 295 Graffiti Spots"
-      - "Tagged 300 Graffiti Spots"
-      - "Tagged 305 Graffiti Spots"
-      - "Tagged 310 Graffiti Spots"
-      - "Tagged 315 Graffiti Spots"
-      - "Tagged 320 Graffiti Spots"
-      - "Tagged 325 Graffiti Spots"
-      - "Tagged 330 Graffiti Spots"
-      - "Tagged 335 Graffiti Spots"
-      - "Tagged 340 Graffiti Spots"
-      - "Tagged 345 Graffiti Spots"
-      - "Tagged 350 Graffiti Spots"
-      - "Tagged 355 Graffiti Spots"
-      - "Tagged 360 Graffiti Spots"
-      - "Tagged 365 Graffiti Spots"
-      - "Tagged 370 Graffiti Spots"
-      - "Tagged 375 Graffiti Spots"
-      - "Tagged 380 Graffiti Spots"
-      - "Tagged 385 Graffiti Spots"
-      - "Tagged 389 Graffiti Spots"
+      locations:
+        - "Tagged 215 Graffiti Spots"
+        - "Tagged 230 Graffiti Spots"
+        - "Tagged 245 Graffiti Spots"
+        - "Tagged 260 Graffiti Spots"
+        - "Tagged 275 Graffiti Spots"
+        - "Tagged 290 Graffiti Spots"
+        - "Tagged 305 Graffiti Spots"
+        - "Tagged 320 Graffiti Spots"
+        - "Tagged 335 Graffiti Spots"
+        - "Tagged 350 Graffiti Spots"
+        - "Tagged 365 Graffiti Spots"
+        - "Tagged 380 Graffiti Spots"
 
-    from_pool: true
-    world: false
+      from_pool: true
+      world: false
 
 
 # Terraria
 
 Terraria:
-  goal: zenith
+  goal: moon_lord
 
-  exclude_locations: 
+  exclude_locations:
     [
       "Don't Dread on Me", "Rainbows and Unicorns",
       "Old One's Army Tier 2", "Old One's Army Tier 3", "Real Estate Agent",
+      "Torch God"
     ]
 
   plando_items: 
