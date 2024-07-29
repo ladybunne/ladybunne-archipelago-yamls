@@ -1,0 +1,38 @@
+#          ((`\          -------------------
+#       ___ \\ '--._    / hippity hoppity /
+#    .'`   `'    o  )  /   ur async is   /
+#   /    \   '. __.'  /   my property   /
+#  _|    /_  \ \_\_  -------------------
+# {_\______\-'\__\_\                    
+# 
+# Ladybunne's submission for "Quick, short-notice async" by Flori
+# Hand-crafted on 2024-07-23
+# Note: unspecified settings default to whatever's in templates.
+#       Check the templates for more info.
+
+name: Ladybunne-BRC
+game: Bomb Rush Cyberfunk
+
+Bomb Rush Cyberfunk:
+  skip_dreams: true
+  skip_statue_heads: true
+  total_rep: 2000
+  limited_graffiti: true
+  dont_save_photos: true
+
+---
+
+name: Ladybunne-Terra
+game: Terraria
+
+Terraria:
+  goal: zenith
+  achievements: none
+
+---
+
+name: Ladybunne-TLoZ
+game: The Legend of Zelda
+
+The Legend of Zelda:
+  StartingPosition: very_dangerous

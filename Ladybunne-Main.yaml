@@ -9,31 +9,30 @@ description: Ladybunne's main weighted yaml for Archipelago syncs
 
 name: Ladybunne{NUMBER}
 game: 
-  # Short games
+  # == Supported games ==
 
   # The Legend of Zelda: 1
   # Kingdom Hearts 2: 1
-  # A Link to the Past: 1
+  A Link to the Past: 1
   # Hollow Knight: 1
   # Timespinner: 1
-  Bomb Rush Cyberfunk: 1
-  
-  # Long games
-
+  # Bomb Rush Cyberfunk: 3
+  # Links Awakening DX: 1
   # Terraria: 1
-  
-  # Unsupported games
+
+  # == Unsupported games ==
 
   # An Untitled Story: 1
   # Metroid Zero Mission: 1
-
+  # Pseudoregalia: 1
+  # Anodyne: 1
 
 requires:
   version: 0.5.0
   plando: items
 
 
-# The Legend of Zelda
+# Supported
 
 The Legend of Zelda:
 
@@ -78,9 +77,6 @@ The Legend of Zelda:
       from_pool: true
       world: Ladybuttonne
       force: true
-
-
-# Kingdom Hearts 2
 
 Kingdom Hearts 2:
   
@@ -130,35 +126,54 @@ Kingdom Hearts 2:
   CorSkipToggle: false
   SuperBosses: false
 
+Terraria:
+  goal: moon_lord
 
-# A Link to the Past
+  exclude_locations:
+    [
+      "Don't Dread on Me", "Rainbows and Unicorns",
+      "Old One's Army Tier 2", "Old One's Army Tier 3", "Real Estate Agent",
+      "Torch God"
+    ]
+
+  plando_items: 
+    - item: Hardmode
+      location: The Big Red Button
+      from_pool: true
+      world: Ladybuttonne
+      force: true
 
 A Link to the Past:
 
   # Normal stuff.
   goal: ganon
-  mode: open
 
-  # GT sucks.
-  open_pyramid: open
+  crystals_needed_for_ganon: 7
 
-  # I want this to be on 5, but 4 is a bit more chill.
-  crystals_needed_for_gt: 5
-  crystals_needed_for_ganon: 5
+  # WE GO
+  glitches_required: no_logic
 
-  # I am ENLIGHTENED.
-  # Hopefully move to no logic once I am practiced enough.
-  glitches_required: overworld_glitches
-
-  shuffle_capacity_upgrades: on
-  
+  key_drop_shuffle: false
+  big_key_shuffle: any_world
+  small_key_shuffle: any_world
   map_shuffle: start_with
   compass_shuffle: start_with
 
   scams: all
 
+  allow_collect: false
 
-# Hollow Knight
+  # Two of each rod, since not is bad.
+  plando_items:
+    - items:
+        Fire Rod: 1
+        Ice Rod: 1
+      from_pool: false
+      world: null
+    - items:
+        Fire Rod: 1
+        Ice Rod: 1
+      world: null
 
 Hollow Knight:
   progression_balancing: 20
@@ -172,9 +187,6 @@ Hollow Knight:
 
   # For spice, change this to "shuffle" sometime. Otherwise, "vanilla".
   RandomCharmCosts: shuffle
-
-
-# Timespinner
 
 Timespinner:
   # Mental note to change this to tournament settings, maybe.
@@ -213,9 +225,6 @@ Timespinner:
   # Misc
   DamageRando: balanced
   TrapChance: 10
-
-
-# Bomb Rush Cyberfunk
 
 Bomb Rush Cyberfunk:
   logic: glitchless
@@ -394,28 +403,33 @@ Bomb Rush Cyberfunk:
       from_pool: true
       world: false
 
+Links Awakening DX:
+  goal: instruments
+  shuffle_instruments: vanilla
+  instrument_count: 7
+  
+  logic: normal
 
-# Terraria
+  shuffle_nightmare_keys: original_dungeon
+  shuffle_small_keys: original_dungeon
+  
+  # These are junk and I wanna remove them eventually.
+  shuffle_maps: any_world
+  shuffle_compasses: any_world
+  shuffle_stone_beaks: any_world
+  
+  warp_improvements: true
+  additional_warp_points: true
+  
+  tradequest: true
+  rooster: true
+  trendy_game: normal
+  nag_messages: false
+  boots_controls: bracelet
+  ap_title_screen: true
 
-Terraria:
-  goal: moon_lord
 
-  exclude_locations:
-    [
-      "Don't Dread on Me", "Rainbows and Unicorns",
-      "Old One's Army Tier 2", "Old One's Army Tier 3", "Real Estate Agent",
-      "Torch God"
-    ]
-
-  plando_items: 
-    - item: Hardmode
-      location: The Big Red Button
-      from_pool: true
-      world: Ladybuttonne
-      force: true
-
-
-# An Untitled Story
+# Unsupported
 
 An Untitled Story:
   is_cool: true
@@ -467,9 +481,6 @@ An Untitled Story:
       from_pool: true
       world: false
 
-
-# Metroid: Zero Mission
-
 Metroid Zero Mission:
   start_inventory_from_pool:
     Bomb: 1
@@ -484,6 +495,27 @@ Metroid Zero Mission:
   walljumps_in_logic: true
   display_nonlocal_items: none
 
+Pseudoregalia:
+  logic_level: normal
+  obscure_logic: false
+  progressive_breaker: true
+  progressive_slide: true
+  split_sun_greaves: true
+
+Anodyne:
+  small_key_shuffle: unlocked
+  big_key_shuffle: own_world
+  health_cicada_shuffle: vanilla
+  red_cave_access: progressive
+  split_windmill: false
+  start_broom: none
+  nexus_gates_open: early
+  random_nexus_gate_open_count: 1
+  nexus_gate_shuffle: off
+  victory_condition: defeat_briar
+  endgame_card_requirement: 36
+  postgame_mode: disabled
+  forest_bunny_chest: false
 
 ---
 

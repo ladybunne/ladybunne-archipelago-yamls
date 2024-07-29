@@ -1,0 +1,10 @@
+name: Ladybunne
+game: Pseudoregalia
+
+Pseudoregalia:
+  logic_level: normal
+  obscure_logic: false
+  progressive_breaker: false
+  progressive_slide: false
+  split_sun_greaves: false
+  

@@ -1,0 +1,32 @@
+#          ((`\          -------------------
+#       ___ \\ '--._    / hippity hoppity /
+#    .'`   `'    o  )  /   ur async is   /
+#   /    \   '. __.'  /   my property   /
+#  _|    /_  \ \_\_  -------------------
+# {_\______\-'\__\_\       1 of 2       
+# 
+# Ladybunne's submission for "Crystal Crown of Eldoria" by Caesius
+# Part 1 of 2
+# Hand-crafted on 2024-07-24
+# Note: unspecified settings default to whatever's in templates.
+#       Check the templates for more info.
+
+name: Ladybunne-TS
+game: Timespinner
+
+Timespinner:
+  EyeSpy: true
+  SpecificKeycards: true
+  Inverted: true
+  GyreArchives: true
+  Cantoran: true
+  LoreChecks: true
+  BossRando: scaled
+  DamageRando: balanced
+  ExtraEarringsXP: 14
+  ShopFill: randomized
+  LootPool: randomized
+  EnterSandman: true
+  RisingTides: true
+  UnchainedKeys: true
+  PresentAccessWithWheelAndSpindle: true
