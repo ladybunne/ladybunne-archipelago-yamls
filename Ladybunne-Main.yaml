@@ -13,10 +13,10 @@ game:
 
   # The Legend of Zelda: 1
   # Kingdom Hearts 2: 1
-  A Link to the Past: 1
+  # A Link to the Past: 1
   # Hollow Knight: 1
   # Timespinner: 1
-  # Bomb Rush Cyberfunk: 3
+  # Bomb Rush Cyberfunk: 1
   # Links Awakening DX: 1
   # Terraria: 1
 
@@ -24,7 +24,7 @@ game:
 
   # An Untitled Story: 1
   # Metroid Zero Mission: 1
-  # Pseudoregalia: 1
+  Pseudoregalia: 1
   # Anodyne: 1
 
 requires:
@@ -406,7 +406,7 @@ Bomb Rush Cyberfunk:
 Links Awakening DX:
   goal: instruments
   shuffle_instruments: vanilla
-  instrument_count: 7
+  instrument_count: 6
   
   logic: normal
 
@@ -502,20 +502,24 @@ Pseudoregalia:
   progressive_slide: true
   split_sun_greaves: true
 
+  exclude_locations: ["The Underbelly - Surrounded By Holes"]
+
 Anodyne:
-  small_key_shuffle: unlocked
-  big_key_shuffle: own_world
-  health_cicada_shuffle: vanilla
+  small_key_shuffle: any_world
+  big_key_shuffle: any_world
+  health_cicada_shuffle: any_world
   red_cave_access: progressive
-  split_windmill: false
-  start_broom: none
-  nexus_gates_open: early
+  split_windmill: true
+  start_broom: normal
+  nexus_gates_open: street_only
   random_nexus_gate_open_count: 1
-  nexus_gate_shuffle: off
+  nexus_gate_shuffle: all
   victory_condition: defeat_briar
   endgame_card_requirement: 36
-  postgame_mode: disabled
+  randomize_color_puzzle: true
+  postgame_mode: progressive
   forest_bunny_chest: false
+  traps_mode: low
 
 ---
 
