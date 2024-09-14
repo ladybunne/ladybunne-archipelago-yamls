@@ -1,5 +1,7 @@
 meta_description: Ladybunne's meta yaml for The Rabbit Games
 
+# Supported
+
 Hollow Knight:
   RandomizeGeoRocks: false
   AddUnshuffledLocations: false
@@ -15,10 +17,20 @@ Pokemon Emerald:
   dexsanity: false
   trainersanity: false
 
+Pokemon Red and Blue:
+  extra_key_items: false
+
 Risk of Rain 2:
-  start_inventory: ["Hidden Realm: Bazaar Between Time"]
+  start_inventory: {"Hidden Realm: Bazaar Between Time": 1}
   chests_per_stage: 6
   shrines_per_stage: 2
 
 Super Mario World:
   blocksanity: false
+
+# Unsupported
+
+Pokemon FireRed and LeafGreen:
+  trainersanity: false
+  famesanity: false
+  extra_key_items: false  # Going off crowd wisdom for this, haven't seen it yet.

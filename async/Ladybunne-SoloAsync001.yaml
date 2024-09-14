@@ -1,0 +1,108 @@
+#          ((`\          -------------------
+#       ___ \\ '--._    / hippity hoppity /
+#    .'`   `'    o  )  /   ur checks r   /
+#   /    \   '. __.'  /   my property   /
+#  _|    /_  \ \_\_  -------------------
+# {_\______\-'\__\_\                    
+
+description: Ladybunne's main weighted yaml for Archipelago syncs
+
+name: Ladybunne-TLoZ
+game: The Legend of Zelda
+
+The Legend of Zelda:
+  # Danger is fun!
+  StartingPosition: very_dangerous
+
+---
+
+name: Ladybunne-HK
+game: Hollow Knight
+
+Hollow Knight:
+  progression_balancing: 20
+
+  Goal: radiance
+
+  RandomizeRelics: true
+  RandomizeGrubs: true
+  RandomizeMaps: true
+  RandomizeBossGeo: true
+
+  # For spice, change this to "shuffle" sometime. Otherwise, "vanilla".
+  RandomCharmCosts: shuffle
+
+---
+
+name: Ladybunne-TS
+game: Timespinner
+
+Timespinner:
+  # Goal and "shape of seed" stuff
+  EnterSandman: true
+  DadPercent: false
+  UnchainedKeys: true
+  SpecificKeycards: true
+  EyeSpy: true
+  Inverted: true
+  PresentAccessWithWheelAndSpindle: true
+  RisingTides: true
+
+  # Extra checks
+  DownloadableItems: true
+  LoreChecks: true
+  Cantoran: true
+  GyreArchives: true
+  LootPool: randomized
+  
+  # Combat
+  start_with_jewelry_box: true
+  QuickSeed: true 
+  LevelCap: 99
+  HpCap: 999
+  ExtraEarringsXP: 14
+  BossRando: scaled
+  EnemyRando: off
+  ShowBestiary: false
+
+  # Shops
+  ShopFill: randomized
+  ShopWarpShards: true
+
+  # Misc
+  DamageRando: balanced
+  TrapChance: 10
+
+# Unsupported
+
+An Untitled Story:
+  is_cool: true
+
+  # RainbowDive max prize is very hard, and too many flowers is unreasonable.
+  exclude_locations: ["Rainbowdive_first_prize", "15_flowers", "20_flowers"]
+
+Metroid Zero Mission:
+  goal: bosses
+  remote_items: true
+  chozodia_access: closed
+  skip_chozodia_stealth: true
+  unknown_items_always_usable: true
+  layout_patches: true
+  morph_ball: early
+  start_with_maps: true
+  logic_difficulty: normal
+  ibj_in_logic: horizontal_and_vertical
+  heatruns_lavadives: true
+  walljumps_in_logic: true
+  tricky_shinesparks: false
+  fast_item_banners: false
+  display_nonlocal_items: none
+
+Pseudoregalia:
+  logic_level: normal
+  obscure_logic: false
+  progressive_breaker: true
+  progressive_slide: true
+  split_sun_greaves: true
+
+  exclude_locations: ["The Underbelly - Surrounded By Holes"]

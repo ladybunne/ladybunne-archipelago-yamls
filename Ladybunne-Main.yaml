@@ -23,8 +23,8 @@ game:
   # == Unsupported games ==
 
   # An Untitled Story: 1
-  # Metroid Zero Mission: 1
-  Pseudoregalia: 1
+  Metroid Zero Mission: 1
+  # Pseudoregalia: 1
   # Anodyne: 1
 
 requires:
@@ -70,20 +70,14 @@ The Legend of Zelda:
         - Level 9 Rupee Drop (Gels East)
       from_pool: true
       world: false
-    
-    # Also a cool thing that I'm considering trying out.
-    - item: Clock
-      location: The Big Red Button
-      from_pool: true
-      world: Ladybuttonne
-      force: true
+
 
 Kingdom Hearts 2:
   
   # Emblems is a bit harder, but I still like proofs.
   Goal:
-    # three_proofs: 1
-    lucky_emblem_hunt: 1
+    three_proofs: 1
+    # lucky_emblem_hunt: 1
 
   # Nowadays, we are gaming.
   FinalXemnas: true
@@ -108,7 +102,7 @@ Kingdom Hearts 2:
     Aerial Recovery: 1
     Draw: 1
 
-  Sora_Level_EXP: 6
+  Sora_Level_EXP: 5
 
   Valor_Form_EXP: 8
 
@@ -124,7 +118,7 @@ Kingdom Hearts 2:
   SummonLevelLocationToggle: true
 
   CorSkipToggle: false
-  SuperBosses: false
+  SuperBosses: true
 
 Terraria:
   goal: moon_lord
@@ -189,42 +183,44 @@ Hollow Knight:
   RandomCharmCosts: shuffle
 
 Timespinner:
-  # Mental note to change this to tournament settings, maybe.
-
   # Goal and "shape of seed" stuff
-  EnterSandman: true
-  DadPercent: false
-  UnchainedKeys: true
-  SpecificKeycards: true
-  EyeSpy: true
-  Inverted: true
-  PresentAccessWithWheelAndSpindle: true
+  enter_sandman: true
+  dad_percent: false
+  unchained_keys: true
+  specific_keycards: true
+  eye_spy: true
+  inverted: true
+  back_to_the_future: true
   RisingTides: true
+  prism_break: true
 
   # Extra checks
-  DownloadableItems: true
-  LoreChecks: true
-  Cantoran: true
-  GyreArchives: true
-  LootPool: randomized
+  downloadable_items: true
+  lore_checks: true
+  cantoran: true
+  gyre_archives: true
+  loot_pool: randomized
   
   # Combat
-  StartWithJewelryBox: true
-  QuickSeed: true 
-  LevelCap: 99
-  HpCap: 999
-  ExtraEarringsXP: 14
-  BossRando: scaled
-  EnemyRando: off
+  start_with_jewelry_box: true
+  quick_seed: true 
+  start_with_meyef: true
+  level_cap: 99
+  hp_cap: 999
+  aura_cap: 999
+  extra_earrings_xp: 14
+  damage_rando: balanced
+  boss_rando: scaled
+  boss_healing: true
+  enemy_rando: off
   ShowBestiary: false
 
   # Shops
-  ShopFill: randomized
-  ShopWarpShards: true
+  shop_fill: randomized
+  shop_warp_shards: true
 
   # Misc
-  DamageRando: balanced
-  TrapChance: 10
+  trap_chance: 10
 
 Bomb Rush Cyberfunk:
   logic: glitchless
@@ -482,20 +478,30 @@ An Untitled Story:
       world: false
 
 Metroid Zero Mission:
-  start_inventory_from_pool:
-    Bomb: 1
+  # start_inventory_from_pool:
+  #   Bomb: 1
+  
+  # local_items: ["Ice Beam", "Plasma Beam"]
 
+  goal: bosses
+  remote_items: true
   chozodia_access: closed
   skip_chozodia_stealth: true
   unknown_items_always_usable: true
   layout_patches: true
   morph_ball: early
-  ibj_in_logic: true
+  start_with_maps: true
+  logic_difficulty: normal
+  ibj_in_logic: horizontal_and_vertical
   heatruns_lavadives: true
   walljumps_in_logic: true
+  tricky_shinesparks: false
+  fast_item_banners: false
   display_nonlocal_items: none
 
 Pseudoregalia:
+  local_items: ["major keys"]
+
   logic_level: normal
   obscure_logic: false
   progressive_breaker: true
@@ -521,10 +527,10 @@ Anodyne:
   forest_bunny_chest: false
   traps_mode: low
 
----
+# ---
 
-name: Ladybuttonne{NUMBER}
-game: Clique
+# name: Ladybuttonne{NUMBER}
+# game: Clique
 
-Clique:
-  hard_mode: 'true'
+# Clique:
+#   hard_mode: 'true'
