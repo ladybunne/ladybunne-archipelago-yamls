@@ -1,0 +1,3 @@
+null:
+  # Disable progression balancing.
+  progression_balancing: disabled

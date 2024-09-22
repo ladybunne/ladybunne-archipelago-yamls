@@ -1,0 +1,192 @@
+#          ((`\          -------------------
+#       ___ \\ '--._    / hippity hoppity /
+#    .'`   `'    o  )  /   ur async is   /
+#   /    \   '. __.'  /   my property   /
+#  _|    /_  \ \_\_  -------------------
+# {_\______\-'\__\_\                    
+
+description: Ladybunne's yaml for Ladybunne + Amanda Duo Async
+
+name: Ladybunne-TLoZ
+game: The Legend of Zelda
+
+The Legend of Zelda:
+  StartingPosition: very_dangerous
+
+---
+
+name: Ladybunne-KH2
+game: Kingdom Hearts 2
+
+Kingdom Hearts 2:
+  Goal: hitlist
+  FinalXemnas: true
+
+  BountyRequired: 26
+  BountyAmount: 26
+
+  FightLogic: hard
+
+  LevelDepth: level_1
+  SummonLevelLocationToggle: true
+  SuperBosses: true
+
+  FillerItemsLocal: false
+
+  start_inventory:
+    Scan: 1
+    Aerial Recovery: 1
+    Draw: 1
+
+  Sora_Level_EXP: 3
+  Valor_Form_EXP: 8
+  Summon_EXP: 10
+
+  Schmovement: level_0
+
+  FinalFormLogic: just_a_form
+  AutoFormLogic: true
+
+  Keyblade_Minimum: 0
+  Keyblade_Maximum: 0
+
+  CorSkipToggle: true
+
+---
+
+name: Ladybunne-HK
+game: Hollow Knight
+
+Hollow Knight:
+  Goal: radiance
+
+  RandomizeRelics: true
+  RandomizeGrubs: true
+  RandomizeMaps: true
+  RandomizeBossGeo: true
+
+  # For spice, change this to "shuffle" sometime. Otherwise, "vanilla".
+  RandomCharmCosts: shuffle
+
+---
+
+name: Ladybunne-TS
+game: Timespinner
+
+Timespinner:
+  # Goal and "shape of seed" stuff
+  enter_sandman: true
+  dad_percent: false
+  unchained_keys: true
+  specific_keycards: true
+  eye_spy: true
+  inverted: true
+  back_to_the_future: true
+  rising_tides: true
+  prism_break: true
+
+  # Extra checks
+  downloadable_items: true
+  lore_checks: true
+  cantoran: true
+  gyre_archives: true
+  loot_pool: randomized
+  
+  # Combat
+  start_with_jewelry_box: true
+  quick_seed: true 
+  start_with_meyef: true
+  level_cap: 99
+  hp_cap: 999
+  aura_cap: 999
+  extra_earrings_xp: 14
+  damage_rando: balanced
+  boss_rando: scaled
+  boss_healing: true
+  show_bestiary: false
+
+  # Shops
+  shop_fill: randomized
+  shop_warp_shards: true
+
+  # Misc
+  trap_chance: 10
+
+---
+
+name: Ladybunne-BRC
+game: Bomb Rush Cyberfunk
+
+Bomb Rush Cyberfunk:
+  logic: glitchless
+  total_rep: 2000
+
+  skip_intro: true
+  skip_dreams: false
+  skip_statue_hands: true
+  
+  starting_movestyle: skateboard
+  
+  limited_graffiti: false
+  small_graffiti_uses: combined
+  
+  skip_polo_photos: false
+  dont_save_photos: true
+
+
+---
+
+name: Ladybunne-YGO
+game: Yu-Gi-Oh! 2006
+
+Yu-Gi-Oh! 2006:
+  add_empty_banlist: true
+
+---
+
+# Unsupported
+
+name: Ladybunne-Egg
+game: An Untitled Story
+
+An Untitled Story:
+  is_cool: true
+
+  # RainbowDive max prize is very hard, and too many flowers is unreasonable.
+  exclude_locations: ["Rainbowdive_first_prize", "15_flowers", "20_flowers"]
+
+---
+
+name: Ladybunne-ZM
+game: Metroid Zero Mission
+
+Metroid Zero Mission:
+  goal: bosses
+  remote_items: true
+  chozodia_access: closed
+  skip_chozodia_stealth: true
+  unknown_items_always_usable: true
+  layout_patches: true
+  morph_ball: early
+  start_with_maps: true
+  logic_difficulty: normal
+  ibj_in_logic: horizontal_and_vertical
+  heatruns_lavadives: true
+  walljumps_in_logic: true
+  tricky_shinesparks: false
+  fast_item_banners: false
+  display_nonlocal_items: none
+
+---
+
+name: Ladybunne-Goat
+game: Pseudoregalia
+
+Pseudoregalia:
+  logic_level: normal
+  obscure_logic: false
+  progressive_breaker: true
+  progressive_slide: true
+  split_sun_greaves: true
+
+  exclude_locations: ["The Underbelly - Surrounded By Holes"]
