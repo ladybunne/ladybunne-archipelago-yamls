@@ -1,0 +1,59 @@
+Red: The Legend of Zelda
+Colour: Hearts, Red Ring and several upgraded items (Water of Life and Candle) have red as their stronger variants.
+Goal: Defeat Ganon, vanilla Triforce Piece locations.
+Secondary Goal: All Heart Containers, Red Ring, Magical Sword, 16 Bombs, 255 Rupees, Magical Key, Silver Arrow, then screenshot in Ganon's room. (Screenshot must be taken before goal, due to Z1 file handling.)
+Plando: Silver Arrow on Magical Sword Grave, Magical Sword on L8 Gleeok.
+Notes: local_items for Heart Containers, Magical Key, Red Ring.
+
+Orange: Zero Mission
+Colour: Varia Suit.
+Goal: All Bosses. Difficulty: Hard. Stealth segment not skipped.
+Secondary Goal: All non-tank upgrades received, then screenshot items page.
+Plando: All Beams to all vanilla beam slots, but shuffled.
+
+Yellow: Pseudoregalia
+Colour: All of the gold stuff in the game.
+Goal: The usual.
+Secondary Goal: 100% upgrades, aspects, health and Major Keys, then screenshot items page. (No Professionalism or small keys.)
+Plando: All three "sun" upgrades (Solar Wind, Sunsetter, Sun Greaves) on Sansa, Twilight and Bailey Major Key spots. Maybe Cling somewhere awful, too.
+Notes: Playing on map patch, so will have to exclude Surrounded By Holes.
+
+Green: Pokemon Emerald
+Colour: The colour of an emerald.
+Goal: Champion
+Secondary Goal: Make a really awesome secret base, with some very difficult to obtain furniture.
+Notes: No trainersanity or dexsanity. Disable TM shuffling, local_items for Secret Power TM.
+
+Blue: Timespinner
+Colour: Lunais' hair. 
+Goal: Usual tournament settings.
+Secondary Goal: Lv99, all orb slots (two orbs, spell, ring) to 999 (can use the same orb), ultimate gear (Empire Crown, Eternal Coat, either two Azure Stoles or Galaxy Earrings + Selen's Bangle), then screenshots of pause menu and gear menu.
+Plando: Empire Crown after Dad, Eternal Coat right before Sandman.
+Notes: local_items for Galaxy Earrings and Selen's Bangle.
+
+Indigo: Hollow Knight
+Colour: General vibe of the game - dark, gloomy, purple.
+Goal: Radiance
+Secondary Goal: Master both nails. Max nail upgrades, Awoken Dream Nail, all dream bosses defeated, 1600 Essence.
+Notes: local_items for Dream Nail, Awoken Dream Nail, Pale Ore.
+
+Violet: Terraria
+Colour: Zenith is violet.
+Goal: Moon Lord
+Secondary Goal: Complete all of the following:
+- Construct Zenith, reforge to Legendary
+- A full set of pillar gear (any set).
+- Acquire Terraprisma
+- Acquire all biome chest items
+- Acquire the Golden Fishing Rod
+- Construct the Ankh Shield
+- Construct the Shellphone
+- Obtain the Torch God's Blessing
+Then screenshot, showing all.
+Notes: Journey Mode, Expert difficulty, no Godmode or disabling spawns. start_hints for Hardmode.
+
+---
+
+The below is for my own reference.
+
+Special: The goal this time around is not to explore and log our worlds, but rather to become gods inside of them. Along with each yaml, you must submit one goal above and beyond your game's "goal." Ideally, this secondary goal will involve you obtaining, constructing, or otherwise finding an item that represents extreme power, or ostentatious wealth (though, I'm not too picky about it. If "wealth" to you is getting $100K in Stardew, that's fine.) Once you reach your game's "goal," you will pursue this secondary goal. Once you reach the secondary goal, submit a screenshot and a brief explanation of your achievement, after which I will release your game. Rather than just hoarding short stories from everyone, this time I'm going to make a collage of all our screenshots at the end of the async. 

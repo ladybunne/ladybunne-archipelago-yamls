@@ -1,0 +1,280 @@
+name: Ladybunne-Red
+game: The Legend of Zelda
+
+requires:
+  plando: items
+
+The Legend of Zelda:
+  StartingPosition: very_dangerous
+
+  local_items: ["Heart Container", "Magical Key", "Red Ring"]
+
+  plando_items:
+    - items:
+        - Silver Arrow
+      locations:
+        - Magical Sword Grave
+      from_pool: true
+      world: false
+
+    - items:
+        - Magical Sword
+      locations:
+        - Level 8 Boss
+      from_pool: true
+      world: false
+
+---
+
+name: Ladybunne-Orange
+game: Metroid Zero Mission
+
+Metroid Zero Mission:
+  goal: bosses
+  remote_items: false
+  chozodia_access: closed
+  skip_chozodia_stealth: false
+  unknown_items_always_usable: true
+  layout_patches: true
+  morph_ball: early
+  start_with_maps: true
+  logic_difficulty: normal
+  ibj_in_logic: horizontal_and_vertical
+  heatruns_lavadives: true
+  walljumps_in_logic: true
+  tricky_shinesparks: false
+  fast_item_banners: false
+  display_nonlocal_items: none
+
+  plando_items:
+    - items:
+        - Long Beam
+        - Charge Beam
+        - Ice Beam
+        - Wave Beam
+        - Plasma Beam
+      locations:
+        - Brinstar Long Beam
+        - Brinstar Worm drop
+        - Norfair Ice Beam
+        - Norfair Wave Beam
+        - Crateria Unknown Item Statue
+      from_pool: true
+      world: false
+
+---
+
+name: Ladybunne-Yellow
+game: Pseudoregalia
+
+Pseudoregalia:
+  local_items: ["major keys"]
+
+  logic_level: normal
+  obscure_logic: false
+  progressive_breaker: true
+  progressive_slide: false
+  split_sun_greaves: false
+
+  exclude_locations: ["The Underbelly - Surrounded By Holes"]
+
+  plando_items:
+    - items:
+        - Sunsetter
+        - Sun Greaves
+        - Solar Wind
+      locations:
+        - Empty Bailey - Guarded Hand
+        - Sansa Keep - Lonely Throne
+        - Twilight Theatre - Center Stage
+      from_pool: true
+      world: false
+
+---
+
+name: Ladybunne-Green
+game: Pokemon Emerald
+
+Pokemon Emerald:
+  goal: champion
+  elite_four_requirement: badges
+  elite_four_count: 8
+
+  badges: completely_random
+  hms: completely_random
+  key_items: true
+  bikes: true
+  event_tickets: true
+  rods: true
+  overworld_items: true
+  hidden_items: true
+  npc_gifts: true
+  berry_trees: true
+
+  dexsanity: false
+  trainersanity: true
+
+  item_pool_type: diverse
+  
+  require_itemfinder: true
+  require_flash: both
+  
+  wild_pokemon: completely_random
+  wild_encounter_blacklist: []
+  starters: completely_random
+  starter_blacklist: []
+  trainer_parties: completely_random
+  trainer_party_blacklist: []
+  force_fully_evolved: 50
+  legendary_encounters: completely_random
+  misc_pokemon: completely_random
+
+  # Would be fun to randomise sometime, but a little confusing.
+  types: vanilla
+  abilities: follow_evolutions
+  ability_blacklist: ["Wonder Guard"]
+  level_up_moves: start_with_four_moves
+  move_match_type_bias: 10
+  move_normal_type_bias: 0
+  tm_tutor_compatibility: 100
+  hm_compatibility: 100
+  tm_tutor_moves: false
+  reusable_tms_tutors: true
+  move_blacklist: []
+
+  min_catch_rate: 255
+  guaranteed_catch: true
+  normalize_encounter_rates: true
+  exp_modifier: 1000
+  blind_trainers: true
+  purge_spinners: true
+
+  match_trainer_levels: off
+  match_trainer_levels_bonus: 0
+
+  double_battle_chance: 5
+  better_shops: true
+
+  remove_roadblocks: [
+    # "Route 110 Aqua Grunts",
+    # "Route 112 Magma Grunts",
+    # "Route 119 Aqua Grunts",
+    # "Safari Zone Construction Workers",
+    # "Lilycove City Wailmer",
+    # "Aqua Hideout Grunts",
+    # "Seafloor Cavern Aqua Grunt"
+    ]
+  extra_boulders: true
+  extra_bumpy_slope: true
+  modify_118: true
+  
+  free_fly_location: true
+  hm_requirements: fly_without_badge
+
+  turbo_a: true
+  receive_item_messages: none
+  remote_items: true
+
+  music: false
+  fanfares: true
+
+  enable_wonder_trading: true
+  easter_egg: EMERALD SECRET
+
+  start_inventory: {"TM43": 1}
+
+---
+
+name: Ladybunne-Blue
+game: Timespinner
+
+Timespinner:
+  # Goal and "shape of seed" stuff
+  enter_sandman: true
+  dad_percent: false
+  unchained_keys: true
+  specific_keycards: true
+  eye_spy: true
+  inverted: true
+  back_to_the_future: true
+  rising_tides: true
+  prism_break: true
+
+  # Extra checks
+  downloadable_items: true
+  lore_checks: true
+  cantoran: true
+  gyre_archives: true
+  loot_pool: randomized
+  
+  # Combat
+  start_with_jewelry_box: true
+  quick_seed: true
+  start_with_meyef: true
+  level_cap: 99
+  hp_cap: 999
+  aura_cap: 999
+  extra_earrings_xp: 14
+  damage_rando: balanced
+  boss_rando: scaled
+  boss_healing: true
+  show_bestiary: false
+
+  # Shops
+  shop_fill: randomized
+  shop_warp_shards: true
+
+  # Misc
+  trap_chance: 10
+
+  local_items: ["Galaxy Earrings", "Selen's Bangle"]
+
+  plando_items:
+    - items:
+        - Empire Crown
+      locations:
+        - "Emperor's Tower: Emperor's Chambers chest"
+      from_pool: true
+      world: false
+
+    - items:
+        - Eternal Coat
+      locations:
+        - "Ancient Pyramid: Nightmare Door chest"
+      from_pool: true
+      world: false
+
+---
+
+name: Ladybunne-Indigo
+game: Hollow Knight
+
+Hollow Knight:
+  progression_balancing: 0
+
+  Goal: radiance
+
+  RandomizeRancidEggs: true
+  RandomizeRelics: true
+  RandomizeGrubs: true
+  RandomizeMaps: true
+  RandomizeBossGeo: true
+  RandomizeLoreTablets: true
+
+  BackgroundObjectPogos: true
+  EnemyPogos: true
+
+  # For spice, change this to "shuffle" sometime. Otherwise, "vanilla".
+  RandomCharmCosts: shuffle
+
+  local_items: ["Dream_Nail", "Awoken_Dream_Nail", "Pale_Ore"]
+
+---
+
+name: Ladybunne-Violet
+game: Terraria
+
+Terraria:
+  goal: moon_lord
+
+  start_hints: ["Hardmode"]
