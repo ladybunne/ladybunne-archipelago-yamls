@@ -1,0 +1,39 @@
+name: Ladybunne-BRC
+game: Bomb Rush Cyberfunk
+
+Bomb Rush Cyberfunk:
+  skip_intro: false
+  skip_dreams: false
+  skip_statue_hands: true
+  total_rep: 1200
+  limited_graffiti: true
+
+---
+
+name: Ladybunne-Egg
+game: An Untitled Story
+
+An Untitled Story:
+  is_cool: true
+  local_items: ["Gold Orb"]
+
+---
+
+name: Ladybunne-Broom
+game: Anodyne
+
+Anodyne:
+  small_key_shuffle: any_world
+  health_cicada_shuffle: any_world
+  big_key_shuffle: any_world
+  red_cave_access: progressive
+  split_windmill: true
+  start_broom: none
+  nexus_gate_shuffle: all_except_endgame
+  nexus_gates_open: street_only
+  victory_condition: defeat_briar
+  endgame_card_requirement: 36
+  randomize_color_puzzle: true
+  postgame_mode: progressive
+  forest_bunny_chest: true
+  traps_mode: none

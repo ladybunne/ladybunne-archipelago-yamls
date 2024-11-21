@@ -1,10 +1,13 @@
-name: Ladybunne
+name: Ladybunne{NUMBER}
 game: Pseudoregalia
 
 Pseudoregalia:
-  logic_level: normal
+  non_local_items: ["Everything"]
+
+  logic_level: expert
   obscure_logic: false
-  progressive_breaker: false
-  progressive_slide: false
-  split_sun_greaves: false
-  
+  progressive_breaker: true
+  progressive_slide: true
+  split_sun_greaves: true
+
+  exclude_locations: ["The Underbelly - Surrounded By Holes"]

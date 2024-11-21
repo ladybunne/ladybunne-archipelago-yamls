@@ -44,7 +44,7 @@ server_options:
   # "enabled" -> Client can always ask for remaining items
   # "disabled" -> Client can never ask for remaining items
   # "goal" -> Client can ask for remaining items after goal completion
-  remaining_mode: "disabled"
+  remaining_mode: "goal"
   # Automatically shut down the server after this many seconds without new location checks, 0 to keep running
   auto_shutdown: 0
   # Compatibility handling
@@ -115,16 +115,30 @@ adventure_options:
   rom_args: " "
   # Set this to true to display item received messages in EmuHawk
   display_msgs: true
+albw_settings:
+  # File name of your decrypted North American A Link Between Worlds ROM
+  rom_file: "Legend of Zelda, The - A Link Between Worlds (USA) (En,Fr,Es).3ds"
+animal_well_settings:
+  # Choose the mode for the in-game tracker.
+  # 0 -> Disable the in-game tracker.
+  # 1 -> Only show checked locations, hide all others.
+  # 2 -> Show the in-game tracker with no logic.
+  # 3 -> Full in-game tracker, including logic.
+  in_game_tracker: 3
 cave_story_settings:
   game_exe: "Doukutsu.exe"
 cv64_options:
   # File name of the CV64 US 1.0 rom
   rom_file: "Castlevania (USA).z64"
 cvcotm_options:
+  # File name of the Castlevania CotM US rom
   rom_file: "Castlevania - Circle of the Moon (USA).gba"
 dkc3_options:
   # File name of the DKC3 US rom
   rom_file: "Donkey Kong Country 3 - Dixie Kong's Double Trouble! (USA) (En,Fr).sfc"
+earthbound_options:
+  # File name of the EarthBound US ROM
+  rom_file: "EarthBound.sfc"
 factorio_options:
   executable: "factorio/bin/x64/factorio"
   # by default, no settings are loaded if this file does not exist. If this file does exist, then it will be used.
@@ -134,13 +148,19 @@ factorio_options:
   filter_item_sends: false
   # Whether to send chat messages from players on the Factorio server to Archipelago.
   bridge_chat_out: true
+ff4fe_options:
+  # File name of the MLSS US rom
+  rom_file: "Final Fantasy II (USA) (Rev A).sfc"
+  rom_start: true
 ffr_options:
   display_msgs: true
 ffta_options:
   rom_file: "Final Fantasy Tactics Advance (USA).gba"
 hades_options:
+  # Path to the StyxScribe install
   styx_scribe_path: "C:/Program Files/Steam/steamapps/common/Hades/StyxScribe.py"
 jakanddaxter_options:
+  # Path to folder containing the ArchipelaGOAL mod executables (gk.exe and goalc.exe).
   root_directory: "D:/Files/Repositories/ArchipelaGOAL/out/build/Release/bin"
 kdl3_options:
   # File name of the KDL3 JP or EN rom
@@ -166,7 +186,11 @@ lufia2ac_options:
 messenger_settings:
   game_path: "TheMessenger.exe"
 metroidprime_options:
+  # File name of the Metroid Prime ISO
   rom_file: "Metroid_Prime.iso"
+  # Set this to false to never autostart a rom (such as after patching),
+  # Set it to true to have the operating system default program open the iso
+  # Alternatively, set it to a path to a program to open the .iso file with (like Dolplhin)
   rom_start: false
 minecraft_options:
   forge_directory: "Minecraft Forge server"
@@ -182,6 +206,7 @@ mm2_options:
   # File name of the MM2 EN rom
   rom_file: "Mega Man 2 (USA).nes"
 mm3_options:
+  # File name of the MM3 EN rom
   rom_file: "Mega Man 3 (USA).nes"
 mmbn3_options:
   # File name of the MMBN3 Blue US rom
@@ -190,6 +215,9 @@ mmbn3_options:
 mmx3_options:
   # File name of the Mega Man X3 US ROM
   rom_file: "Mega Man X3 (USA).sfc"
+mmx_options:
+  # File name of the Mega Man X US ROM
+  rom_file: "Mega Man X (USA).sfc"
 mzm_options:
   # File name of the Metroid: Zero Mission ROM.
   rom_file: "Metroid - Zero Mission (USA).gba"
@@ -205,7 +233,11 @@ oot_options:
   # Alternatively, a path to a program to open the .z64 file with
   rom_start: true
 paper_mario_settings:
+  # File name of the Paper Mario USA ROM
   rom_file: "Paper Mario (USA).z64"
+  # Set this to false to never autostart a rom (such as after patching),
+  # true  for operating system default program
+  # Alternatively, a path to a program to open the .z64 file with
   rom_start: true
 pokemon_crystal_settings:
   rom_file: "Pokemon - Crystal Version (UE) (V1.0) [C][!].gbc"
@@ -213,16 +245,26 @@ pokemon_crystal_settings:
 pokemon_emerald_settings:
   # File name of your English Pokemon Emerald ROM
   rom_file: "Pokemon - Emerald Version (USA, Europe).gba"
+pokemon_frlg_settings:
+  # File name of your English Pokémon FireRed ROM
+  firered_rom_file: "Pokemon - FireRed Version (USA, Europe).gba"
+  # File name of your English Pokémon LeafGreen ROM
+  leafgreen_rom_file: "Pokemon - LeafGreen Version (USA, Europe).gba"
 pokemon_rb_options:
   # File names of the Pokemon Red and Blue roms
   red_rom_file: "Pokemon Red (UE) [S][!].gb"
   blue_rom_file: "Pokemon Blue (UE) [S][!].gb"
+psychonauts_options:
+  # Locate the Psychonauts root directory on your system.
+  # This is used by the Psychonauts client, so it knows where to send communication files to
+  root_directory: "C:\\\\Program Files (x86)\\\\Steam\\\\steamapps\\\\common\\\\Psychonauts"
 rabi_ribi_options:
   game_installation_path: "C:/Program Files (x86)/Steam/steamapps/common/Rabi-Ribi"
 sm_options:
   # File name of the v1.0 J rom
   rom_file: "Super Metroid (JU).sfc"
 sml2_options:
+  # File name of the Super Mario Land 2 1.0 ROM
   rom_file: "Super Mario Land 2 - 6 Golden Coins (USA, Europe).gb"
 smw_options:
   # File name of the SMW US rom
@@ -230,6 +272,24 @@ smw_options:
 soe_options:
   # File name of the SoE US ROM
   rom_file: "Secret of Evermore (USA).sfc"
+tloz_oos_options:
+  # File name of the Oracle of Seasons US ROM
+  rom_file: "Legend of Zelda, The - Oracle of Seasons (USA).gbc"
+  rom_start: true
+  # The name of the sprite file to use (from "data/sprites/oos_ooa/").
+  # Putting "link" as a value uses the default game sprite.
+  # Putting "random" as a value randomly picks a sprite from your sprites directory for each generated ROM.
+  character_sprite: "link"
+  # The color palette used for character sprite throughout the game.
+  # Valid values are: "green", "red", "blue", "orange", and "random"
+  character_palette: "green"
+  # If enabled, hidden digging spots in Subrosia are revealed as diggable tiles.
+  reveal_hidden_subrosia_digging_spots: true
+  # A factor applied to the infamous heart beep sound interval.
+  # Valid values are: "vanilla", "half", "quarter", "disabled"
+  heart_beep_interval: "vanilla"
+  # If true, no music will be played in the game while sound effects remain untouched
+  remove_music: false
 tloz_options:
   # File name of the Zelda 1
   rom_file: "Legend of Zelda, The (U) (PRG0) [!].nes"
@@ -240,7 +300,7 @@ tloz_options:
   # Display message inside of Bizhawk
   display_msgs: false
 universal_tracker:
-  player_files_path: null
+  player_files_path: "C:/Users/Ladybunne/Games/Archipelago/UT"
   include_region_name: true
   include_location_name: true
   hide_excluded_locations: true

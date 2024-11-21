@@ -15,11 +15,12 @@ game:
   # Kingdom Hearts 2: 1
   # A Link to the Past: 1
   # Hollow Knight: 1
-  # Timespinner: 1
+  Timespinner: 1
   # Bomb Rush Cyberfunk: 1
   # Links Awakening DX: 1
   # Terraria: 1
-  Pokemon Emerald: 1
+  # Pokemon Emerald: 1
+  # Super Metroid: 1
 
   # == Unsupported games ==
 
@@ -179,6 +180,10 @@ Hollow Knight:
   RandomizeMaps: true
   RandomizeBossGeo: true
 
+  # Longer
+  RandomizeLoreTablets: true
+  ExtraShopSlots: 144
+
   # For spice, change this to "shuffle" sometime. Otherwise, "vanilla".
   RandomCharmCosts: shuffle
 
@@ -236,6 +241,8 @@ Bomb Rush Cyberfunk:
   
   skip_polo_photos: false
   dont_save_photos: false
+
+  local_items: []
 
   exclude_locations: [
     # These are time-consuming checks.
@@ -554,6 +561,44 @@ Pokemon Emerald:
     "Route 134 - Swimmer Laurel",
   ]
 
+Super Metroid:
+  progression_balancing: 80
+  start_inventory_removes_from_pool: true
+  preset: newbie
+  start_location: landing_site
+  remote_items: true
+  max_difficulty: hard
+  morph_placement: early
+  hide_items: false
+  strict_minors: true
+
+  area_randomization: false
+  area_layout: true
+  doors_colors_rando: false # Try true sometime.
+  allow_grey_doors: false
+  boss_randomization: false
+  escape_rando: false
+  remove_escape_enemies: false
+  fun_combat: false
+  fun_movement: false # lmao, removing Space Jump is "fun"?
+  fun_suits: false
+  layout_patches: true
+  varia_tweaks: true
+  nerfed_charge: false
+  gravity_behaviour: balanced
+  
+  elevators_speed: true
+  fast_doors: true
+  spin_jump_restart: true # Geeeeet dunked on, Super Metroid.
+  rando_speed: true
+  infinite_space_jump: true
+  refill_before_save: false
+  hud: true
+  animals: false
+  no_music: false
+  random_music: false
+  tourian: vanilla # Ugh.
+
 # Unsupported
 
 An Untitled Story:
@@ -631,7 +676,7 @@ Metroid Zero Mission:
 Pseudoregalia:
   local_items: ["major keys"]
 
-  logic_level: normal
+  logic_level: expert
   obscure_logic: false
   progressive_breaker: true
   progressive_slide: true
@@ -645,16 +690,15 @@ Anodyne:
   health_cicada_shuffle: any_world
   red_cave_access: progressive
   split_windmill: true
-  start_broom: normal
+  start_broom: none
+  nexus_gate_shuffle: all_except_endgame
   nexus_gates_open: street_only
-  random_nexus_gate_open_count: 1
-  nexus_gate_shuffle: all
   victory_condition: defeat_briar
   endgame_card_requirement: 36
   randomize_color_puzzle: true
   postgame_mode: progressive
   forest_bunny_chest: false
-  traps_mode: low
+  traps_mode: none
 
 # ---
 

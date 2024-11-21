@@ -1,0 +1,48 @@
+#          ((`\          -------------------
+#       ___ \\ '--._    / we will always  /
+#    .'`   `'    o  )  /  remember her   /
+#   /    \   '. __.'  /    sacrifice.   /
+#  _|    /_  \ \_\_  -------------------
+# {_\______\-'\__\_\                    
+
+name: Ladybunne
+game: Timespinner
+
+Timespinner:
+  # Goal and "shape of seed" stuff
+  enter_sandman: true
+  dad_percent: false
+  unchained_keys: true
+  specific_keycards: true
+  eye_spy: true
+  inverted: true
+  back_to_the_future: true
+  rising_tides: true
+  prism_break: true
+
+  # Extra checks
+  downloadable_items: true
+  lore_checks: true
+  cantoran: true
+  gyre_archives: true
+  loot_pool: randomized
+  
+  # Combat
+  start_with_jewelry_box: true
+  quick_seed: true 
+  start_with_meyef: true
+  level_cap: 99
+  hp_cap: 999
+  aura_cap: 999
+  extra_earrings_xp: 14
+  damage_rando: mostlynerfs
+  boss_rando: scaled
+  boss_healing: true
+  show_bestiary: false
+
+  # Shops
+  shop_fill: randomized
+  shop_warp_shards: true
+
+  # Misc
+  trap_chance: 10
