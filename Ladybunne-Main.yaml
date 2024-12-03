@@ -15,7 +15,7 @@ game:
   # Kingdom Hearts 2: 1
   # A Link to the Past: 1
   # Hollow Knight: 1
-  Timespinner: 1
+  # Timespinner: 1
   # Bomb Rush Cyberfunk: 1
   # Links Awakening DX: 1
   # Terraria: 1
@@ -26,7 +26,7 @@ game:
 
   # An Untitled Story: 1
   # Metroid Zero Mission: 1
-  # Pseudoregalia: 1
+  Pseudoregalia: 1
   # Anodyne: 1
 
 requires:
@@ -204,27 +204,31 @@ Timespinner:
   lore_checks: true
   cantoran: true
   gyre_archives: true
+  
+  # Enemy drops
   loot_pool: randomized
+  drop_rate_category: tiered
+  show_bestiary: true
+  show_drops: false
   
   # Combat
   start_with_jewelry_box: true
-  quick_seed: true 
-  start_with_meyef: true
+  quick_seed: false
+  start_with_meyef: false
   level_cap: 99
   hp_cap: 999
   aura_cap: 999
   extra_earrings_xp: 14
-  damage_rando: balanced
+  damage_rando: allnerfs
   boss_rando: scaled
   boss_healing: true
-  show_bestiary: false
 
   # Shops
-  shop_fill: randomized
+  shop_fill: empty
   shop_warp_shards: true
 
   # Misc
-  trap_chance: 10
+  trap_chance: 0
 
 Bomb Rush Cyberfunk:
   logic: glitchless

@@ -3,6 +3,7 @@ game: Pseudoregalia
 
 Pseudoregalia:
   non_local_items: ["Everything"]
+  # local_items: ["major keys"]
 
   logic_level: expert
   obscure_logic: false

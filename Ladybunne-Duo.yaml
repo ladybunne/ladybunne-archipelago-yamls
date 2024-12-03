@@ -12,11 +12,6 @@ requires:
   plando: items
 
 Metroid Zero Mission:
-  # start_inventory_from_pool:
-  #   Bomb: 1
-  
-  # local_items: ["Ice Beam", "Plasma Beam"]
-
   goal: bosses
   remote_items: true
   chozodia_access: closed
@@ -30,7 +25,7 @@ Metroid Zero Mission:
   heatruns_lavadives: true
   walljumps_in_logic: true
   tricky_shinesparks: false
-  fast_item_banners: false
+  fast_item_banners: true
   display_nonlocal_items: none
 
 ---
@@ -44,7 +39,7 @@ requires:
 Pseudoregalia:
   local_items: ["major keys"]
 
-  logic_level: normal
+  logic_level: expert
   obscure_logic: false
   progressive_breaker: true
   progressive_slide: true
