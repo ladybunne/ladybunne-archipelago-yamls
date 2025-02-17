@@ -30,7 +30,7 @@ Super Mario World:
 
 # Unsupported
 
-Pokemon FireRed and LeafGreen:
-  trainersanity: false
-  famesanity: false
-  extra_key_items: false  # Going off crowd wisdom for this, haven't seen it yet.
+# Pokemon FireRed and LeafGreen:
+#   trainersanity: false
+#   famesanity: false
+#   extra_key_items: false  # Going off crowd wisdom for this, haven't seen it yet.

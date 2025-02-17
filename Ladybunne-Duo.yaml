@@ -20,11 +20,11 @@ Metroid Zero Mission:
   layout_patches: true
   morph_ball: early
   start_with_maps: true
-  logic_difficulty: normal
+  logic_difficulty: advanced
   ibj_in_logic: horizontal_and_vertical
   heatruns_lavadives: true
   walljumps_in_logic: true
-  tricky_shinesparks: false
+  tricky_shinesparks: true
   fast_item_banners: true
   display_nonlocal_items: none
 

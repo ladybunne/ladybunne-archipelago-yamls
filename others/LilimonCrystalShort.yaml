@@ -1,0 +1,40 @@
+name: Lilimon
+game: Pokemon Crystal
+Pokemon Crystal:
+  progression_balancing: 50
+  goal: elite_four
+  johto_only: include_silver_cave
+  elite_four_badges: 7
+  red_badges: 5
+
+  randomize_badges: completely_random
+  randomize_hidden_items: true
+  require_itemfinder: false
+  trainersanity: false
+  trainersanity_alerts: no_alerts
+  randomize_pokegear: false
+  randomize_berry_trees: false
+  
+  randomize_starters: completely_random
+  randomize_wilds: true
+  randomize_static_pokemon: true
+  randomize_trainer_parties: completely_random
+  randomize_learnsets: start_with_four_moves
+  
+  randomize_tm_moves: true
+  tm_compatibility: 100
+  hm_compatibility: 100
+  
+  randomize_palettes: completely_random
+  free_fly_location: free_fly
+  early_fly: true
+  hm_badge_requirements: vanilla
+  reusable_tms: true
+  guaranteed_catch: true
+  blind_trainers: true
+  better_marts: true
+  experience_modifier: 40
+  
+  item_receive_sound: false
+  start_inventory: {'Super Repel': 99}
+  local_items: ['Mineral Badge']

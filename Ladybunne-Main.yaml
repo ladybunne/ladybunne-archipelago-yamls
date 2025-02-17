@@ -20,17 +20,18 @@ game:
   # Links Awakening DX: 1
   # Terraria: 1
   # Pokemon Emerald: 1
-  # Super Metroid: 1
+  # Yu-Gi-Oh! 2006: 1
 
   # == Unsupported games ==
 
-  # An Untitled Story: 1
+  An Untitled Story: 1
   # Metroid Zero Mission: 1
-  Pseudoregalia: 1
+  # Pseudoregalia: 1
   # Anodyne: 1
+  # Simon Tatham's Portable Puzzle Collection: 1
 
 requires:
-  version: 0.5.0
+  version: 0.5.1
   plando: items
 
 
@@ -80,6 +81,8 @@ Kingdom Hearts 2:
     three_proofs: 1
     # lucky_emblem_hunt: 1
 
+  local_items: ["Proof", "Way to the Dawn"]
+
   # Nowadays, we are gaming.
   FinalXemnas: true
 
@@ -119,10 +122,10 @@ Kingdom Hearts 2:
   SummonLevelLocationToggle: true
 
   CorSkipToggle: false
-  SuperBosses: true
+  SuperBosses: false
 
 Terraria:
-  goal: moon_lord
+  goal: zenith
 
   exclude_locations:
     [
@@ -565,116 +568,36 @@ Pokemon Emerald:
     "Route 134 - Swimmer Laurel",
   ]
 
-Super Metroid:
-  progression_balancing: 80
-  start_inventory_removes_from_pool: true
-  preset: newbie
-  start_location: landing_site
-  remote_items: true
-  max_difficulty: hard
-  morph_placement: early
-  hide_items: false
-  strict_minors: true
-
-  area_randomization: false
-  area_layout: true
-  doors_colors_rando: false # Try true sometime.
-  allow_grey_doors: false
-  boss_randomization: false
-  escape_rando: false
-  remove_escape_enemies: false
-  fun_combat: false
-  fun_movement: false # lmao, removing Space Jump is "fun"?
-  fun_suits: false
-  layout_patches: true
-  varia_tweaks: true
-  nerfed_charge: false
-  gravity_behaviour: balanced
-  
-  elevators_speed: true
-  fast_doors: true
-  spin_jump_restart: true # Geeeeet dunked on, Super Metroid.
-  rando_speed: true
-  infinite_space_jump: true
-  refill_before_save: false
-  hud: true
-  animals: false
-  no_music: false
-  random_music: false
-  tourian: vanilla # Ugh.
+Yu-Gi-Oh! 2006:
+  structure_deck: random_deck
+  banlist: september_2005
+  add_empty_banlist: true
 
 # Unsupported
 
 An Untitled Story:
   is_cool: true
-
-  local_items: [
-    # Good singular items that help balance progression between local and non-local.
-    "Red Energy",
-    "Smash",
-
-    # Ice Shot skews things towards certain areas, which is boring. Let's make it
-    # more random!
-    # "Ice Shot",
-
-    # Hatch can straight up be skipped, which is awesome, so I want to see non-local
-    # hatch seeds more often.
-    # "Hatch",
-
-    # These ones are multiples, so forcing them local can end up dragging you to 
-    # the Curtain and beyond. We don't like that.
-
-    # "Jump Upgrade",
-    # "Double Jump Upgrade",
-    # "Progressive Fire Shot",
-    # "Progressive Ceiling Stick",
-  ]
-
-  # RainbowDive max prize is very hard, and too many flowers is unreasonable.
-  exclude_locations: ["Rainbowdive_first_prize", "15_flowers", "20_flowers"]
-
-  # MountSide rules, so we should make its last check priority.
-  # Also left ceiling memes.
-  priority_locations: ["Mountside_right_heart_door", "Deepdive_left_ceiling"]
-
-  # Plando some jump height upgrades early on to prevent early BKs.
-  plando_items:
-    - items:
-        Jump Upgrade: 1
-        Double Jump Upgrade: 1
-      locations:
-        - Nightwalk_jump_1
-      from_pool: true
-      world: false
-    
-    - items:
-        Jump Upgrade: 1
-        Double Jump Upgrade: 1
-      locations:
-        - Grotto_djump
-      from_pool: true
-      world: false
+  local_items: ["Gold Orb"]
 
 Metroid Zero Mission:
-  # start_inventory_from_pool:
-  #   Bomb: 1
-  
-  # local_items: ["Ice Beam", "Plasma Beam"]
-
   goal: bosses
   remote_items: true
-  chozodia_access: closed
+  chozodia_access:
+    open: 1
+    closed: 2
   skip_chozodia_stealth: true
-  unknown_items_always_usable: true
+  unknown_items_always_usable:
+    true: 1
+    false: 3
   layout_patches: true
   morph_ball: early
   start_with_maps: true
-  logic_difficulty: normal
+  logic_difficulty: advanced
   ibj_in_logic: horizontal_and_vertical
   heatruns_lavadives: true
   walljumps_in_logic: true
   tricky_shinesparks: false
-  fast_item_banners: false
+  fast_item_banners: true
   display_nonlocal_items: none
 
 Pseudoregalia:
@@ -703,6 +626,59 @@ Anodyne:
   postgame_mode: progressive
   forest_bunny_chest: false
   traps_mode: none
+
+Simon Tatham's Portable Puzzle Collection:
+  # One of each puzzle, do them sequentially, goal when they're all done.
+  puzzle_count: 50
+  starting_puzzles: 1
+  completion_percentage: 90
+
+  min_difficulty: normal
+  max_difficulty: hard
+
+  genre_weights:
+    # Relative chance for each genre to be selected as a random preset. Set a genre's
+    # weight to 0 or remove it from this list to disable it.
+    blackbox: 10
+    bridges: 10
+    cube: 10
+    dominosa: 10
+    fifteen: 10
+    filling: 10
+    flip: 10
+    flood: 10
+    galaxies: 10
+    guess: 10
+    inertia: 10
+    keen: 10
+    lightup: 10
+    loopy: 10
+    magnets: 10
+    map: 10
+    mines: 10
+    mosaic: 10
+    net: 10
+    netslide: 10
+    palisade: 10
+    pattern: 10
+    pearl: 10
+    pegs: 10
+    range: 10
+    rect: 10
+    samegame: 10
+    signpost: 10
+    singles: 10
+    sixteen: 10
+    slant: 10
+    solo: 10
+    tents: 10
+    towers: 10
+    tracks: 10
+    twiddle: 10
+    undead: 10
+    unequal: 10
+    unruly: 10
+    untangle: 10
 
 # ---
 

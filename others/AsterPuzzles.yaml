@@ -1,0 +1,92 @@
+name: Aster
+game: Simon Tatham's Portable Puzzle Collection
+Simon Tatham's Portable Puzzle Collection:
+  progression_balancing: 50
+  puzzle_count: 20
+  starting_puzzles: 3
+  completion_percentage: 90
+
+  min_difficulty: easy
+  max_difficulty: easy
+  genre_weights:
+    blackbox: 0
+    bridges: 10
+    cube: 0
+    dominosa: 10
+    fifteen: 10
+    filling: 10
+    flip: 0
+    flood: 10
+    galaxies: 10
+    guess: 10
+    inertia: 10
+    keen: 10
+    lightup: 10
+    loopy: 0
+    magnets: 10
+    map: 10
+    mines: 10
+    mosaic: 10
+    net: 10
+    netslide: 0
+    palisade: 5
+    pattern: 10
+    pearl: 5
+    pegs: 5
+    range: 10
+    rect: 10
+    samegame: 5
+    signpost: 10
+    singles: 10
+    sixteen: 0
+    slant: 10
+    solo: 10
+    tents: 10
+    towers: 5
+    tracks: 5
+    twiddle: 0
+    undead: 10
+    unequal: 10
+    unruly: 10
+    untangle: 10
+  # genre_min_difficulty: {
+  #   bridges: 1,
+  #   dominosa: 0,
+  #   keen: 1,
+  #   magnets: 0,
+  #   map: 1,
+  #   mines: 1,
+  #   pearl: 0,
+  #   singles: 0,
+  #   solo: 1,
+  #   towers: 0,
+  #   tracks: 0,
+  #   undead: 1,
+  #   unequal: 0,
+  #   unruly: 0,
+  # }
+  # genre_max_difficulty: {
+  #   bridges: 2,
+  #   dominosa: 1,
+  #   flood: 1,
+  #   galaxies: 1,
+  #   keen: 2,
+  #   magnets: 0,
+  #   palisade: 1,
+  #   pearl: 0,
+  #   pegs: 1,
+  #   signpost: 1,
+  #   singles: 3,
+  #   slant: 1,
+  #   solo: 2,
+  #   towers: 0,
+  #   tracks: 0,
+  #   undead: 2,
+  #   unequal: 1,
+  #   unruly: 3,
+  # }
+  preset_overrides: { 
+    fifteen: [4x4, 5x5],
+    net: [5x5, 7x7],
+    untangle: [6, 10]
+  }

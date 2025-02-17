@@ -1,0 +1,189 @@
+name: Ladybunne-TLoZ
+game: The Legend of Zelda
+
+The Legend of Zelda:
+  StartingPosition: very_dangerous
+
+---
+
+name: Ladybunne-TS
+game: Timespinner
+
+Timespinner:
+  # Goal and "shape of seed" stuff
+  enter_sandman: true
+  dad_percent: false
+  unchained_keys: true
+  specific_keycards: true
+  eye_spy: true
+  inverted: true
+  back_to_the_future: true
+  rising_tides: true
+  prism_break: true
+
+  # Extra checks
+  downloadable_items: true
+  lore_checks: true
+  cantoran: true
+  gyre_archives: true
+  
+  # Enemy drops
+  loot_pool: randomized
+  drop_rate_category: tiered
+  show_bestiary: true
+  show_drops: false
+  
+  # Combat
+  start_with_jewelry_box: true
+  quick_seed: false
+  start_with_meyef: false
+  level_cap: 99
+  hp_cap: 999
+  aura_cap: 999
+  extra_earrings_xp: 14
+  damage_rando: allnerfs
+  boss_rando: scaled
+  boss_healing: true
+
+  # Shops
+  shop_fill: empty
+  shop_warp_shards: true
+
+  # Misc
+  trap_chance: 0
+
+---
+
+name: Ladybunne-Egg
+game: An Untitled Story
+
+An Untitled Story:
+  is_cool: true
+  exclude_locations: ["Rainbowdive_first_prize"]
+
+---
+
+name: Ladybunne-ZM
+game: Metroid Zero Mission
+
+Metroid Zero Mission:
+  goal: bosses
+  remote_items: true
+  chozodia_access: open
+  skip_chozodia_stealth: false
+  unknown_items_always_usable:
+    true: 1
+    false: 3
+  layout_patches: true
+  morph_ball: early
+  start_with_maps: true
+  logic_difficulty: advanced
+  ibj_in_logic: horizontal_and_vertical
+  heatruns_lavadives: true
+  walljumps_in_logic: true
+  tricky_shinesparks: true
+  fast_item_banners: true
+  display_nonlocal_items: none
+
+---
+
+name: Ladybunne-Goat
+game: Pseudoregalia
+
+Pseudoregalia:
+  logic_level: expert
+  obscure_logic: false
+  progressive_breaker: true
+  progressive_slide: true
+  split_sun_greaves: true
+
+  exclude_locations: ["The Underbelly - Surrounded By Holes"]
+
+---
+
+name: Ladybunne-Broom
+game: Anodyne
+
+Anodyne:
+  small_key_shuffle: any_world
+  big_key_shuffle: any_world
+  health_cicada_shuffle: any_world
+  red_cave_access: progressive
+  split_windmill: true
+  start_broom: none
+  nexus_gate_shuffle: all_except_endgame
+  nexus_gates_open: street_only
+  random_nexus_gate_open_count: 1
+  victory_condition: defeat_briar
+  endgame_card_requirement: 36
+  randomize_color_puzzle: true
+  postgame_mode: progressive
+  forest_bunny_chest: false
+  traps_mode: none
+
+---
+
+name: Ladybunne-YGO
+game: Yu-Gi-Oh! 2006
+
+Yu-Gi-Oh! 2006:
+  structure_deck: random_deck
+  banlist: september_2005
+  add_empty_banlist: true
+
+---
+
+name: Ladybunne-Puzzle
+game: Simon Tatham's Portable Puzzle Collection
+
+Simon Tatham's Portable Puzzle Collection:
+  puzzle_count: 200
+  starting_puzzles: 0
+  completion_percentage: 80
+
+  min_difficulty: normal
+  max_difficulty: hard
+
+  genre_weights:
+    # Relative chance for each genre to be selected as a random preset. Set a genre's
+    # weight to 0 or remove it from this list to disable it.
+    blackbox: 0
+    bridges: 1
+    cube: 0
+    dominosa: 2
+    fifteen: 0
+    filling: 0
+    flip: 1
+    flood: 0
+    galaxies: 1
+    guess: 1
+    inertia: 0
+    keen: 1
+    lightup: 1
+    loopy: 2
+    magnets: 2
+    map: 1
+    mines: 1
+    mosaic: 2
+    net: 2
+    netslide: 0
+    palisade: 2
+    pattern: 0
+    pearl: 1
+    pegs: 0
+    range: 1
+    rect: 2
+    samegame: 0
+    signpost: 1
+    singles: 0
+    sixteen: 0
+    slant: 1
+    solo: 1
+    tents: 1
+    towers: 1
+    tracks: 1
+    twiddle: 0
+    undead: 0
+    unequal: 2
+    unruly: 2
+    untangle: 0

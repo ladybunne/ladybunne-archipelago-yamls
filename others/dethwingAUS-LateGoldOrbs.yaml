@@ -1,0 +1,67 @@
+name: Dethwing
+game: An Untitled Story
+description: Plando example for Dethwing that forces some Gold Orbs to be local and in "post-Curtain" locations.
+requires:
+  plando: items
+
+An Untitled Story:
+  plando_items:
+    - items:
+        # Change the number according to your preference.
+        Gold Orb: 10
+      locations:
+        # Late Curtain checks
+        - Curtain_boss_14
+        - Curtain_boss
+        
+        # IceCastle
+        - Icecastle_entrance
+        - Icecastle_entrance_heart_door
+        - Icecastle_left_outside
+        - Icecastle_entrance_flower
+        - Icecastle_top_left_heart_door
+        - Icecastle_bottom_underhang
+        - Icecastle_high_mid_heartdoor
+        - Icecastle_low_mid_heartdoor
+        - Icecastle_low_mid_secret
+        - Icecastle_boss
+        - Icecastle_boss_15
+        - Icecastle_top_right
+        
+        # Library
+        - Library_heart
+        - Library_flower
+        
+        # RainbowDive
+        - Rainbowdive_100
+        - Rainbowdive_300
+        - Rainbowdive_second_prize
+        - Rainbowdive_first_prize
+        
+        # SkyLands
+        - Skylands_underhang
+        - Skylands_duck
+        - Skylands_chest
+        - Skylands_balloon_chain
+        # - Skylands_portal (not this one!)
+        - Skylands_toll_gate
+        - Skylands_heart_gate
+
+        # NightWalk
+        - Nightwalk_high_flower
+        - Nightwalk_chest
+        - Nightwalk_upper_heart
+
+        # DeepTower
+        - Deeptower_top_entrance
+
+        # Staircase
+        # I strongly discourage plandoing _anything_ important on 15 or 20,
+        # as it will have detrimental effects on the multiworld.
+        - 5_flowers
+        - 10_flowers
+        # - 15_flowers
+        # - 20_flowers
+
+      from_pool: true
+      world: false

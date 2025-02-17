@@ -18,11 +18,11 @@ server_options:
   disable_item_cheat: true
   # Client hint system
   # Points given to a player for each acquired item in their world
-  location_check_points: 1
+  location_check_points: 0
   # Relative point cost to receive a hint via !hint for players
   # so for example hint_cost: 20 would mean that for every 20% of available checks, you get the ability to hint,
   # for a total of 5
-  hint_cost: 5
+  hint_cost: 100
   # Release modes
   # A Release sends out the remaining items *from* a world that releases
   # "disabled" -> clients can't release,
