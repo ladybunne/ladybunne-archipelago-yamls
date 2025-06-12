@@ -1,0 +1,10 @@
+name: AmandaAran
+game: Metroid Zero Mission
+
+Metroid Zero Mission:
+  chozodia_access: closed
+  logic_difficulty: normal
+  ibj_in_logic: vertical_only
+  hazard_runs: 'true'
+  buff_pb_drops: 'true'
+  elevator_speed: way_too_fast

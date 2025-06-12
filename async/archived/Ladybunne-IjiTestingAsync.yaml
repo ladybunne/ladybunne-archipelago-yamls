@@ -1,0 +1,40 @@
+name: Ladybunne-Iji
+game: Iji
+
+Iji:
+  EndGoal: sector_x
+  SectorZPosterLocationsRequired: 0
+  SectorZRibbonItemsRequired: 0
+  NullDriverPosterLocationsRequired: 0
+  NullDriverRibbonItemsRequired: 0
+  RibbonItemCount: 0
+  PostGameLocations: none
+  RibbonLocations: true
+  PosterLocations: true
+  SuperchargeLocations: true
+  BasicWeaponLocations: first_time
+  CombinedWeaponLocations: true
+  UniqueWeaponLocations: true
+  UpgradeLocations: true
+  LogbookLocations: false
+  PacifistLocations: false
+  SectorAccessItems: 12
+
+  HealthItems: 9
+  AttackItems: 9
+  AssimilateItems: 9
+  StrengthItems: 9
+  CrackItems: 9
+  TasenItems: 9
+  KomatoItems: 9
+  CompactStatItems: 1
+
+  SpecialTraitItems: true
+  ExtraSupercharges: 10
+
+  TrapPercentage: 0
+
+  HealthBalancing: true
+  SuperchargePointHandling: shuffled
+
+  LogicDifficulty: normal_logic

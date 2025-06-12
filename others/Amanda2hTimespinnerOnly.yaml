@@ -1,0 +1,37 @@
+name: Amanda2Sync
+game: Timespinner
+
+Timespinner:
+  start_with_jewelry_box: 'true'
+  start_with_meyef: 'true'
+  quick_seed: 'true'
+  specific_keycards: 'true'
+  inverted:
+    'false': 1
+    'true': 2
+  gyre_archives: 'true'
+  cantoran: 'true'
+  lore_checks: 'true'
+  boss_rando: scaled
+  damage_rando: balanced
+  extra_earrings_xp: 24
+  shop_fill: randomized
+  loot_pool: randomized
+  enter_sandman: 'true'
+  rising_tides: 'true'
+  unchained_keys: 'true'
+  back_to_the_future: 'true'
+  dad_percent:
+    'false': 2
+    'true': 1
+  prism_break: 'true'
+  lock_key_amadeus: 'true'
+  gate_keep:
+    'false': 2
+    'true': 1
+  royal_roadblock:
+    'false': 2
+    'true': 1
+  trap_chance: 0
+  local_items:
+    ["Timespinner Spindle", "Timespinner Gear 1", "Timespinner Gear 2", "Timespinner Gear 3"]

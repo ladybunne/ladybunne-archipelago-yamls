@@ -1,0 +1,69 @@
+# Platformer
+
+name: Ladybunne-AUS
+game: An Untitled Story
+
+An Untitled Story:
+  is_cool: true
+  local_items: ["Gold Orb"]
+
+---
+
+# Action-Adventure / RPG / JRPG
+
+name: Ladybunne-ZM
+game: Metroid Zero Mission
+
+Metroid Zero Mission:
+  goal: bosses
+  game_difficulty: hard
+  remote_items: true
+  chozodia_access: open
+  unknown_items_always_usable: true
+  layout_patches: true
+  morph_ball: early
+  logic_difficulty: advanced
+  combat_logic_difficulty: minimal
+  ibj_in_logic: horizontal_and_vertical
+  hazard_runs: true
+  walljumps_in_logic: true
+  tricky_shinesparks: true
+  skip_chozodia_stealth: false
+  buff_pb_drops: true
+  elevator_speed: fast
+  start_with_maps: true
+  fast_item_banners: false
+  skip_tourian_opening_cutscenes: true
+  display_nonlocal_items: none
+
+---
+
+# Puzzle / card / mobile friendly
+
+name: Ladybunne-YGO
+game: Yu-Gi-Oh! 2006
+
+Yu-Gi-Oh! 2006:
+  add_empty_banlist: true
+
+---
+
+# Hard to BK
+
+name: Ladybunne-Terra
+game: Terraria
+
+Terraria:
+  goal: zenith
+  achievements: all
+
+---
+
+# Free
+
+name: Ladybunne-TLoZ
+game: The Legend of Zelda
+
+The Legend of Zelda:
+  ExpandedPool: true
+  StartingPosition: very_dangerous

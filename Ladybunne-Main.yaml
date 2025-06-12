@@ -24,11 +24,13 @@ game:
 
   # == Unsupported games ==
 
-  An Untitled Story: 1
-  # Metroid Zero Mission: 1
+  # An Untitled Story: 1
+  Metroid Zero Mission: 1
   # Pseudoregalia: 1
   # Anodyne: 1
   # Simon Tatham's Portable Puzzle Collection: 1
+  # ChecksMate: 1
+  # Iji: 1
 
 requires:
   version: 0.5.1
@@ -40,37 +42,21 @@ requires:
 The Legend of Zelda:
 
   # Stepladder local means the multiworld can't hold half my game hostage.
-  local_items:
-    - Stepladder
+  # local_items: ["Stepladder"]
 
   # Danger is fun!
   StartingPosition: very_dangerous
 
   plando_items:
     # Put Book of Magic and the boomerangs in the bad corner where they belong.
-    # Ideally I force them to something like L9 Wizzrobes East Island, which you
-    # would normally never visit... but because a random 50% of L9 is junked by the
-    # generator, I need to provide a list of at least 50% + 3 checks.
     - items:
-        - Book of Magic
-        - Boomerang
-        - Magical Boomerang
+        Book of Magic: 1
+        Boomerang: 1
+        Magical Boomerang: 1
       locations:
-        - Level 9 Item (Silver Arrow)
-        - Level 9 Item (Red Ring)
-        - Level 9 Map
-        - Level 9 Compass
-        - Level 9 Key Drop (Wizzrobes and Bubbles East)
         - Level 9 Key Drop (Wizzrobes East Island)
-        - Level 9 Bomb Drop (Blue Lanmolas)
-        - Level 9 Bomb Drop (Gels Lake)
-        - Level 9 Bomb Drop (Like Likes and Zols Corridor)
+        - Level 9 Key Drop (Wizzrobes and Bubbles East)
         - Level 9 Bomb Drop (Vires)
-        - Level 9 Rupee Drop (Wizzrobes West Island)
-        - Level 9 Rupee Drop (Red Lanmolas)
-        - Level 9 Rupee Drop (Keese Central Island)
-        - Level 9 Rupee Drop (Wizzrobes Central)
-        - Level 9 Rupee Drop (Gels East)
       from_pool: true
       world: false
 
@@ -136,10 +122,9 @@ Terraria:
 
   plando_items: 
     - item: Hardmode
-      location: The Big Red Button
+      location: "Hot Reels!"
       from_pool: true
-      world: Ladybuttonne
-      force: true
+      world: false
 
 A Link to the Past:
 
@@ -196,11 +181,15 @@ Timespinner:
   dad_percent: false
   unchained_keys: true
   specific_keycards: true
-  eye_spy: true
+  eye_spy: false
   inverted: true
   back_to_the_future: true
   rising_tides: true
-  prism_break: true
+  prism_break: random
+  lock_key_amadeus: random
+  risky_warps: random
+  gate_keep: random
+  royal_roadblock: random
 
   # Extra checks
   downloadable_items: true
@@ -211,23 +200,23 @@ Timespinner:
   # Enemy drops
   loot_pool: randomized
   drop_rate_category: tiered
-  show_bestiary: true
+  show_bestiary: false
   show_drops: false
-  
+
   # Combat
   start_with_jewelry_box: true
-  quick_seed: false
+  quick_seed: true
   start_with_meyef: false
   level_cap: 99
   hp_cap: 999
   aura_cap: 999
   extra_earrings_xp: 14
-  damage_rando: allnerfs
+  damage_rando: balanced
   boss_rando: scaled
   boss_healing: true
 
   # Shops
-  shop_fill: empty
+  shop_fill: randomized
   shop_warp_shards: true
 
   # Misc
@@ -572,32 +561,86 @@ Yu-Gi-Oh! 2006:
   structure_deck: random_deck
   banlist: september_2005
   add_empty_banlist: true
+  number_of_challenges: 30
 
 # Unsupported
 
 An Untitled Story:
   is_cool: true
-  local_items: ["Gold Orb"]
+ 
+  # RainbowDive max prize is very hard, and too many flowers is unreasonable.
+  exclude_locations: ["RainbowDive: First Prize", "Staircase: 15 Flowers Reward", "Staircase: 20 Flowers Reward"]
+
+  local_items: [
+    # Macguffins should always be local.
+    "Gold Orb",
+
+    # Skulltulas should also be local.
+    "Flower",
+
+    # Good singular items that help balance progression between local and non-local.
+    # "Red Energy",
+    # "Dive Bomb",
+
+    # Ice Shot skews things towards certain areas, which is boring. Let's make it
+    # more random!
+    # "Ice Shot",
+
+    # Hatch can straight up be skipped, which is awesome, so I want to see non-local
+    # hatch seeds more often.
+    # "Hatch",
+
+    # These ones are multiples, so forcing them local can end up dragging you to 
+    # the Curtain and beyond. We don't like that.
+
+    # "Jump Upgrade",
+    # "Double Jump Upgrade",
+    # "Progressive Fire Shot",
+    # "Progressive Stick Slide",
+  ]
+
+  # MountSide rules, so we should make its last check priority.
+  # Also left ceiling memes.
+  priority_locations: ["MountSide: Gauntlet Heart Door", "DeepDive: Left Shipwreck Hidden Ceiling"]
+
+  # Plando some jump height upgrades early on to prevent early BKs.
+  plando_items:
+    - items:
+        Jump Upgrade: 2
+        Double Jump Upgrade: 2
+      locations:
+        - "NightWalk: First Item"
+        - "Grotto: After GrottoRed"
+      from_pool: true
+      world: false
 
 Metroid Zero Mission:
+  local_items: ["Ice Beam", "Plasma Beam"]
+
   goal: bosses
+  game_difficulty: hard
   remote_items: true
   chozodia_access:
-    open: 1
+    open: 0
     closed: 2
-  skip_chozodia_stealth: true
   unknown_items_always_usable:
     true: 1
     false: 3
   layout_patches: true
   morph_ball: early
-  start_with_maps: true
-  logic_difficulty: advanced
+  logic_difficulty: normal # Advanced is a bit much for now.
+  combat_logic_difficulty: minimal
   ibj_in_logic: horizontal_and_vertical
-  heatruns_lavadives: true
+  hazard_runs: true
   walljumps_in_logic: true
-  tricky_shinesparks: false
+  tricky_shinesparks: true
+  skip_chozodia_stealth: true
+  buff_pb_drops: true
+  plasma_beam_hint: true
+  elevator_speed: fast
+  start_with_maps: true
   fast_item_banners: true
+  skip_tourian_opening_cutscenes: true
   display_nonlocal_items: none
 
 Pseudoregalia:
@@ -628,62 +671,104 @@ Anodyne:
   traps_mode: none
 
 Simon Tatham's Portable Puzzle Collection:
-  # One of each puzzle, do them sequentially, goal when they're all done.
+  Simon Tatham's Portable Puzzle Collection:
   puzzle_count: 50
-  starting_puzzles: 1
-  completion_percentage: 90
+  starting_puzzles: 0
+  completion_percentage: 80
 
-  min_difficulty: normal
-  max_difficulty: hard
+  min_difficulty: easy
+  max_difficulty: normal
 
   genre_weights:
     # Relative chance for each genre to be selected as a random preset. Set a genre's
     # weight to 0 or remove it from this list to disable it.
-    blackbox: 10
-    bridges: 10
-    cube: 10
-    dominosa: 10
-    fifteen: 10
-    filling: 10
-    flip: 10
-    flood: 10
-    galaxies: 10
-    guess: 10
-    inertia: 10
-    keen: 10
-    lightup: 10
-    loopy: 10
-    magnets: 10
-    map: 10
-    mines: 10
-    mosaic: 10
-    net: 10
-    netslide: 10
-    palisade: 10
-    pattern: 10
-    pearl: 10
-    pegs: 10
-    range: 10
-    rect: 10
-    samegame: 10
-    signpost: 10
-    singles: 10
-    sixteen: 10
-    slant: 10
-    solo: 10
-    tents: 10
-    towers: 10
-    tracks: 10
-    twiddle: 10
-    undead: 10
-    unequal: 10
-    unruly: 10
-    untangle: 10
+    blackbox: 0
+    bridges: 1
+    cube: 0
+    dominosa: 2
+    fifteen: 0
+    filling: 0
+    flip: 1
+    flood: 0
+    galaxies: 1
+    guess: 1
+    inertia: 0
+    keen: 1
+    lightup: 1
+    loopy: 2
+    magnets: 2
+    map: 1
+    mines: 1
+    mosaic: 2
+    net: 2
+    netslide: 0
+    palisade: 2
+    pattern: 0
+    pearl: 1
+    pegs: 0
+    range: 1
+    rect: 2
+    samegame: 0
+    signpost: 1
+    singles: 0
+    sixteen: 0
+    slant: 1
+    solo: 1
+    tents: 1
+    towers: 1
+    tracks: 1
+    twiddle: 0
+    undead: 0
+    unequal: 2
+    unruly: 2
+    untangle: 0
 
-# ---
+ChecksMate:
+  enable_tactics: all
+  fairy_kings:
+    0: 9
+    2: 1
 
-# name: Ladybuttonne{NUMBER}
-# game: Clique
+Iji:
+  EndGoal: sector_x
+  SectorZPosterLocationsRequired: 0
+  SectorZRibbonItemsRequired: 0
+  NullDriverPosterLocationsRequired: 0
+  NullDriverRibbonItemsRequired: 0
+  RibbonItemCount: 0
+  PostGameLocations: none
+  RibbonLocations: true
+  PosterLocations: true
+  SuperchargeLocations: true
+  BasicWeaponLocations: first_time
+  CombinedWeaponLocations: true
+  UniqueWeaponLocations: true
+  UpgradeLocations: true
+  LogbookLocations: false
+  PacifistLocations: false
+  SectorAccessItems: 12
 
-# Clique:
-#   hard_mode: 'true'
+  HealthItems: 9
+  AttackItems: 9
+  AssimilateItems: 9
+  StrengthItems: 9
+  CrackItems: 9
+  TasenItems: 9
+  KomatoItems: 9
+  CompactStatItems: 1
+
+  SpecialTraitItems: true
+  ExtraSupercharges: 10
+
+  TrapPercentage: 0
+
+  HealthBalancing: true
+  SuperchargePointHandling: shuffled
+
+  LogicDifficulty: normal_logic
+
+  plando_items:
+    - items:
+        Sector Access: 6
+      world: false
+      from_pool: true

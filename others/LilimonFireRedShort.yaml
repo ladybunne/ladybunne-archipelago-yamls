@@ -1,0 +1,63 @@
+name: Lilimon
+game: Pokemon FireRed and LeafGreen
+Pokemon FireRed and LeafGreen:
+  progression_balancing: 50
+  
+  game_version: firered
+  shuffle_hidden: nonrecurring
+  extra_key_items: true
+  trainersanity: none
+  shuffle_fly_unlocks: off
+  pokemon_request_locations: false
+  card_key: vanilla
+  island_passes: vanilla
+  split_teas: false
+  itemfinder_required: off
+  viridian_city_roadblock: vanilla
+  pewter_city_roadblock: boulder_badge
+  modify_world_state: ["Modify Route 10", "Route 12 Boulders", "Modify Route 23", "Total Darkness", "Block Vermilion Sailing"]
+  additional_dark_caves: ["Victory Road"]
+  remove_badge_requirement: ["Fly"]
+  route22_gate_count: 1
+  route23_guard_count: 4
+  cerulean_cave_requirement: badges
+  cerulean_cave_count: 6
+  force_fully_evolved: 25
+  wild_pokemon: completely_random
+  starters: completely_random
+  trainers: completely_random
+  legendary_pokemon: completely_random
+  misc_pokemon: completely_random
+  abilities: follow_evolutions
+  ability_blacklist: ["Wonder Guard", "Arena Trap", "Shadow Tag"]
+  moves: start_with_four_moves
+  hm_compatibility: full
+  tm_tutor_compatibility: full
+  tm_tutor_moves: true
+  reusable_tm_tutors: true
+  better_shops: true
+  free_fly_location: true
+  town_map_fly_location: true
+  randomize_fanfares: true
+  game_options:
+    Auto Run: 'Off'
+    Battle Scene: 'Off'
+    Battle Style: Set
+    Bike Music: 'On'
+    Blind Trainers: 'On'
+    Button Mode: LR
+    Encounter Rates: Normalized
+    Experience: Normal
+    Frame: 2
+    Guaranteed Catch: 'On'
+    Item Messages: Progression
+    Low HP Beep: 'On'
+    Show Effectiveness: 'On'
+    Skip Fanfares: 'On'
+    Sound: Mono
+    Surf Music: 'On'
+    Text Speed: Instant
+    Turbo A: 'On'
+  provide_hints: true
+  
+  start_inventory: {"Super Repel": 99, "HM02 Fly": 1}

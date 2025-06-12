@@ -1,0 +1,24 @@
+﻿name: AmandaPseudo
+game: Pseudoregalia
+
+Pseudoregalia:
+  local_items:
+    ["major keys"]
+  exclude_locations:
+    ["The Underbelly - Surrounded By Holes"]
+  logic_level: hard
+  split_sun_greaves: true
+
+plando_items:
+  - item:
+      Progressive_Slide: 1
+      Air_Kick: 1
+      Sunsetter: 1
+      Ascendant_Light: 1
+    location: early_locations
+    world: null
+    force: true
+  - item:
+      Cling_Gem: 1
+    location: non_early_locations
+    world: null

@@ -8,15 +8,19 @@
 name: Ladybunne-ZM
 game: Metroid Zero Mission
 requires:
-  version: 0.5.0
+  version: 0.5.1
   plando: items
 
 Metroid Zero Mission:
   goal: bosses
   remote_items: true
-  chozodia_access: closed
+  chozodia_access:
+    open: 1
+    closed: 2
   skip_chozodia_stealth: true
-  unknown_items_always_usable: true
+  unknown_items_always_usable:
+    true: 1
+    false: 3
   layout_patches: true
   morph_ball: early
   start_with_maps: true
@@ -24,25 +28,63 @@ Metroid Zero Mission:
   ibj_in_logic: horizontal_and_vertical
   heatruns_lavadives: true
   walljumps_in_logic: true
-  tricky_shinesparks: true
+  tricky_shinesparks: false
   fast_item_banners: true
   display_nonlocal_items: none
 
 ---
 
-name: Ladybunne-Goat
-game: Pseudoregalia
+name: Ladybunne-Egg
+game: An Untitled Story
 requires:
-  version: 0.5.0
+  version: 0.5.1
   plando: items
 
-Pseudoregalia:
-  local_items: ["major keys"]
+An Untitled Story:
+  is_cool: true
+ 
+  # RainbowDive max prize is very hard, and too many flowers is unreasonable.
+  exclude_locations: ["RainbowDive: First Prize", "Staircase: 15 Flowers Reward", "Staircase: 20 Flowers Reward"]
 
-  logic_level: expert
-  obscure_logic: false
-  progressive_breaker: true
-  progressive_slide: true
-  split_sun_greaves: true
+  local_items: [
+    # Macguffins should always be local.
+    "Gold Orb",
 
-  exclude_locations: ["The Underbelly - Surrounded By Holes"]
+    # Skulltulas should also be local.
+    "Flower",
+
+    # Good singular items that help balance progression between local and non-local.
+    # "Red Energy",
+    # "Dive Bomb",
+
+    # Ice Shot skews things towards certain areas, which is boring. Let's make it
+    # more random!
+    # "Ice Shot",
+
+    # Hatch can straight up be skipped, which is awesome, so I want to see non-local
+    # hatch seeds more often.
+    # "Hatch",
+
+    # These ones are multiples, so forcing them local can end up dragging you to 
+    # the Curtain and beyond. We don't like that.
+
+    # "Jump Upgrade",
+    # "Double Jump Upgrade",
+    # "Progressive Fire Shot",
+    # "Progressive Stick Slide",
+  ]
+
+  # MountSide rules, so we should make its last check priority.
+  # Also left ceiling memes.
+  priority_locations: ["MountSide: Gauntlet Heart Door", "DeepDive: Left Shipwreck Hidden Ceiling"]
+
+  # Plando some jump height upgrades early on to prevent early BKs.
+  plando_items:
+    - items:
+        Jump Upgrade: 2
+        Double Jump Upgrade: 2
+      locations:
+        - "NightWalk: First Item"
+        - "Grotto: After GrottoRed"
+      from_pool: true
+      world: false

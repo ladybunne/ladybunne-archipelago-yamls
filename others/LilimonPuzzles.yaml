@@ -1,9 +1,9 @@
 name: Lilimon
 game: Simon Tatham's Portable Puzzle Collection
 Simon Tatham's Portable Puzzle Collection:
-  # progression_balancing: 50
-  puzzle_count: 30
-  starting_puzzles: 0
+  progression_balancing: 50
+  puzzle_count: 25
+  starting_puzzles: 2
   completion_percentage: 80
 
   max_difficulty: ridiculous

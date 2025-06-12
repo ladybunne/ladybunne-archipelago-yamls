@@ -1,0 +1,100 @@
+name: Amanda2Sync
+game:
+  Timespinner: 3
+  Metroid Zero Mission: 2
+  Pseudoregalia: 3
+  The Witness: 2
+
+Timespinner:
+  start_with_jewelry_box: 'true'
+  start_with_meyef: 'true'
+  quick_seed: 'true'
+  specific_keycards: 'true'
+  inverted:
+    'false': 1
+    'true': 2
+  gyre_archives: 'true'
+  cantoran: 'true'
+  lore_checks: 'true'
+  boss_rando: scaled
+  damage_rando: balanced
+  extra_earrings_xp: 24
+  shop_fill: randomized
+  loot_pool: randomized
+  enter_sandman: 'true'
+  rising_tides: 'true'
+  unchained_keys: 'true'
+  back_to_the_future: 'true'
+  dad_percent:
+    'false': 2
+    'true': 1
+  prism_break: 'true'
+  lock_key_amadeus: 'true'
+  gate_keep:
+    'false': 2
+    'true': 1
+  royal_roadblock:
+    'false': 2
+    'true': 1
+  trap_chance: 0
+  local_items:
+    ["Timespinner Spindle", "Timespinner Gear 1", "Timespinner Gear 2", "Timespinner Gear 3"]
+
+Metroid Zero Mission:
+  chozodia_access: closed
+  logic_difficulty: normal
+  ibj_in_logic: vertical_only
+  hazard_runs: 'true'
+  buff_pb_drops: 'true'
+  elevator_speed: way_too_fast
+
+The Witness:
+  puzzle_randomization: umbra_variety
+  victory_condition: panel_hunt
+  panel_hunt_required_percentage: 70
+  panel_hunt_total: 60
+  panel_hunt_discourage_same_area_factor: 70
+  shuffle_discarded_panels: 'true'
+  shuffle_EPs: obelisk_sides
+  disable_non_randomized_puzzles: 'true'
+  shuffle_doors:
+    panels: 3
+    doors: 2
+    mixed: 1
+  door_groupings: regional
+  unlockable_warps: 'true'
+  puzzle_skip_amount: 30
+  trap_percentage: 0
+  hint_amount: 49
+  area_hint_percentage: 0
+  local_items:
+    ["Speed Boost"]
+  non_local_items:
+    ["Symbols"]
+  start_inventory:
+    {"Speed Boost": 999}
+  exclude_locations:
+    ["Boat", "Caves", "Challenge", "Mountain (Inside)"]
+
+
+Pseudoregalia:
+  local_items:
+    ["major keys"]
+  exclude_locations:
+    ["The Underbelly - Surrounded By Holes"]
+  logic_level: hard
+  split_sun_greaves: 'true'
+
+plando_items:
+  - item:
+      Progressive_Slide: 1
+      Air_Kick: 1
+      Sunsetter: 1
+      Ascendant_Light: 1
+    location: early_locations
+    world: null
+    force: true
+  - item:
+      Cling_Gem: 1
+    location: non_early_locations
+    world: null

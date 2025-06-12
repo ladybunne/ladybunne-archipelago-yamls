@@ -12,6 +12,7 @@ server_options:
   savefile: null
   disable_save: false
   loglevel: "info"
+  logtime: false
   # Allows for clients to log on and manage the server.  If this is null, no remote administration is possible.
   server_password: "randomisedrabbits"
   # Disallow !getitem
@@ -77,13 +78,14 @@ generator:
   race: 0
   # List of options that can be plando'd. Can be combined, for example "bosses, items"
   # Available options: bosses, items, texts, connections
-  plando_options: "items, bosses, texts, connections"
+  plando_options: "bosses, items, texts, connections"
   # What to do if the current item placements appear unsolvable.
   # raise -> Raise an exception and abort.
   # swap -> Attempt to fix it by swapping prior placements around. (Default)
   # start_inventory -> Move remaining items to start_inventory, generate additional filler items to fill locations.
   panic_method: "swap"
-  glitch_triforce_room: 0
+  loglevel: "info"
+  logtime: false
 sni_options:
   # Set this to your SNI folder location if you want the MultiClient to attempt an auto start, does nothing if not found
   sni_path: "SNI"
@@ -102,7 +104,7 @@ adventure_options:
   # File name of the standard NTSC Adventure rom.
   # The licensed "The 80 Classic Games" CD-ROM contains this.
   # It may also have a .a26 extension
-  rom_file: "ADVNTURE.BIN"
+  rom_file: "ROMs/ADVNTURE.BIN"
   # Set this to false to never autostart a rom (such as after patching)
   # True for operating system default program for '.a26'
   # Alternatively, a path to a program to open the .a26 file with (generally EmuHawk for multiworld)
@@ -115,22 +117,15 @@ adventure_options:
   rom_args: " "
   # Set this to true to display item received messages in EmuHawk
   display_msgs: true
-albw_settings:
-  rom_file: "Legend of Zelda, The - A Link Between Worlds (USA) (En,Fr,Es).3ds"
-animal_well_settings:
-  in_game_tracker: 3
-cave_story_settings:
-  game_exe: "Doukutsu.exe"
 cv64_options:
   # File name of the CV64 US 1.0 rom
-  rom_file: "Castlevania (USA).z64"
+  rom_file: "ROMs/Castlevania (USA).z64"
 cvcotm_options:
-  rom_file: "Castlevania - Circle of the Moon (USA).gba"
+  # File name of the Castlevania CotM US rom
+  rom_file: "ROMs/Castlevania - Circle of the Moon (USA).gba"
 dkc3_options:
   # File name of the DKC3 US rom
-  rom_file: "Donkey Kong Country 3 - Dixie Kong's Double Trouble! (USA) (En,Fr).sfc"
-earthbound_options:
-  rom_file: "EarthBound.sfc"
+  rom_file: "ROMs/Donkey Kong Country 3 - Dixie Kong's Double Trouble! (USA) (En,Fr).sfc"
 factorio_options:
   executable: "factorio/bin/x64/factorio"
   # by default, no settings are loaded if this file does not exist. If this file does exist, then it will be used.
@@ -140,28 +135,17 @@ factorio_options:
   filter_item_sends: false
   # Whether to send chat messages from players on the Factorio server to Archipelago.
   bridge_chat_out: true
-ff4fe_options:
-  rom_file: "Final Fantasy II (USA) (Rev A).sfc"
-  rom_start: true
 ffr_options:
   display_msgs: true
-ffta_options:
-  rom_file: "Final Fantasy Tactics Advance (USA).gba"
-ffvcd_options:
-  rom_file: "Final Fantasy V (J).sfc"
-hades_options:
-  styx_scribe_path: "C:/Program Files/Steam/steamapps/common/Hades/StyxScribe.py"
 hk_options:
   # Disallows the APMapMod from showing spoiler placements.
   disable_spoilers: true
-jakanddaxter_options:
-  root_directory: "D:/Files/Repositories/ArchipelaGOAL/out/build/Release/bin"
 kdl3_options:
   # File name of the KDL3 JP or EN rom
-  rom_file: "Kirby's Dream Land 3.sfc"
+  rom_file: "ROMs/Kirby's Dream Land 3.sfc"
 ladx_options:
   # File name of the Link's Awakening DX rom
-  rom_file: "Legend of Zelda, The - Link's Awakening DX (USA, Europe) (SGB Enhanced).gbc"
+  rom_file: "ROMs/Legend of Zelda, The - Link's Awakening DX (USA, Europe) (SGB Enhanced).gbc"
   # Set this to false to never autostart a rom (such as after patching)
   # true  for operating system default program
   # Alternatively, a path to a program to open the .gbc file with
@@ -173,15 +157,12 @@ ladx_options:
   rom_start: true
 lttp_options:
   # File name of the v1.0 J rom
-  rom_file: "Zelda no Densetsu - Kamigami no Triforce (Japan).sfc"
+  rom_file: "ROMs/Zelda no Densetsu - Kamigami no Triforce (Japan).sfc"
 lufia2ac_options:
   # File name of the US rom
-  rom_file: "Lufia II - Rise of the Sinistrals (USA).sfc"
+  rom_file: "ROMs/Lufia II - Rise of the Sinistrals (USA).sfc"
 messenger_settings:
   game_path: "TheMessenger.exe"
-metroidprime_options:
-  rom_file: "Metroid_Prime.iso"
-  rom_start: false
 minecraft_options:
   forge_directory: "Minecraft Forge server"
   max_heap_size: "2G"
@@ -190,79 +171,72 @@ minecraft_options:
   release_channel: "release"
 mlss_options:
   # File name of the MLSS US rom
-  rom_file: "Mario & Luigi - Superstar Saga (U).gba"
+  rom_file: "ROMs/Mario & Luigi - Superstar Saga (U).gba"
   rom_start: true
 mm2_options:
   # File name of the MM2 EN rom
-  rom_file: "Mega Man 2 (USA).nes"
-mm3_options:
-  rom_file: "Mega Man 3 (USA).nes"
+  rom_file: "ROMs/Mega Man 2 (USA).nes"
 mmbn3_options:
   # File name of the MMBN3 Blue US rom
-  rom_file: "Mega Man Battle Network 3 - Blue Version (USA).gba"
+  rom_file: "ROMs/Mega Man Battle Network 3 - Blue Version (USA).gba"
   rom_start: true
-mmx3_options:
-  rom_file: "Mega Man X3 (USA).sfc"
-mmx_options:
-  rom_file: "Mega Man X (USA).sfc"
 mzm_options:
   # File name of the Metroid: Zero Mission ROM.
-  rom_file: "Metroid - Zero Mission (USA).gba"
+  rom_file: "ROMs/Metroid - Zero Mission (USA).gba"
   # Set this to false to never autostart a rom (such as after patching),
   # Set it to true to have the operating system default program open the rom
   # Alternatively, set it to a path to a program to open the .gba file with
   rom_start: true
 oot_options:
   # File name of the OoT v1.0 ROM
-  rom_file: "The Legend of Zelda - Ocarina of Time.z64"
+  rom_file: "ROMs/The Legend of Zelda - Ocarina of Time.z64"
   # Set this to false to never autostart a rom (such as after patching),
   # true  for operating system default program
   # Alternatively, a path to a program to open the .z64 file with
   rom_start: true
-paper_mario_settings:
-  rom_file: "Paper Mario (USA).z64"
-  rom_start: true
-pokemon_crystal_settings:
-  rom_file: "Pokemon - Crystal Version (UE) (V1.0) [C][!].gbc"
-  rom_start: true
 pokemon_emerald_settings:
   # File name of your English Pokemon Emerald ROM
-  rom_file: "Pokemon - Emerald Version (USA, Europe).gba"
-pokemon_frlg_settings:
-  firered_rom_file: "Pokemon - FireRed Version (USA, Europe).gba"
-  leafgreen_rom_file: "Pokemon - LeafGreen Version (USA, Europe).gba"
+  rom_file: "ROMs/Pokemon - Emerald Version (USA, Europe).gba"
 pokemon_rb_options:
   # File names of the Pokemon Red and Blue roms
-  red_rom_file: "Pokemon Red (UE) [S][!].gb"
-  blue_rom_file: "Pokemon Blue (UE) [S][!].gb"
-psychonauts_options:
-  root_directory: "C:\\\\Program Files (x86)\\\\Steam\\\\steamapps\\\\common\\\\Psychonauts"
-rabi_ribi_options:
-  game_installation_path: "C:/Program Files (x86)/Steam/steamapps/common/Rabi-Ribi"
+  red_rom_file: "ROMs/Pokemon Red (UE) [S][!].gb"
+  blue_rom_file: "ROMs/Pokemon Blue (UE) [S][!].gb"
+saving_princess_settings:
+  # Path to the game executable from which files are extracted
+  exe_path: "Saving Princess.exe"
+  # Path to the mod installation folder
+  install_folder: "Saving Princess"
+  # Set this to false to never autostart the game
+  launch_game: true
+  # The console command that will be used to launch the game
+  # The command will be executed with the installation folder as the current directory
+  launch_command: "\"Saving Princess v0_8.exe\""
+sf64_options:
+  # File path of the Star Fox 64 v1.1 ROM.
+  rom_path: ""
+  # Folder path of where to save the patched ROM.
+  patch_path: ""
+  # File path of the program to automatically run.
+  # Leave blank to disable.
+  program_path: ""
+  # Arguments to pass to the automatically run program.
+  # Leave blank to disable.
+  program_args: "--lua=C:\\Users\\Ladybunne\\Games\\Archipelago\\data\\lua\\connector_sf64_bizhawk.lua"
+  # Whether to enable the built in logic Tracker.
+  # If enabled, the 'Tracker' tab will show all unchecked locations in logic.
+  enable_tracker: true
 sm_options:
   # File name of the v1.0 J rom
-  rom_file: "Super Metroid (JU).sfc"
-sml2_options:
-  rom_file: "Super Mario Land 2 - 6 Golden Coins (USA, Europe).gb"
+  rom_file: "ROMs/Super Metroid (JU).sfc"
 smw_options:
   # File name of the SMW US rom
-  rom_file: "Super Mario World (USA).sfc"
+  rom_file: "ROMs/Super Mario World (USA).sfc"
 soe_options:
   # File name of the SoE US ROM
-  rom_file: "Secret of Evermore (USA).sfc"
-tloz_ooa_options:
-  rom_file: "Legend of Zelda, The - Oracle of Ages (USA).gbc"
-tloz_oos_options:
-  rom_file: "Legend of Zelda, The - Oracle of Seasons (USA).gbc"
-  rom_start: true
-  character_sprite: "link"
-  character_palette: "green"
-  reveal_hidden_subrosia_digging_spots: true
-  heart_beep_interval: "vanilla"
-  remove_music: false
+  rom_file: "ROMs/Secret of Evermore (USA).sfc"
 tloz_options:
   # File name of the Zelda 1
-  rom_file: "Legend of Zelda, The (U) (PRG0) [!].nes"
+  rom_file: "ROMs/Legend of Zelda, The (U) (PRG0) [!].nes"
   # Set this to false to never autostart a rom (such as after patching)
   # true  for operating system default program
   # Alternatively, a path to a program to open the .nes file with
@@ -272,9 +246,11 @@ tloz_options:
 tunic_options:
   # Disallows the TUNIC client from creating a local spoiler log.
   disable_local_spoiler: false
+  # Limits the impact of Grass Randomizer on the multiworld by disallowing local_fill percentages below 95.
+  limit_grass_rando: true
 universal_tracker:
   # Players folder for UT look for YAMLs
-  player_files_path: "C:/Users/Ladybunne/Games/Archipelago/UT"
+  player_files_path: "UT"
   # Show Region names in the UT tab
   include_region_name: true
   # Show Location names in the UT tab
@@ -285,18 +261,15 @@ wargroove_options:
   # Locate the Wargroove root directory on your system.
   # This is used by the Wargroove client, so it knows where to send communication files to
   root_directory: "C:/Program Files (x86)/Steam/steamapps/common/Wargroove"
-wl4_options:
-  rom_file: "Wario Land 4.gba"
-  rom_start: true
 yoshisisland_options:
   # File name of the Yoshi's Island 1.0 US rom
-  rom_file: "Super Mario World 2 - Yoshi's Island (U).sfc"
+  rom_file: "ROMs/Super Mario World 2 - Yoshi's Island (U).sfc"
 yugioh06_settings:
   # File name of your Yu-Gi-Oh 2006 ROM
-  rom_file: "YuGiOh06.gba"
+  rom_file: "ROMs/YuGiOh06.gba"
 zillion_options:
   # File name of the Zillion US rom
-  rom_file: "Zillion (UE) [!].sms"
+  rom_file: "ROMs/Zillion (UE) [!].sms"
   # Set this to false to never autostart a rom (such as after patching)
   # True for operating system default program
   # Alternatively, a path to a program to open the .sfc file with

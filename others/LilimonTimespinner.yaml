@@ -1,0 +1,41 @@
+name: Lilimon
+game: Timespinner
+Timespinner:
+  progression_balancing: 50
+  
+  # Goal and "shape of seed" stuff
+  enter_sandman: true
+  dad_percent: false
+  unchained_keys: true
+  specific_keycards: true
+  eye_spy: false
+  inverted: true
+  back_to_the_future: true
+  rising_tides: true
+
+  # Extra checks
+  downloadable_items: true
+  lore_checks: true
+  cantoran: true
+  gyre_archives: true
+  loot_pool: randomized
+  
+  # Combat
+  start_with_jewelry_box: true
+  quick_seed: true
+  level_cap: 99
+  hp_cap: 999
+  extra_earrings_xp: 14
+  boss_rando: scaled
+  enemy_rando: off
+  show_bestiary: false
+
+  # Shops
+  shop_fill: randomized
+  shop_warp_shards: true
+  shop_multiplier: 2
+
+  # Misc
+  damage_rando: mostlybuffs
+  trap_chance: 10
+  start_with_meyef: true
