@@ -1,0 +1,16 @@
+name: Ladybunne
+game: Pseudoregalia
+
+Pseudoregalia:
+  logic_level: expert
+  spawn_point: dungeon_mirror
+  split_sun_greaves: true
+  split_cling_gem: true
+  start_with_breaker: true
+  randomize_time_trials: true
+  randomize_goats: true
+  randomize_chairs: true
+  randomize_books: true
+  randomize_notes: true
+  major_key_hints: false
+  local_items: ["major keys"]

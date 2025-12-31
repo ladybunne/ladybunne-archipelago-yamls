@@ -1,0 +1,63 @@
+name: Ladybunne-MZM
+game: Metroid Zero Mission
+
+Metroid Zero Mission:
+  goal: bosses
+  chozodia_access: closed
+  fully_powered_suit: shuffled
+  spring_ball: true
+  logic_difficulty: normal
+  combat_logic_difficulty: normal
+  ibj_in_logic: horizontal_and_vertical
+  hazard_runs: normal
+  buff_pb_drops: true
+  reveal_hidden_blocks: false
+  display_nonlocal_items: none
+
+---
+
+name: Ladybunne-Goat
+game: Pseudoregalia
+
+Pseudoregalia:
+  logic_level: expert
+  spawn_point: dungeon_mirror
+  split_sun_greaves: true
+  split_cling_gem: true
+  start_with_breaker: true
+  randomize_time_trials: true
+  randomize_goats: true
+  randomize_chairs: true
+  randomize_books: true
+  randomize_notes: true
+  major_key_hints: false
+  local_items: ["major keys"]
+
+---
+
+name: Ladybunne-TS
+game: Timespinner
+
+Timespinner:
+  start_with_jewelry_box: true
+  quick_seed: true
+  specific_keycards: true
+  inverted: true
+  gyre_archives: true
+  cantoran: true
+  lore_checks: true
+  boss_rando: scaled
+  damage_rando: balanced
+  extra_earrings_xp: 24
+  shop_fill: randomized
+  loot_pool: randomized
+  enter_sandman: true
+  rising_tides: true
+  unchained_keys: true
+  back_to_the_future: true
+  prism_break: true
+  lock_key_amadeus: true
+  risky_warps: true
+  gate_keep: true
+  royal_roadblock: true
+  trap_chance: 0
