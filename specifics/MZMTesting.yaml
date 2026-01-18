@@ -1,0 +1,41 @@
+name: Ladybunne
+game: Metroid Zero Mission
+
+Metroid Zero Mission:
+  goal: bosses
+  metroid_dna_available: 10
+  metroid_dna_required: 5
+  game_difficulty: either
+  remote_items: true
+  death_link: false
+
+  chozodia_access: closed
+  layout_patches: true
+  selected_patches: []
+
+  morph_ball: early
+  fully_powered_suit: shuffled
+  walljumps: shuffled
+  spring_ball: true
+  junk_fill_weights:
+    Missile Tank: 1
+  
+  logic_difficulty: normal
+  combat_logic_difficulty: normal
+  ibj_in_logic: horizontal_and_vertical
+
+  hazard_runs: normal
+  tricky_shinesparks: false
+
+  tricks_allowed: []
+  tricks_denied: []
+
+  skip_chozodia_stealth: true
+  buff_pb_drops: true
+  plasma_beam_hint: true
+  elevator_speed: fast
+  start_with_maps: true
+  reveal_hidden_blocks: false
+  skip_tourian_opening_cutscenes: true
+
+  display_nonlocal_items: none

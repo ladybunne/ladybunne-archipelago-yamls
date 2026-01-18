@@ -15,7 +15,7 @@ game:
   # Kingdom Hearts 2: 1
   # A Link to the Past: 1
   # Hollow Knight: 1
-  # Timespinner: 1
+  Timespinner: 1
   # Bomb Rush Cyberfunk: 1
   # Links Awakening DX: 1
   # Terraria: 1
@@ -25,7 +25,7 @@ game:
   # == Unsupported games ==
 
   # An Untitled Story: 1
-  Metroid Zero Mission: 1
+  # Metroid Zero Mission: 1
   # Pseudoregalia: 1
   # Anodyne: 1
   # Simon Tatham's Portable Puzzle Collection: 1
@@ -194,7 +194,7 @@ Timespinner:
   # Extra checks
   downloadable_items: true
   lore_checks: true
-  cantoran: true
+  cantoran: false
   gyre_archives: true
   
   # Enemy drops
@@ -412,18 +412,24 @@ Links Awakening DX:
   shuffle_small_keys: original_dungeon
   
   # These are junk and I wanna remove them eventually.
-  shuffle_maps: any_world
-  shuffle_compasses: any_world
-  shuffle_stone_beaks: any_world
+  shuffle_maps: own_world
+  shuffle_compasses: own_world
+  shuffle_stone_beaks: own_world
   
-  warp_improvements: true
-  additional_warp_points: true
+  warps: improved_additional
   
   tradequest: true
   rooster: true
+  tarins_gift: bush_breaker
+  overworld: open_mabe
   trendy_game: normal
+  in_game_hints: true
   nag_messages: false
+
+  quickswap: a
   boots_controls: bracelet
+
+  foreign_item_icons: indicate_progression
   ap_title_screen: true
 
 Pokemon Emerald:
@@ -615,7 +621,7 @@ An Untitled Story:
       world: false
 
 Metroid Zero Mission:
-  local_items: ["Ice Beam", "Plasma Beam"]
+  # local_items: ["Ice Beam", "Plasma Beam"]
 
   goal: bosses
   game_difficulty: hard

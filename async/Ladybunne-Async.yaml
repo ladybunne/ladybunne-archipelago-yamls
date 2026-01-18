@@ -1,0 +1,178 @@
+name: Ladybunne-Goat
+game: Pseudoregalia
+
+Pseudoregalia:
+  logic_level: expert
+  spawn_point: dungeon_mirror
+  split_sun_greaves: true
+  split_cling_gem: true
+  start_with_breaker: true
+  randomize_time_trials: true
+  randomize_goats: true
+  randomize_chairs: true
+  randomize_books: true
+  randomize_notes: true
+  major_key_hints: false
+  # local_items: ["major keys"]
+
+---
+
+name: Ladybunne-TS
+game: Timespinner
+
+Timespinner:
+  start_with_jewelry_box: true
+  quick_seed: true
+  specific_keycards: true
+  inverted: true
+  gyre_archives: true
+  cantoran: true
+  lore_checks: true
+  boss_rando: scaled
+  damage_rando: balanced
+  extra_earrings_xp: 24
+  shop_fill: randomized
+  loot_pool: randomized
+  enter_sandman: true
+  rising_tides: true
+  unchained_keys: true
+  back_to_the_future: true
+  prism_break: true
+  lock_key_amadeus: true
+  risky_warps: true
+  gate_keep: true
+  royal_roadblock: true
+  trap_chance: 0
+  # local_items: ["Timespinner Wheel", "Timespinner Spindle", "Timespinner Gear 1", "Timespinner Gear 2", "Timespinner Gear 3"]
+
+---
+
+name: Ladybunne-ZM
+game: Metroid Zero Mission
+
+Metroid Zero Mission:
+  goal: bosses
+  game_difficulty: hard
+  remote_items: true
+  death_link: false
+
+  chozodia_access: closed
+  layout_patches: true
+  selected_patches: []
+
+  morph_ball: early
+  fully_powered_suit: shuffled
+  walljumps: shuffled
+  spring_ball: true
+  junk_fill_weights:
+    Missile Tank: 1
+
+  logic_difficulty: advanced
+  combat_logic_difficulty: minimal
+  ibj_in_logic: horizontal_and_vertical
+
+  hazard_runs: normal
+  tricky_shinesparks: false
+
+  tricks_allowed: [
+      # Shortcuts
+      "Norfair-Ridley Shortcut",
+      "Kraid-Norfair Shortcut",
+      "Ridley Right Shaft Shortcut",
+
+      # Normal
+      "Chozo Ghost Access Reverse",
+      "Mecha Ridley Hall PB Skip",
+      "Brinstar Varia Suit Power Bomb",
+      "Kraid Quad Ball Cannon No Bombs",
+      "Norfair Under Crateria Elevator Enemy Freeze",
+      "Norfair Big Room Walljump",
+      "Norfair Bomb Trap PB Only",
+      "Norfair Right Shaft Get-Around Walljump",
+      "Screw Attack Access Shinespark",
+      "Norfair Behind Super Door Left Enemy Freeze",
+      "Norfair Larvae Room Missiles",
+      "Ridley Fake Floor Skip",
+      "Mother Brain Access Wall Jump",
+      "Chozo Ghost Shinespark No Screw",
+      "Chozodia Pirates Enemy Freezes",
+      "Chozodia Under Tube Items Ballspark",
+      "Mothership Upper Access Walljump",
+
+      # Advanced
+      "Balljump to IBJ From Acid",
+      "Brinstar Ripper Climb Zoomer Freeze",
+      "Kraid Unknown Item With 2 PBs", # If it's not too bad.
+      "Kraid Bottom Escape Get-Around Walljump",
+      "Norfair Big Room Entrance Enemy Freeze", # Terrifying, but okay.
+      "Ridley Southwest Puzzle Crumble Jump", # I can do this, but it is really awful.
+      "Ridley Northeast Corner Get-Around Walljump", # This is probably fine.
+      "Ridley Bomb Puzzle No Grip", # I found the trick, so evidently I can do it.
+      "Tourian Escape Hard Mode IBJ", # Done it before.
+
+      # Ludicrous
+      # None, because I'm sane.
+
+      # Shinesparks
+      "Brinstar Ceiling E-Tank Tricky Spark", # Weirdly easy, particularly with PBs.
+      "Acid Worm Skip Tricky Spark", # Love this one.
+      "Lower Norfair Wave Beam Skip Tricky Spark", # And this one, great for routing.
+      "Ridley Left Shaft Climb Tricky Spark", # This one's cool too.
+      "Crateria Upper Access Tricky Spark", # Great one.
+      "Crateria Northeast Corner Tricky Spark", # Shuffling walljump incentivises this.
+
+      # Leaving hazard runs out for now.
+    ]
+
+  tricks_denied: [
+      # Normal
+      "Varia Area Access Enemy Freeze",
+      "Kraid Right Shaft Enemy Freeze",
+      "Kraid Bottom Escape Enemy Freeze",
+
+      # Advanced
+      "Brinstar Top Access Damage Boost", # Very time-consuming and finicky.
+      "Varia Area Access Get-Around Walljump",
+      "Kraid Zipline Morph Jump Without Ziplines",
+      "Kraid Right Shaft Balljump Climb", # Just sounds really cursed.
+      "Kraid Left Shaft Access Space Jump Only",
+      "Acid Worm Skip Grip Only", # I can do it, but I don't want to.
+      "Acid Worm Skip Grip And Bombs",
+      "Kraid Quad Ball Cannon Crumble Grip",
+      "Kraid Unknown Item Spaceboost",
+      "Norfair Ice Beam Hi-Jump Only", # This one's awful, I've tried to do it before.
+      "Behind Ice Beam Shaft Hard Mode Enemy Freeze",
+      "Screw Attack Access Enemy Freeze",
+      "Lower Norfair Wave Beam Skip With Bombs", # What the hell is this?
+      "Ridley Bomb Puzzle Power Bombs", # This one just sucks if you make mistakes with low PBs.
+      "Mother Brain Access Ice Only", # No.
+      "Tourian Escape Shinespark", # Not sure how this would even come into play, logically.
+      "Crateria-Chozodia Door Get-Around Walljump", # Don't know it.
+      "Alpha PB Area Ice Escape",
+
+      # Ludicrous
+      "Acid Worm Skip Bomb Only", # Oh god.
+      "Ridley Speed Jump No Wave", # Love that this is a trick, but... oof.
+
+      # Shinesparks
+      "Brinstar Ripper Climb Tricky Spark", # This one is incredibly hard and I've never done it.
+      "Varia Area Access Tricky Spark",
+    ]
+
+  skip_chozodia_stealth: true
+  buff_pb_drops: true
+  plasma_beam_hint: true
+  elevator_speed: fast
+  start_with_maps: true
+  reveal_hidden_blocks: false
+  skip_tourian_opening_cutscenes: true
+
+  display_nonlocal_items: none
+
+---
+
+name: Ladybunne-Z1
+game: The Legend of Zelda
+
+The Legend of Zelda:
+  StartingPosition: very_dangerous

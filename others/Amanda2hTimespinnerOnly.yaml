@@ -12,7 +12,6 @@ Timespinner:
   gyre_archives: 'true'
   cantoran: 'true'
   lore_checks: 'true'
-  boss_rando: scaled
   damage_rando: balanced
   extra_earrings_xp: 24
   shop_fill: randomized
@@ -35,3 +34,38 @@ Timespinner:
   trap_chance: 0
   local_items:
     ["Timespinner Spindle", "Timespinner Gear 1", "Timespinner Gear 2", "Timespinner Gear 3"]
+  boss_rando: scaled
+  boss_rando_type:
+    shuffle: 1
+    chaos: 1
+    singularity: 1
+  rising_tides_overrides:
+    AncientPyramidShaft:
+      Dry: 67
+      Flooded: 33
+    CastleBasement:
+      Dry: 67
+      FloodedWithSavePointAvailable: 33
+    CastleCourtyard:
+      Dry: 67
+      Flooded: 33
+    CastleMoat:
+      Dry: 67
+      Flooded: 33
+    Lab: Dry
+    LakeDesolation:
+      Dry: 67
+      Flooded: 33
+    LakeSerene:
+      Dry: 33
+      Flooded: 67
+    LakeSereneBridge: Flooded
+    Maw:
+      Dry: 67
+      Flooded: 33
+    Sandman:
+      Dry: 67
+      Flooded: 33
+    Xarion:
+      Dry: 67
+      Flooded: 33
